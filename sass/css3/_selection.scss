@@ -2,7 +2,7 @@
   $before-colons: "";
 
   @if & {
-    $before-colons: "&"
+    // $before-colons: "&"
   }
 
   #{$before-colons}::selection {

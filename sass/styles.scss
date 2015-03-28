@@ -1,12 +1,8 @@
 @import "reset";
-
-@import "bourbon";
-
-@import "neat";
-
 @import "getting-settings";
-// @import "neat/neat";
-
+@import "bourbon";
+@import "neat";
+@import "neat/neat";
 
 // z-index notes (Go in twenties 100 is heighest)
 
@@ -35,10 +31,10 @@
 
 // Breakpoints
 
-$largeDesktop: new-breakpoint(max-width 1088px 12);
-$desktop: new-breakpoint(max-width 960px 12);
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 640px 4);
+// $largeDesktop: new-breakpoint(max-width 1088px 12);
+// $desktop: new-breakpoint(max-width 960px 12);
+// $tablet: new-breakpoint(max-width 768px 8);
+// $mobile: new-breakpoint(max-width 640px 4);
 
 // Colors
 $state: rgba(99, 180, 40, 1);
@@ -78,9 +74,6 @@ header {
 
 .wrapper {
   @include outer-container;
-  @include media($largeDesktop) {
-    @include outer-container(90%);
-  }
 }
 
 #banner {
@@ -1213,7 +1206,6 @@ header nav.main {
 
 
 }
-
 
 
 #signatories {

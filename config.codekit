@@ -957,24 +957,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/build\/home (robert farrelly's conflicted copy 2015-03-28).html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/home (robert farrelly's conflicted copy 2015-03-28).html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/build\/home (Seán Mongey's conflicted copy 2015-03-28).html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/home (Seán Mongey's conflicted copy 2015-03-28).html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/build\/home.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1017,15 +999,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/build\/index (robert farrelly's conflicted copy 2015-03-28).html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/index (robert farrelly's conflicted copy 2015-03-28).html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/build\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1046,29 +1019,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/build\/mock (robert farrelly's conflicted copy 2015-03-28).html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/mock (robert farrelly's conflicted copy 2015-03-28).html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/build\/mock (Seán Mongey's conflicted copy 2015-03-28).html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/mock (Seán Mongey's conflicted copy 2015-03-28).html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/build\/mock.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/build\/mock.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/build\/styles\/sean.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/build\/styles\/sean.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1120,15 +1084,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/includes\/footer (robert farrelly's conflicted copy 2015-03-28).kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/footer (robert farrelly's conflicted copy 2015-03-28).kit",
-		"outputAbbreviatedPath": "\/includes\/footer (robert farrelly's conflicted copy 2015-03-28).html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/includes\/footer.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -1144,15 +1099,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/harp.kit",
 		"outputAbbreviatedPath": "\/includes\/harp.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/includes\/head.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/head.html",
-		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1202,6 +1148,18 @@
 		"outputAbbreviatedPath": "\/build\/mock.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/sass\/_bourbon-deprecated-upcoming.scss": {
 		"createSourceMap": 0,
@@ -1260,6 +1218,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_reset.scss",
 		"outputAbbreviatedPath": "\/css\/_reset.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/addons\/_button.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/addons\/_button.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_button.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1955,6 +1929,54 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/sass\/functions\/_flex-grid.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/functions\/_flex-grid.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_flex-grid.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/functions\/_golden-ratio.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/functions\/_golden-ratio.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_golden-ratio.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/functions\/_grid-width.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/functions\/_grid-width.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_grid-width.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/sass\/functions\/_is-length.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2323,6 +2345,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/sass\/sean.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/sean.scss",
+		"outputAbbreviatedPath": "\/build\/styles\/sean.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/sass\/settings\/_asset-pipeline.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2366,22 +2404,6 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_px-to-em.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/sass\/styles-sm.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/styles-sm.scss",
-		"outputAbbreviatedPath": "\/build\/styles\/styles-sm.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
