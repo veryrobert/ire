@@ -155,13 +155,13 @@ body {
   line-height: 32px; }
 #programme ul li.state a {
   color: #63b428; }
-#programme ul li.historic a {
+#programme ul li.historical a {
   color: #14825f; }
-#programme ul li.living a {
+#programme ul li.language a {
   color: #0f81ad; }
 #programme ul li.youth a {
   color: #cf568c; }
-#programme ul li.culture a {
+#programme ul li.cultural a {
   color: #7a2b88; }
 #programme ul li.community a {
   color: #e6263a; }
@@ -181,14 +181,14 @@ body {
   position: relative;
   top: 10px;
   left: 30px; }
-#programme ul li.historic a:before {
+#programme ul li.historical a:before {
   background-position-x: -114px;
   background-position-y: -22px; }
-#programme ul li.living a:before {
+#programme ul li.language a:before {
   background-position-x: -218px; }
 #programme ul li.youth a:before {
   background-position-x: -320px; }
-#programme ul li.culture a:before {
+#programme ul li.cultural a:before {
   background-position-x: -424px; }
 #programme ul li.community a:before {
   background-position-x: -527px; }
@@ -392,18 +392,18 @@ footer {
 .home #banner {
   height: calc(85vh);
   min-height: 100%; }
-.state #banner, .historic #banner, .living #banner, .youth #banner, .culture #banner, .community #banner, .global #banner {
+.state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
   height: calc(100vh - 180px);
   min-height: 100%; }
 .state #banner {
   background: #63b428; }
-.historic #banner {
+.historical #banner {
   background: #14825f; }
-.living #banner {
+.language #banner {
   background: #0f81ad; }
 .youth #banner {
   background: #cf568c; }
-.culture #banner {
+.cultural #banner {
   background: #7a2b88; }
 .community #banner {
   background: #e6263a; }
@@ -424,13 +424,13 @@ svg#harp {
   height: 65px; }
   .state svg#harp {
     fill: #63b428; }
-  .historic svg#harp {
+  .historical svg#harp {
     fill: #14825f; }
-  .living svg#harp {
+  .language svg#harp {
     fill: #0f81ad; }
   .youth svg#harp {
     fill: #cf568c; }
-  .culture svg#harp {
+  .cultural svg#harp {
     fill: #7a2b88; }
   .community svg#harp {
     fill: #e6263a; }
@@ -441,13 +441,13 @@ svg#harp {
 
 .state footer a, .state #events .eng, .state #events a.more, .state #programme ul li a {
   color: #63b428; }
-.historic footer a, .historic #events .eng, .historic #events a.more, .historic #programme ul li a {
+.historical footer a, .historical #events .eng, .historical #events a.more, .historical #programme ul li a {
   color: #14825f; }
-.living footer a, .living #events .eng, .living #events a.more, .living #programme ul li a {
+.language footer a, .language #events .eng, .language #events a.more, .language #programme ul li a {
   color: #0f81ad; }
 .youth footer a, .youth #events .eng, .youth #events a.more, .youth #programme ul li a {
   color: #cf568c; }
-.culture footer a, .culture #events .eng, .culture #events a.more, .culture #programme ul li a {
+.cultural footer a, .cultural #events .eng, .cultural #events a.more, .cultural #programme ul li a {
   color: #7a2b88; }
 .community footer a, .community #events .eng, .community #events a.more, .community #programme ul li a {
   color: #e6263a; }
@@ -607,15 +607,15 @@ section h2 {
 
 .main a {
   border-bottom: solid 1px transparent;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out; }
 
 .main a:hover {
   border-bottom: solid 1px #958864;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out; }
 
 .col-12 .img {
   float: left;
@@ -829,14 +829,14 @@ h1 {
   background-position-x: -12px;
   background-position-y: -19px;
   background-size: 680px; }
-.secondary nav li.historic a {
+.secondary nav li.historical a {
   background-position-x: -114px;
   background-position-y: -22px; }
-.secondary nav li.living a {
+.secondary nav li.language a {
   background-position-x: -218px; }
 .secondary nav li.youth a {
   background-position-x: -320px; }
-.secondary nav li.culture a {
+.secondary nav li.cultural a {
   background-position-x: -424px; }
 .secondary nav li.community a {
   background-position-x: -527px; }
@@ -903,7 +903,10 @@ header div.secondary nav {
 @media (min-width: 768px) {
   .hide-desktop {
     display: none; } }
-@media (max-width: 768px) {
+@media (min-width: 769px) {
+  .home #banner .wrapper .logo, header nav.main {
+    display: none; } }
+@media (max-width: 769px) {
   #banner, .home #banner {
     top: 75px;
     height: inherit;
@@ -931,6 +934,11 @@ header div.secondary nav {
   .home #banner .wrapper a.more {
     margin-left: 34.1192171993%;
     margin-bottom: 60px; }
+
+  header {
+    background: #0d3343; }
+    header .logo {
+      display: block; }
 
   header nav.main {
     position: absolute;
