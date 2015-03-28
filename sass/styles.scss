@@ -42,10 +42,10 @@ $mobile: new-breakpoint(max-width 640px 4);
 
 // Colors
 $state: rgba(99, 180, 40, 1);
-$historic: rgba(20, 130, 95, 1);
-$living: rgba(15, 129, 173, 1);
+$historical: rgba(20, 130, 95, 1);
+$language: rgba(15, 129, 173, 1);
 $youth: rgba(207, 86, 140, 1);
-$culture: rgba(122, 43, 136, 1);
+$cultural: rgba(122, 43, 136, 1);
 $community: rgba(230, 38, 58, 1);
 $global: rgba(242, 127, 10, 1);
 $gold: #958864;
@@ -166,17 +166,17 @@ header {
 		&.state a{
 			color: $state;
 		}
-		&.historic a{
-			color: $historic;
+		&.historical a{
+			color: $historical;
 		}
-		&.living a{
-			color: $living;
+		&.language a{
+			color: $language;
 		}
 		&.youth a{
 			color: $youth;
 		}
-		&.culture a{
-			color: $culture;
+		&.cultural a{
+			color: $cultural;
 		}
 		&.community a{
 			color: $community;
@@ -201,17 +201,17 @@ header {
 		    left: 30px;
 		}
 
-	  &.historic a:before {
+	  &.historical a:before {
 	    background-position-x: -114px;
 	    background-position-y: -22px;
 	  }
-	  &.living a:before {
+	  &.language a:before {
 	    background-position-x: -218px;
 	  }
 	  &.youth a:before {
 	    background-position-x: -320px;
 	  }
-	  &.culture a:before {
+	  &.cultural a:before {
 	    background-position-x: -424px;
 	  }
 	  &.community a:before {
@@ -466,24 +466,24 @@ header {
 
 }
 
-  .state &, .historic &, .living &, .youth &, .culture &, .community &, .global & {
+  .state &, .historical &, .language &, .youth &, .cultural &, .community &, .global & {
     height: calc(100vh - 180px);
     min-height: 100%;
   }
   .state & {
     background: $state;
   }
-  .historic & {
-    background: $historic;
+  .historical & {
+    background: $historical;
   }
-  .living & {
-    background: $living;
+  .language & {
+    background: $language;
   }
   .youth & {
     background: $youth;
   }
-  .culture & {
-    background: $culture;
+  .cultural & {
+    background: $cultural;
   }
   .community & {
     background: $community;
@@ -512,17 +512,17 @@ svg#harp {
   .state & {
     fill: $state;
   }
-  .historic & {
-    fill: $historic;
+  .historical & {
+    fill: $historical;
   }
-  .living & {
-    fill: $living;
+  .language & {
+    fill: $language;
   }
   .youth & {
     fill: $youth;
   }
-  .culture & {
-    fill: $culture;
+  .cultural & {
+    fill: $cultural;
   }
   .community & {
     fill: $community;
@@ -540,17 +540,17 @@ footer a, #events .eng, #events a.more, #programme ul li a {
   .state & {
     color: $state;
   }
-  .historic & {
-    color: $historic;
+  .historical & {
+    color: $historical;
   }
-  .living & {
-    color: $living;
+  .language & {
+    color: $language;
   }
   .youth & {
     color: $youth;
   }
-  .culture & {
-    color: $culture;
+  .cultural & {
+    color: $cultural;
   }
   .community & {
     color: $community;
@@ -692,12 +692,12 @@ section {
 
 .main a {
 	border-bottom: solid 1px transparent;
-	@include transition(all 0.2s ease-in-out);
+	@include transition(border 0.2s ease-in-out);
 }
 
 .main a:hover {
 	border-bottom: solid 1px $gold;
-	@include transition(all 0.2s ease-in-out);
+	@include transition(border 0.2s ease-in-out);
 }
 
 
@@ -732,7 +732,7 @@ section {
 }
 
 #events, #signatories{
-  background: lighten($living, 50%);
+  background: lighten($language, 50%);
   padding-top: em(100);
   .single-event {
     background: white;
@@ -962,17 +962,17 @@ h1 {
     background-position-y: -19px;
     background-size: 680px;
   }
-  &.historic a {
+  &.historical a {
     background-position-x: -114px;
     background-position-y: -22px;
   }
-  &.living a {
+  &.language a {
     background-position-x: -218px;
   }
   &.youth a {
     background-position-x: -320px;
   }
-  &.culture a {
+  &.cultural a {
     background-position-x: -424px;
   }
   &.community a {
@@ -1085,6 +1085,7 @@ header div.secondary nav {
 }
 
 
+
 // Small Desktop
 @media (max-width: 960px) {
 
@@ -1106,7 +1107,13 @@ header div.secondary nav {
 	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
+	.home #banner .wrapper .logo, header nav.main {
+		display: none;
+	}
+}
+
+@media (max-width: 769px) {
   #banner, .home #banner {
 
 	top: 75px;
@@ -1114,8 +1121,6 @@ header div.secondary nav {
 	min-height: inherit;
 	padding-top: 0px;
 	position: relative;
-
-
 
     .wrapper {
       padding-top: em(60);
@@ -1142,6 +1147,13 @@ header div.secondary nav {
 }
 
 header {
+	background: $navy;
+	.logo {
+		display: block;
+	}
+}
+
+#banner {
 
 }
 
@@ -1229,6 +1241,9 @@ header nav.main {
 .hide-desktop {
 	display: block;
 }
+
+
+
 
 
 }
