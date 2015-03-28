@@ -133,9 +133,9 @@ honk.hashCheck =function(){
 
 honk.pageCheck =function(){
 
-	if(window.location.pathname == '/') {
+	if(window.location.pathname == '/build/') {
 		// is homepage so load signatories
-		l(window.location.pathname);
+		
 		this.$body.addClass('home');
 
 	} else {
@@ -150,9 +150,8 @@ honk.pageCheck =function(){
 
 // Get This Party Started
 $(document).ready(function(){
-
+	l('JS LOADED');
 	// honk.hashCheck();
 	honk.pageCheck();
 
 });
-
