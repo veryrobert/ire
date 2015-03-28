@@ -1049,20 +1049,39 @@ header div.secondary nav {
 	header .main ul li {
 
 		&:first-child {
-			margin-right: inherit;
+			margin-right: 3%;
 		}
 
 		min-width: inherit;
 		background: aqua;
 		width: auto;
-		margin-right: inherit;
-		margin-right: 5%;
+		margin-right: 3%;
 
 		&:last-child {
 			margin-right: 0px;
 		}	
 	}
 
+}
+
+@media (max-width: 830px) {
+	header .main ul li {
+
+		a {
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		&:first-child {
+			margin-right: 2%;
+		}
+
+		margin-right: 2%;
+
+		&:last-child {
+			margin-right: 0px;
+		}	
+	}
 }
 
 
