@@ -28,8 +28,15 @@ var honk = {
 	$body: $('body'),
 	$ghost: $('#ghost'),
 	$info: $('.info'),
-	$pageTitle : $('header h1'),
-	$events : $('.events')
+	$pageTitle: $('header h1'),
+	$events: $('.events'),
+	$header: $('header'),
+	$more: $('.more'),
+	$secondary: $('.secondary'),
+	$logo: $('h1.logo'),
+
+	// document
+	$window: $(window)
 }
 
 honk.closeClick =  function(){
@@ -131,11 +138,28 @@ honk.hashCheck =function(){
 }
 
 honk.pageCheck =function(){
-
+	self = this;
 	if(window.location.pathname == '/build/') {
 		// is homepage so load signatories
 		
 		this.$body.addClass('home');
+		this.$header.addClass('on');
+
+		self.$window.on('scroll', function(){ 
+
+			var scrollPos = self.$window.scrollTop();
+			if (scrollPos >= 150) {
+
+				self.$logo.addClass('on');
+
+			} else {
+
+				self.$logo.removeClass('on');
+
+			}
+
+		});
+
 
 	} else {
 		// load relevant strand
@@ -144,6 +168,30 @@ honk.pageCheck =function(){
 	
 		this.getAllEvents(this[strand]);
 		this.$body.addClass(strand);
+
+		this.$more.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: $("#events").offset().top - 60
+			}, 600, 'easeInOutCubic');
+		});
+
+		var menuHeight = this.$header.outerHeight() - this.$secondary.outerHeight();
+		self.$window.on('scroll', function(){
+
+			var scrollPos = self.$window.scrollTop();
+			if (scrollPos >= menuHeight) {
+
+				self.$header.addClass('on');
+
+			} else {
+
+				self.$header.removeClass('on');
+
+			}
+
+		});
+
 	}
 }
 
@@ -153,24 +201,6 @@ $(document).ready(function(){
 	// honk.hashCheck();
 	honk.pageCheck();
 
-	$('.more').on('click', function(e){
-		e.preventDefault();
-		$('html, body').animate({
-			scrollTop: $("#events").offset().top - 60
-		}, 600, 'easeInOutCubic');
-	});
-
-	var menuHeight = $('header').outerHeight() - $('.secondary').outerHeight();
-	$(window).on('scroll', function(){
-
-		var scrollPos = $(window).scrollTop();
-		if (scrollPos >= menuHeight) {
-			$('header').addClass('on');
-		} else {
-			$('header').removeClass('on');
-		}
-
-	});
 });
 
 
@@ -183,9 +213,10 @@ var menuButton 	= $('.menu'),
 	progBtn		= $('.prog a');
 
 menuButton.on('click', function(){
-	nav.toggleClass('open');
-	body.toggleClass('open');
+	honk.$body.toggleClass('open');
 	menuButton.toggleClass('open');
+	nav.toggleClass('open');
+	
 });
 
 progBtn.on('click', function(){

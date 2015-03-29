@@ -35,6 +35,22 @@ body {
 	max-width: 1160px;
 }
 
+.logo {
+	transition: all ease .3s;
+}
+
+.home header .logo {
+	display: block;
+	margin-top: -10px;
+	opacity: 0;
+}
+
+.home header .logo.on {
+	margin-top: 0;
+	opacity: 1;
+}
+
+
 footer:not(.home) {
 	background: white;
 }
@@ -45,7 +61,7 @@ footer:not(.home) {
 	}
 }
 
-header {
+header:not(body.home) {
 	height: inherit;
 	perspective: 1100px;
 	position: absolute !important;
@@ -57,8 +73,10 @@ header {
 		top: 0px;
 		position: fixed !important;
 		margin-top: -110px;
+		.home & {
+			margin-top: 0;
+		}
 	}
-
 	nav.main {
 
 		
