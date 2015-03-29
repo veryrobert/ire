@@ -28,7 +28,8 @@ var honk = {
 	$body: $('body'),
 	$ghost: $('#ghost'),
 	$info: $('.info'),
-	$pageTitle : $('header h1')
+	$pageTitle : $('header h1'),
+	$events : $('.events')
 }
 
 honk.closeClick =  function(){
@@ -58,6 +59,7 @@ honk.closeEventOverlay = function () {
 }
 
 honk.getAllEvents = function (strand) {
+	self = this;
 	$.getJSON(strand, function(data) {
 		for (var i = 0; i < data.feed.entry.length; i++) {
 
@@ -71,12 +73,9 @@ honk.getAllEvents = function (strand) {
 				image 			= 	data.feed.entry[i]['gsx$image']['$t'];
 
 			if (!image) {
-				$('.events').append(
-					'<div class="event ' + size + '" data-id="' + i + '">' + '<h3>' + title + '<span class="irish">' + irishTitle + '</h3>' +'<p>' + summary + '</p><p class="irish">' + irishSummary + '</p>' + '</div>'
-				);
+				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' +'<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' + '</div>');
 			} else {
-				$('.events').append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<img src="' + image + '" />' + '<h3>' + title + '<span class="irish">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="irish">' + irishSummary + '</p>' +  '</div>'	
-				);
+				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<img src="' + image + '" />' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' +  '</div>');
 			}
 		};
 	});
@@ -103,13 +102,13 @@ honk.getSingleEvent = function(strand){
 				image 			= 	data.feed.entry[self.eventIndex]['gsx$image']['$t'];
 
 			if (!image) {
-				$('.info').empty().append( '<a class="close"></a>' + '<h3>' + title + '<span class="irish">' + irishTitle + '</span></h3>' + '<p>' + text + '</p>' + '<p class="irish">' + irishText + '</p>');
+				self.$info.empty().append( '<a class="close"></a>' + '<h3>' + title + '<span class="ire">' + irishTitle + '</span></h3>' + '<p>' + text + '</p>' + '<p class="ire">' + irishText + '</p>');
 			} else {
-				$('.info').empty().append( '<a class="close"></a>' + '<h3>' + title + '<span class="irish">' + irishTitle + '</span></h3>' + '<img src="' + image + '" />' + '<p>' + text + '</p>' + '<p class="irish">' + irishText + '</p>');
+				self.$info.empty().append( '<a class="close"></a>' + '<h3>' + title + '<span class="ire">' + irishTitle + '</span></h3>' + '<img src="' + image + '" />' + '<p>' + text + '</p>' + '<p class="ire">' + irishText + '</p>');
 			}
 
 			self.openEventOverlay();
-			$('h3').balanceText();
+			// $('h3').balanceText();
 		});
 
 	});
@@ -158,9 +157,24 @@ $(document).ready(function(){
 	$('.more').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: $("#events").offset().top - 20
+			scrollTop: $("#events").offset().top - 60
 		}, 600, 'easeInOutCubic');
 	});
+
+	var menuHeight = $('header').outerHeight() - $('.secondary').outerHeight();
+	$(window).on('scroll', function(){
+
+		var scrollPos = $(window).scrollTop();
+		if (scrollPos >= menuHeight) {
+			$('header').addClass('on');
+		} else {
+			$('header').removeClass('on');
+		}
+
+	});
+
+
+
 
 });
 

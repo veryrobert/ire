@@ -20,6 +20,25 @@ $navy: #0b2936;
 }
 
 
+body {
+	overflow-y: scroll;
+	transition: all ease .3s;
+}
+
+.noscroll {
+	overflow-y: hidden;
+	margin-left: -100px;
+}
+
+
+.wrapper {
+	max-width: 1160px;
+}
+
+footer:not(.home) {
+	background: white;
+}
+
 @media (min-width: 769px) {
 	.home #banner .wrapper .logo, header nav.main {
 		display: block !important;
@@ -27,9 +46,23 @@ $navy: #0b2936;
 }
 
 header {
-	// top: 0px;
 	height: inherit;
+	perspective: 1100px;
+	position: absolute !important;
+	// & > .wrapper {
+	// 	transform-style: preserve-3d;
+	// 	transform: rotateX(40deg);
+	// }
+	&.on {
+		top: 0px;
+		position: fixed !important;
+		margin-top: -110px;
+	}
+
 	nav.main {
+
+		
+
 		ul li {
 			width: inherit;
 			min-width: inherit;
@@ -78,26 +111,190 @@ header {
 	
 	#events {
 		background: rgba(255,255,255,.6);
+		padding-top:  70px;
 
 		.events-title {
-			// margin-bottom: 2px;
+			padding-left: 15px;
+			margin-bottom: 50px;
 			
-			h3 {
+			h2 {
 				font: bold 28px/32px 'karla', Arial, sans-serif;
 				display: inline;
 				width: inherit;
 				letter-spacing: -1px;
+				text-transform: inherit;
+				
+			}
+			.eng {
 				color: $navy;
-
-				&.ire {
-					color: $historical;
-				}
 			}
 		}
 	}
+}
+
+
+// EVENT RELATED CODE STARTS
+#wrap {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+	padding-bottom: 100px;
+}
+
+.event {
+	float: left;
+	width: 270px;
+	background: white;
+	box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.1);
+	height: 400px;
+	margin: 15px;
+	padding: 15px 15px;
+	overflow: hidden;
+	-webkit-font-smoothing: antialised;
+	transition: all ease .3s;
+	border-radius: 2px;
+
+
+	h3 {
+	font: 700 1.5em/1em 'Alegreya', Times, serif;
+	color: #333; 
+	padding-bottom: 15px;
+		span {
+			display: inline-block;
+		}
+	}
+	p {
+		margin-bottom: 15px;
+	}
+	img {
+		mix-blend-mode: multiply;
+	}
+
+  &:hover {
+	//background: lighten(red, 48%);
+	cursor: pointer;
+	.irish {
+		// color: white !important;
+	}
+  }
 
 }
- 
+
+.double {
+  width: 570px;
+  height: 400px;
+}
+
+.image {
+  height: 830px;
+}
+
+.full {
+  width: 98%;
+  height: inherit;
+  padding-bottom: 40px;
+}
+
+
+#single { 
+	color: black;
+	background: white;
+	position: fixed;
+	overflow-x: auto;
+	overflow-y: scroll;
+	bottom: 0;
+	width: 40%;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+	opacity: 1;
+	transition: all ease .3s;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.4);
+	left: 100%;
+	h3 {
+		font: 700 24px/28px 'Alegreya', Times, serif;
+		color: #333; 
+		margin-bottom: 20px;
+		padding-left: 40px;
+		padding-right: 70px;
+		span {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	
+	p {
+		padding: 0 0 20px 40px;
+		font: 17px/24px 'Alegreya', Times, serif;
+	}
+
+	p.irish {
+		text-indent: 40px;
+	}
+
+	&.active {
+		opacity: 1;
+		pointer-events: auto;
+		left: 60%;
+	}
+
+	.info {
+		float: left;
+		width: 100%;
+		min-height: 100%;
+		padding: 40px 70px 40px 50px;
+		position: absolute;
+		transition: all .2s ease .3s;
+	}
+}
+
+.hidden {
+	opacity: 0;
+}
+
+#ghost {
+	position: fixed;
+	z-index: 8888;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: all ease .3s;
+	background: rgba(255,255,255,.7);
+	opacity: 0;
+	pointer-events: none;
+	&.active {
+		opacity: 1;
+		pointer-events: visible;
+	}
+	&:hover {
+		cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMAIDBAUGBwj5/v4hFWaAAAAFpJREFUeNqV0EESABEQQ1GMHi33P/CU6eKzlI3Us5CSrpIrvVmcr2TTXCpxqaVG9agYGtZ+QIc5FroMxUgZ+JxWu8TT7HMGYczc7Rhaw07NnS3GN7RtRkk3+QBxjAQv32l+rQAAAABJRU5ErkJggg==), auto; 
+	}
+}
+
+.close {
+	display: block;
+	position: fixed;
+	right: 40px;
+	top: 40px;
+	width: 20px;
+	height: 20px;
+	font-size: 1.3em;
+	text-decoration: none;
+	z-index: 9999;
+	color: $navy;
+	&:after {
+		content: "×";
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+// EVENT RELATED CODE ENDS
+
 
 
 
