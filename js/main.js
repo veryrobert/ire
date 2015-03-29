@@ -84,7 +84,7 @@ honk.getAllEvents = function (strand) {
 			if (!image) {
 				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' +'<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' + '</div>');
 			} else {
-				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<img src="' + image + '" />' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' +  '</div>');
+				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<span><img src="' + image + '" /></span>' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' +  '</div>');
 			}
 		};
 	});
