@@ -34,6 +34,8 @@ var honk = {
 	$more: $('.more'),
 	$secondary: $('.secondary'),
 	$logo: $('h1.logo'),
+	$signatories: $('.signatories'),
+	$top: $('.top'),
 
 	// document
 	$window: $(window)
@@ -159,17 +161,38 @@ honk.pageCheck =function(){
 			}
 
 		});
+			
+		self.$more.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: $("#programme").offset().top - 90
+			}, 600, 'easeInOutCubic');
+		});
+
+		self.$signatories.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: $("#signatories").offset().top - 90
+			}, 600, 'easeInOutCubic');
+		});
+		self.$top.on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: 0
+			}, 600, 'easeInOutCubic');
+		});
 
 
 	} else {
+
 		// load relevant strand
 		var strand = window.location.pathname.split('/')[2];
 		var parseStrand = this[strand];
 	
 		this.getAllEvents(this[strand]);
 		this.$body.addClass(strand);
-
-		this.$more.on('click', function(e){
+			
+		self.$more.on('click', function(e){
 			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#events").offset().top - 60
@@ -182,11 +205,11 @@ honk.pageCheck =function(){
 			var scrollPos = self.$window.scrollTop();
 			if (scrollPos >= menuHeight) {
 
-				self.$header.addClass('on');
+				honk.$header.addClass('on');
 
 			} else {
 
-				self.$header.removeClass('on');
+				honk.$header.removeClass('on');
 
 			}
 
@@ -200,6 +223,8 @@ $(document).ready(function(){
 	l('JS LOADED');
 	// honk.hashCheck();
 	honk.pageCheck();
+
+	FastClick.attach(document.body);
 
 });
 
@@ -224,4 +249,5 @@ progBtn.on('click', function(){
 	$('nav.strands ul, .prog').toggleClass('show');
 
 });
+
 
