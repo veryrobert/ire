@@ -164,9 +164,16 @@ honk.pageCheck =function(){
 			
 		self.$more.on('click', function(e){
 			e.preventDefault();
-			$('html, body').animate({
-				scrollTop: $("#programme").offset().top - 90
-			}, 600, 'easeInOutCubic');
+
+			if ($(window).width() < 960) {
+			   e.preventDefault();
+			}
+			else {
+				$('html, body').animate({
+					scrollTop: $("#programme").offset().top - 90
+				}, 600, 'easeInOutCubic');
+			}
+
 		});
 
 		self.$signatories.on('click', function(e){
@@ -249,5 +256,7 @@ progBtn.on('click', function(){
 	$('nav.strands ul, .prog').toggleClass('show');
 
 });
+
+
 
 

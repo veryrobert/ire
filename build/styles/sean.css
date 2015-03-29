@@ -15,9 +15,6 @@ body {
   overflow-y: hidden;
   margin-left: -100px; }
 
-.wrapper {
-  max-width: 1160px; }
-
 .logo {
   transition: all ease .3s; }
 
@@ -30,12 +27,11 @@ body {
   margin-top: 0;
   opacity: 1; }
 
-footer:not(.home) {
+footer {
   background: white; }
+  .home footer {
+    background: #c5b99f; }
 
-@media (min-width: 769px) {
-  .home #banner .wrapper .logo, header nav.main {
-    display: block !important; } }
 header {
   height: inherit;
   perspective: 1100px;
@@ -46,18 +42,6 @@ header {
     margin-top: -110px; }
     .home header.on {
       margin-top: 0; }
-  header nav.main ul li {
-    width: inherit;
-    min-width: inherit;
-    padding-right: 6%; }
-  header nav.main a {
-    -webkit-font-smoothing: subpixel-antialiased;
-    letter-spacing: 0.25px;
-    font: 19px/22px 'Alegreya', Times, serif; }
-  header nav.main .eng {
-    color: #0b2936; }
-  header nav.main .ire {
-    color: #9f8a5f; }
   header div.secondary {
     background: #0b2936; }
     header div.secondary h2 {
@@ -66,6 +50,11 @@ header {
       color: white; }
     header div.secondary .ire {
       color: #9f8a5f; }
+  @media (max-width: 769px) {
+    header {
+      height: 80px; }
+      header h1 {
+        margin-top: 6px !important; } }
 
 .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
   height: inherit;
@@ -226,9 +215,6 @@ body.state {
   body.state .event {
     color: #0b2936; }
 
-.secondary nav li.state a {
-  background-position: -12px -19px; }
-
 body.historical {
   background: #14825f; }
   body.historical #banner {
@@ -239,9 +225,6 @@ body.historical {
     color: #14825f; }
   body.historical .event {
     color: #0b2936; }
-
-.secondary nav li.historical a {
-  background-position: -114px -22px; }
 
 body.language {
   background: #0f81ad; }
@@ -254,9 +237,6 @@ body.language {
   body.language .event {
     color: #0b2936; }
 
-.secondary nav li.language a {
-  background-position: -218px -20px; }
-
 body.youth {
   background: #cf568c; }
   body.youth #banner {
@@ -267,9 +247,6 @@ body.youth {
     color: #cf568c; }
   body.youth .event {
     color: #0b2936; }
-
-.secondary nav li.youth a {
-  background-position: -320px -20px; }
 
 body.cultural {
   background: #7a2b88; }
@@ -282,9 +259,6 @@ body.cultural {
   body.cultural .event {
     color: #0b2936; }
 
-.secondary nav li.cultural a {
-  background-position: -424px -20px; }
-
 body.community {
   background: #e6263a; }
   body.community #banner {
@@ -296,9 +270,6 @@ body.community {
   body.community .event {
     color: #0b2936; }
 
-.secondary nav li.community a {
-  background-position: -527px -20px; }
-
 body.global {
   background: #f27f0a; }
   body.global #banner {
@@ -309,6 +280,3 @@ body.global {
     color: #f27f0a; }
   body.global .event {
     color: #0b2936; }
-
-.secondary nav li.global a {
-  background-position: -631px -20px; }
