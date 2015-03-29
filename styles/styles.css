@@ -53,7 +53,7 @@ html {
 
 body {
   font-family: 'Alegreya', serif;
-  color: #0d3343;
+  color: #0b2936;
   outline: none; }
 
 .home header .logo {
@@ -88,7 +88,7 @@ body {
 #programme {
   padding: 3.75em 0;
   height: 65vh;
-  color: #0d3343; }
+  color: #0b2936; }
   #programme .wrapper {
     position: relative;
     top: 50%;
@@ -220,7 +220,7 @@ body {
     .ire #banner .wrapper h2 {
       margin-bottom: 0.625em; }
   #banner .wrapper .ire {
-    color: #0d3343; }
+    color: #0b2936; }
   #banner .wrapper .more {
     margin-left: 51.7893318034%; }
   .home #banner .wrapper {
@@ -291,7 +291,6 @@ body {
     position: inherit; } }
 header {
   position: fixed;
-  height: 100px;
   background: white;
   width: 100%;
   z-index: 100;
@@ -314,7 +313,7 @@ header {
   header div.secondary {
     height: 4.875em;
     padding: 1.25em 0em;
-    background: #0d3343;
+    background: #0b2936;
     text-transform: uppercase; }
     header div.secondary nav ul li {
       display: inline-block;
@@ -437,7 +436,7 @@ svg#harp {
   .global svg#harp {
     fill: #e6263a; }
   .home svg#harp {
-    fill: #675e45; }
+    fill: #766c50; }
 
 .state footer a, .state #events .eng, .state #events a.more, .state #programme ul li a {
   color: #63b428; }
@@ -453,6 +452,9 @@ svg#harp {
   color: #e6263a; }
 .global footer a, .global #events .eng, .global #events a.more, .global #programme ul li a {
   color: #f27f0a; }
+
+.home footer li {
+  color: #766c50; }
 
 .col-12 {
   float: left;
@@ -586,7 +588,7 @@ p, a {
   color: #958864; }
   .main a span.eng {
     display: inline;
-    color: #0d3343; }
+    color: #0b2936; }
   .main a span.eng:after {
     content: "\a";
     white-space: pre; }
@@ -717,7 +719,7 @@ section h2 {
 #signatories aside {
   padding-top: 1.875em; }
   #signatories aside p.eng, #signatories aside h2.eng {
-    color: #0d3343; }
+    color: #0b2936; }
   #signatories aside h2.ire {
     margin-bottom: 1.875em; }
   #signatories aside p.ire, #signatories aside h2.ire {
@@ -779,7 +781,7 @@ section h2 {
     border: 0px;
     outline: none;
     border-bottom: solid 1px #958864;
-    color: #0d3343;
+    color: #0b2936;
     font: 700 15px karla, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px; }
@@ -801,7 +803,7 @@ section h2 {
     float: right;
     margin-right: 0px; } }
 .navy {
-  color: #0d3343; }
+  color: #0b2936; }
 
 .gold {
   color: #958864; }
@@ -877,7 +879,6 @@ header div.secondary nav {
 @media (max-width: 1060px) {
   header .main ul li {
     min-width: inherit;
-    background: aqua;
     width: auto;
     margin-right: 3%; }
     header .main ul li:first-child {
@@ -903,9 +904,60 @@ header div.secondary nav {
 @media (min-width: 768px) {
   .hide-desktop {
     display: none; } }
-@media (min-width: 769px) {
-  .home #banner .wrapper .logo, header nav.main {
-    display: none; } }
+@media (max-width: 769px) {
+  body {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out; }
+    body.open {
+      -webkit-transform: translateX(-280px);
+      -ms-transform: translateX(-280px);
+      transform: translateX(-280px);
+      -webkit-transition: -webkit-transform 0.6s ease-in-out;
+      -moz-transition: -moz-transform 0.6s ease-in-out;
+      transition: transform 0.6s ease-in-out; }
+
+  header nav.main {
+    display: block;
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    -moz-transition: -moz-transform 0.9s ease-in-out;
+    transition: transform 0.9s ease-in-out; }
+    header nav.main.open {
+      -webkit-transform: translateX(280px);
+      -ms-transform: translateX(280px);
+      -webkit-transition: -webkit-transform 0.9s ease-in-out;
+      -moz-transition: -moz-transform 0.9s ease-in-out;
+      transition: transform 0.9s ease-in-out;
+      -webkit-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
+      -moz-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
+      box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2); }
+
+  .home header .logo {
+    display: none;
+    background-image: url(../img/logo-small-white.png) no-repeat;
+    background: url(../img/logo-small-white.svg) no-repeat;
+    height: 45px; }
+
+  .menu {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/menu.png);
+    background: url(../img/menu.svg) no-repeat;
+    width: 40px;
+    height: 36px;
+    background-color: #081f29;
+    padding: 0 10px;
+    text-indent: -9999px;
+    background-position-x: 2px;
+    position: absolute;
+    right: 6%;
+    top: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; } }
 @media (max-width: 769px) {
   #banner, .home #banner {
     top: 75px;
@@ -936,16 +988,17 @@ header div.secondary nav {
     margin-bottom: 60px; }
 
   header {
-    background: #0d3343; }
+    background: #09232e; }
     header .logo {
       display: block; }
 
   header nav.main {
-    position: absolute;
-    background: #0d3343;
+    position: fixed;
+    background: #0b2936;
     height: inherit;
-    width: 280px;
+    width: 300px;
     padding: 0;
+    padding-top: 5px;
     min-height: 100%;
     height: 100vh;
     margin-left: -20px;
@@ -958,19 +1011,75 @@ header div.secondary nav {
       header nav.main ul li:last-child a {
         padding-bottom: 22px; }
       header nav.main ul li a {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         padding: 16px 30px 17px 30px;
         width: 100%;
-        border-bottom: solid 1px #09232e; }
+        border-bottom: solid 1px #071921; }
         header nav.main ul li a:hover {
-          background: #09232e;
-          border-bottom: solid 1px #09232e; }
+          background: #071921;
+          border-bottom: solid 1px #071921; }
+        header nav.main ul li a:hover {
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
         header nav.main ul li a .eng {
           color: white; }
+    header nav.main .prog > a:after {
+      content: "\0002B";
+      display: block;
+      color: #071921;
+      border: solid 1px #071921;
+      height: 26px;
+      width: 26px;
+      -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+      border-radius: 24px;
+      font-size: 26px;
+      position: absolute;
+      right: 30px;
+      opacity: 1;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 2px;
+      margin-top: -31px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    header nav.main .prog > a:hover:after {
+      color: #958864;
+      border: solid 1px #958864; }
+    header nav.main .prog.show > a:after {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      color: #958864;
+      border-color: #958864; }
+    header nav.main .strands ul {
+      height: auto;
+      overflow: hidden;
+      float: left;
+      height: 0px;
+      position: relative;
+      -webkit-transition: height 0.6s ease-in-out;
+      -moz-transition: height 0.6s ease-in-out;
+      transition: height 0.6s ease-in-out; }
+      header nav.main .strands ul.show {
+        height: 411px;
+        -webkit-transition: height 0.6s ease-in-out;
+        -moz-transition: height 0.6s ease-in-out;
+        transition: height 0.6s ease-in-out; }
     header nav.main .strands a {
       font: 14px karla, sans-serif;
       line-height: 8px;
       padding-left: 75px;
-      background-color: #0b2c3a; }
+      background-color: #09232e; }
       header nav.main .strands a.eng {
         color: white; }
     header nav.main .strands a:before {
