@@ -280,3 +280,9 @@ body.global {
     color: #f27f0a; }
   body.global .event {
     color: #0b2936; }
+
+.about #banner {
+  background: blue;
+  height: 80vh; }
+  .about #banner .wrapper {
+    top: 350px; }
