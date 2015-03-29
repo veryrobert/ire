@@ -18,39 +18,53 @@ body {
 .wrapper {
   max-width: 1160px; }
 
+.logo {
+  transition: all ease .3s; }
+
+.home header .logo {
+  display: block;
+  margin-top: -10px;
+  opacity: 0; }
+
+.home header .logo.on {
+  margin-top: 0;
+  opacity: 1; }
+
 footer:not(.home) {
   background: white; }
 
 @media (min-width: 769px) {
   .home #banner .wrapper .logo, header nav.main {
     display: block !important; } }
-header {
+header:not(body.home) {
   height: inherit;
   perspective: 1100px;
   position: absolute !important; }
-  header.on {
+  header:not(body.home).on {
     top: 0px;
     position: fixed !important;
     margin-top: -110px; }
-  header nav.main ul li {
+    .home header:not(body.home).on {
+      margin-top: 0; }
+  header:not(body.home) nav.main ul li {
     width: inherit;
     min-width: inherit;
     padding-right: 6%; }
-  header nav.main a {
+  header:not(body.home) nav.main a {
     -webkit-font-smoothing: subpixel-antialiased;
     letter-spacing: 0.25px;
     font: 19px/22px 'Alegreya', Times, serif; }
-  header nav.main .eng {
+  header:not(body.home) nav.main .eng {
     color: #0b2936; }
-  header nav.main .ire {
+  header:not(body.home) nav.main .ire {
     color: #9f8a5f; }
-  header div.secondary {
+  header:not(body.home) div.secondary {
     background: #0b2936; }
-    header div.secondary h2 {
+    header:not(body.home) div.secondary h2 {
       letter-spacing: 1px; }
-    header div.secondary .eng {
+    header:not(body.home) div.secondary .eng {
       color: white; }
-    header div.secondary .ire {
+    header:not(body.home) div.secondary .ire {
       color: #9f8a5f; }
 
 .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
