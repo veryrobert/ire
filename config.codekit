@@ -1026,6 +1026,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/build\/img\/logo-small-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1477,
+		"inputAbbreviatedPath": "\/build\/img\/logo-small-white.png",
+		"outputAbbreviatedPath": "\/build\/img\/logo-small-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/build\/img\/logo-small.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1033,6 +1044,17 @@
 		"initialSize": 6528,
 		"inputAbbreviatedPath": "\/build\/img\/logo-small.jpg",
 		"outputAbbreviatedPath": "\/build\/img\/logo-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/menu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 152,
+		"inputAbbreviatedPath": "\/build\/img\/menu.png",
+		"outputAbbreviatedPath": "\/build\/img\/menu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

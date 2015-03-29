@@ -153,7 +153,6 @@ $(document).ready(function(){
 	// honk.hashCheck();
 	honk.pageCheck();
 
-
 	$('.more').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
@@ -172,12 +171,26 @@ $(document).ready(function(){
 		}
 
 	});
-
-
-
-
 });
 
 
+// rob shit js here
 
+var menuButton 	= $('.menu'),
+	nav			= $('.main'),
+	body		= $('body'),
+	strandsNav	= $('nav.strands'),
+	progBtn		= $('.prog a');
+
+menuButton.on('click', function(){
+	nav.toggleClass('open');
+	body.toggleClass('open');
+	menuButton.toggleClass('open');
+});
+
+progBtn.on('click', function(){
+
+	$('nav.strands ul, .prog').toggleClass('show');
+
+});
 
