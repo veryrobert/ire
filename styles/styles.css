@@ -444,7 +444,7 @@ footer {
   background: #e6263a; }
 .global #banner {
   background: #f27f0a; }
-.home #banner {
+.home #banner, .about #banner {
   background: #09727a;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDk3MjdhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzclIiBzdG9wLWNvbG9yPSIjMDg1MTU5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODklIiBzdG9wLWNvbG9yPSIjMDYzMzQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
   background: -moz-linear-gradient(-45deg, #09727a 0%, #085159 37%, #063342 89%);
@@ -1184,5 +1184,132 @@ header div.secondary nav {
   padding: 6.25em 0;
   background: #958864; }
 
+@media (max-width: 641px) {
+  h1.logo, .home header .logo {
+    display: block;
+    opacity: 1; }
+
+  .home #banner .wrapper .logo {
+    display: none; }
+  .home #banner .wrapper .col-8 {
+    width: 100%; }
+    .home #banner .wrapper .col-8 p {
+      font-size: 20px; }
+  .home #banner .wrapper a.more {
+    margin-left: 0px; }
+
+  header nav.main.open {
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(280px);
+    -webkit-transition: -webkit-transform 0.9s ease-in-out;
+    -moz-transition: -moz-transform 0.9s ease-in-out; }
+
+  header nav.main .prog > a:after {
+    right: 50px; }
+
+  .mobile-pull-left, .col-4, #programme .wrapper .mobile-pull-left, #programme .wrapper .mobile-pull-left p, aside, #programme .wrapper .col-8, #programme .wrapper .col-4, .col-8.strands ul, .strands ul li, #programme ul, #signatories aside p, .home #about .col-6, #about .about p, #about .signup, #about .signup h4.eng {
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px; }
+
+  #about .signup {
+    border-left: 0px;
+    border-top: solid 1px #958864;
+    margin-top: 20px; }
+
+  .home #about {
+    padding-top: 30px; }
+    .home #about input, .home #about button {
+      width: 100%;
+      padding-right: 0px;
+      margin-right: 0px; }
+    .home #about ul.social {
+      margin-top: 36px;
+      width: 90px;
+      left: -45px;
+      position: relative;
+      margin-left: 50%; }
+
+  #about .signup h4 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0px; }
+
+  #signatories aside p.ire {
+    margin-bottom: 30px; }
+
+  #programme aside h2.ire, .mobile-pull-left {
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+
+  #programme .wrapper .mobile-pull-left p {
+    font-size: 21px; }
+
+  aside h2 {
+    font-size: 18px; }
+
+  #programme ul li, #programme ul:nth-child(2), #programme ul {
+    margin: inherit;
+    padding: inherit;
+    float: left; }
+
+  #about .wrapper {
+    position: inherit;
+    top: inherit;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    overflow: hidden; }
+
+  .home #about {
+    height: inherit;
+    min-height: inherit;
+    max-height: inherit; }
+
+  #programme {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+    #programme aside {
+      width: 90%; }
+
+  #programme .wrapper .col-4 {
+    padding: 0 5%;
+    margin: 0 auto; }
+
+  #programme ul:nth-child(1) li:first-child {
+    border-top: solid 1px #eee;
+    padding-top: 10px;
+    margin-top: 20px; }
+
+  #programme ul:nth-child(2) li:first-child {
+    border-top: solid 0px #eee;
+    padding-top: 10px;
+    margin-top: 20px; }
+
+  #programme ul:nth-child(2) li:last-child {
+    border-bottom: 0px; }
+
+  #programme ul {
+    position: relative;
+    margin-left: 0px; }
+
+  #programme ul li {
+    padding: 24px 0px 10px 10%;
+    border-bottom: solid 1px #eee; }
+
+  #programme .wrapper {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%; }
+
+  #signatories {
+    padding: 30px 0; }
+
+  #programme .strands a:after {
+    content: ""; } }
 .home #banner .wrapper .col-8.pull-right {
   float: right !important; }
