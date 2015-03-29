@@ -154,4 +154,16 @@ $(document).ready(function(){
 	// honk.hashCheck();
 	honk.pageCheck();
 
+
+	$('.more').on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $("#events").offset().top - 20
+		}, 600, 'easeInOutCubic');
+	});
+
 });
+
+
+
+

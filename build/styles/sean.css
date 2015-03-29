@@ -1,0 +1,124 @@
+::-moz-selection {
+  background: #0b2936;
+  color: white; }
+
+::selection {
+  background: #0b2936;
+  color: white; }
+
+@media (min-width: 769px) {
+  .home #banner .wrapper .logo, header nav.main {
+    display: block !important; } }
+header {
+  height: inherit; }
+  header nav.main .ire {
+    color: #958864; }
+  header div.secondary {
+    background: #0b2936; }
+    header div.secondary h2 {
+      letter-spacing: 1px; }
+    header div.secondary .eng {
+      color: white; }
+    header div.secondary .ire {
+      color: #958864; }
+
+.state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+  height: inherit;
+  padding: 375px 0 200px; }
+  .state #banner h2, .historical #banner h2, .language #banner h2, .youth #banner h2, .cultural #banner h2, .community #banner h2, .global #banner h2 {
+    text-transform: inherit;
+    letter-spacing: 0; }
+.state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events {
+  background: rgba(255, 255, 255, 0.6); }
+  .state #events .events-title h3, .historical #events .events-title h3, .language #events .events-title h3, .youth #events .events-title h3, .cultural #events .events-title h3, .community #events .events-title h3, .global #events .events-title h3 {
+    font: bold 28px/32px 'karla', Arial, sans-serif;
+    display: inline;
+    width: inherit;
+    letter-spacing: -1px;
+    color: #0b2936; }
+    .state #events .events-title h3.ire, .historical #events .events-title h3.ire, .language #events .events-title h3.ire, .youth #events .events-title h3.ire, .cultural #events .events-title h3.ire, .community #events .events-title h3.ire, .global #events .events-title h3.ire {
+      color: #14825f; }
+
+body.state {
+  background: #63b428; }
+  body.state #banner {
+    background: #63b428; }
+  body.state .ire {
+    color: #63b428; }
+  body.state .event {
+    color: #0b2936; }
+
+.secondary nav li.state a {
+  background-position: -12px -19px; }
+
+body.historical {
+  background: #14825f; }
+  body.historical #banner {
+    background: #14825f; }
+  body.historical .ire {
+    color: #14825f; }
+  body.historical .event {
+    color: #0b2936; }
+
+.secondary nav li.historical a {
+  background-position: -114px -22px; }
+
+body.language {
+  background: #0f81ad; }
+  body.language #banner {
+    background: #0f81ad; }
+  body.language .ire {
+    color: #0f81ad; }
+  body.language .event {
+    color: #0b2936; }
+
+.secondary nav li.language a {
+  background-position: -218px -20px; }
+
+body.youth {
+  background: #cf568c; }
+  body.youth #banner {
+    background: #cf568c; }
+  body.youth .ire {
+    color: #cf568c; }
+  body.youth .event {
+    color: #0b2936; }
+
+.secondary nav li.youth a {
+  background-position: -320px -20px; }
+
+body.cultural {
+  background: #7a2b88; }
+  body.cultural #banner {
+    background: #7a2b88; }
+  body.cultural .ire {
+    color: #7a2b88; }
+  body.cultural .event {
+    color: #0b2936; }
+
+.secondary nav li.cultural a {
+  background-position: -424px -20px; }
+
+body.community {
+  background: #e6263a; }
+  body.community #banner {
+    background: #e6263a; }
+  body.community .ire {
+    color: #e6263a; }
+  body.community .event {
+    color: #0b2936; }
+
+.secondary nav li.community a {
+  background-position: -527px -20px; }
+
+body.global {
+  background: #f27f0a; }
+  body.global #banner {
+    background: #f27f0a; }
+  body.global .ire {
+    color: #f27f0a; }
+  body.global .event {
+    color: #0b2936; }
+
+.secondary nav li.global a {
+  background-position: -631px -20px; }

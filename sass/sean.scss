@@ -1,0 +1,124 @@
+//COLORS + UTILITIES
+$state: rgba(99, 180, 40, 1);
+$historical: rgba(20, 130, 95, 1);
+$language: rgba(15, 129, 173, 1);
+$youth: rgba(207, 86, 140, 1);
+$cultural: rgba(122, 43, 136, 1);
+$community: rgba(230, 38, 58, 1);
+$global: rgba(242, 127, 10, 1);
+$gold: #958864;
+$navy: #0b2936;
+
+::-moz-selection {
+	background: $navy;
+	color: white;
+}
+
+::selection {
+	background: $navy;
+	color: white;
+}
+
+
+@media (min-width: 769px) {
+	.home #banner .wrapper .logo, header nav.main {
+		display: block !important;
+	}
+}
+
+header {
+	// top: 0px;
+	height: inherit;
+	nav.main {
+		// height: inherit;
+		.ire {
+			color: $gold;
+		}
+	}
+
+	div.secondary {
+		background: $navy;
+		h2 {
+			letter-spacing: 1px;
+		}
+		.eng {
+			color: white;
+		}
+		.ire {
+			color: $gold;
+		}
+	}
+}
+
+
+.state, .historical, .language, .youth, .cultural, .community, .global {
+	
+	#banner {
+		height: inherit;
+		padding: 375px 0 200px;
+
+		h2 {
+			text-transform: inherit;
+			letter-spacing: 0;
+		}
+	}
+	
+	#events {
+		background: rgba(255,255,255,.6);
+
+		.events-title {
+			// margin-bottom: 2px;
+			
+			h3 {
+				font: bold 28px/32px 'karla', Arial, sans-serif;
+				display: inline;
+				width: inherit;
+				letter-spacing: -1px;
+				color: $navy;
+
+				&.ire {
+					color: $historical;
+				}
+			}
+		}
+	}
+
+}
+ 
+
+
+
+$icons: -12px -19px, -114px -22px, -218px -20px, -320px -20px, -424px -20px, -527px -20px, -631px -20px; 
+$classList: state, historical, language, youth, cultural, community, global;
+$brands: $state, $historical, $language, $youth, $cultural, $community, $global;
+
+@for $i from 1 through length($classList) {
+
+	body.#{nth($classList, $i)} {
+
+		$color:  #{nth($brands, $i)};		
+		background: $color;
+
+		#banner {
+			background: $color;
+		}
+
+		.ire {
+			color: $color;
+		}
+		
+		.event {
+			color: $navy;
+		}
+
+	}
+	
+	.secondary nav li.#{nth($classList, $i)} a {
+		background-position: #{nth($icons, $i)}
+	}
+
+}
+
+
+
+
