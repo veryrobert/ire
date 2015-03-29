@@ -6,17 +6,17 @@ $youth: rgba(207, 86, 140, 1);
 $cultural: rgba(122, 43, 136, 1);
 $community: rgba(230, 38, 58, 1);
 $global: rgba(242, 127, 10, 1);
-$gold: #958864;
+$gold: #9f8a5f;
 $navy: #0b2936;
 
 ::-moz-selection {
-	background: $navy;
-	color: white;
+	background: white;
+	color: $navy;
 }
 
 ::selection {
-	background: $navy;
-	color: white;
+	background: white;
+	color: $navy;
 }
 
 
@@ -30,7 +30,20 @@ header {
 	// top: 0px;
 	height: inherit;
 	nav.main {
-		// height: inherit;
+		ul li {
+			width: inherit;
+			min-width: inherit;
+			padding-right: 6%;
+		}
+		a {
+			-webkit-font-smoothing: subpixel-antialiased;
+			
+			letter-spacing: 0.25px;
+			font: 19px/22px 'Alegreya', Times, serif;
+		}
+		.eng {
+			color: $navy;
+		}
 		.ire {
 			color: $gold;
 		}

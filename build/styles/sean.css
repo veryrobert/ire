@@ -1,18 +1,28 @@
 ::-moz-selection {
-  background: #0b2936;
-  color: white; }
+  background: white;
+  color: #0b2936; }
 
 ::selection {
-  background: #0b2936;
-  color: white; }
+  background: white;
+  color: #0b2936; }
 
 @media (min-width: 769px) {
   .home #banner .wrapper .logo, header nav.main {
     display: block !important; } }
 header {
   height: inherit; }
+  header nav.main ul li {
+    width: inherit;
+    min-width: inherit;
+    padding-right: 6%; }
+  header nav.main a {
+    -webkit-font-smoothing: subpixel-antialiased;
+    letter-spacing: 0.25px;
+    font: 19px/22px 'Alegreya', Times, serif; }
+  header nav.main .eng {
+    color: #0b2936; }
   header nav.main .ire {
-    color: #958864; }
+    color: #9f8a5f; }
   header div.secondary {
     background: #0b2936; }
     header div.secondary h2 {
@@ -20,7 +30,7 @@ header {
     header div.secondary .eng {
       color: white; }
     header div.secondary .ire {
-      color: #958864; }
+      color: #9f8a5f; }
 
 .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
   height: inherit;
