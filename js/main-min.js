@@ -82,9 +82,9 @@ honk.getAllEvents = function (strand) {
 				image 			= 	data.feed.entry[i]['gsx$image']['$t'];
 
 			if (!image) {
-				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' +'<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' + '</div>');
+				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' +'<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' + '<span class="grad"></span></div>');
 			} else {
-				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<span><img src="' + image + '" /></span>' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' +  '</div>');
+				self.$events.append( '<div class="event ' + size + '" data-id="' + i + '">' +  '<span class="img"><img src="' + image + '" /></span>' + '<h3>' + title + '<span class="ire">' + irishTitle + '</h3>' + '<p>' + summary + '</p><p class="ire">' + irishSummary + '</p>' +  '<span class="grad"></span></div>');
 			}
 		};
 	});

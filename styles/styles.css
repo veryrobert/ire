@@ -125,7 +125,7 @@ body {
     #programme .strands a:after {
       content: "Read More \203A\203A";
       display: block;
-      font: 15px karla;
+      font: 15px karla, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       height: 15px;
       padding-top: 6px;
       text-indent: 3.125em;
@@ -412,7 +412,7 @@ footer {
     text-align: center; }
   footer li {
     display: inline;
-    font: 11px karla;
+    font: 11px karla, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     padding: 5px;
     text-align: center; }
   .home footer {
@@ -633,7 +633,7 @@ p, a {
   .main a {
     font-size: 17px; } }
 section a {
-  font-family: karla;
+  font-family: karla, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
