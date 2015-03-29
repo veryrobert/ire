@@ -36,35 +36,35 @@ footer:not(.home) {
 @media (min-width: 769px) {
   .home #banner .wrapper .logo, header nav.main {
     display: block !important; } }
-header:not(body.home) {
+header {
   height: inherit;
   perspective: 1100px;
   position: absolute !important; }
-  header:not(body.home).on {
+  header.on {
     top: 0px;
     position: fixed !important;
     margin-top: -110px; }
-    .home header:not(body.home).on {
+    .home header.on {
       margin-top: 0; }
-  header:not(body.home) nav.main ul li {
+  header nav.main ul li {
     width: inherit;
     min-width: inherit;
     padding-right: 6%; }
-  header:not(body.home) nav.main a {
+  header nav.main a {
     -webkit-font-smoothing: subpixel-antialiased;
     letter-spacing: 0.25px;
     font: 19px/22px 'Alegreya', Times, serif; }
-  header:not(body.home) nav.main .eng {
+  header nav.main .eng {
     color: #0b2936; }
-  header:not(body.home) nav.main .ire {
+  header nav.main .ire {
     color: #9f8a5f; }
-  header:not(body.home) div.secondary {
+  header div.secondary {
     background: #0b2936; }
-    header:not(body.home) div.secondary h2 {
+    header div.secondary h2 {
       letter-spacing: 1px; }
-    header:not(body.home) div.secondary .eng {
+    header div.secondary .eng {
       color: white; }
-    header:not(body.home) div.secondary .ire {
+    header div.secondary .ire {
       color: #9f8a5f; }
 
 .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
@@ -73,8 +73,11 @@ header:not(body.home) {
   .state #banner h2, .historical #banner h2, .language #banner h2, .youth #banner h2, .cultural #banner h2, .community #banner h2, .global #banner h2 {
     text-transform: inherit;
     letter-spacing: 0; }
+  .state #banner .wrapper p, .historical #banner .wrapper p, .language #banner .wrapper p, .youth #banner .wrapper p, .cultural #banner .wrapper p, .community #banner .wrapper p, .global #banner .wrapper p {
+    font-size: 23px;
+    line-height: 27px; }
 .state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   padding-top: 70px; }
   .state #events .events-title, .historical #events .events-title, .language #events .events-title, .youth #events .events-title, .cultural #events .events-title, .community #events .events-title, .global #events .events-title {
     padding-left: 15px;
@@ -101,15 +104,16 @@ header:not(body.home) {
   box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.1);
   height: 400px;
   margin: 15px;
-  padding: 15px 15px;
+  padding: 20px 25px;
   overflow: hidden;
   -webkit-font-smoothing: antialised;
   transition: all ease .3s;
   border-radius: 2px; }
   .event h3 {
-    font: 700 1.5em/1em 'Alegreya', Times, serif;
-    color: #333;
-    padding-bottom: 15px; }
+    font: 700 22px/24px karla, Arial, sans-serif;
+    color: #0b2936;
+    letter-spacing: -1px;
+    padding-bottom: 30px; }
     .event h3 span {
       display: inline-block; }
   .event p {
@@ -149,9 +153,10 @@ header:not(body.home) {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   left: 100%; }
   #single h3 {
-    font: 700 24px/28px 'Alegreya', Times, serif;
+    font: 700 24px/28px karla, Arial, sans-serif;
     color: #333;
-    margin-bottom: 20px;
+    letter-spacing: -1px;
+    margin: 20px 0 60px 0;
     padding-left: 40px;
     padding-right: 70px; }
     #single h3 span {
