@@ -155,3 +155,36 @@ $(document).ready(function(){
 	honk.pageCheck();
 
 });
+
+
+// rob shit js here
+
+var menuButton 	= $('.menu'),
+	nav			= $('.main'),
+	body		= $('body'),
+	strandsNav	= $('nav.strands'),
+	progBtn		= $('.prog a');
+
+menuButton.on('click',function(){
+	nav.toggleClass('open');
+	body.toggleClass('open');
+	menuButton.toggleClass('open');
+});
+
+progBtn.on('click',function(){
+
+	// strandsNav.slideToggle(750, 'swing', function(){
+	// 	$('nav.strands ul').addClass('show');
+	// });
+
+	$('nav.strands ul, .prog').toggleClass('show');
+
+
+});
+
+
+
+
+
+
+
