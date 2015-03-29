@@ -199,7 +199,9 @@ header {
 body.state {
   background: #63b428; }
   body.state #banner {
-    background: #63b428; }
+    background: #63b428 url("../img/state-old.jpg") center 80% no-repeat;
+    background: #63b428 url("../img/state.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.state .ire {
     color: #63b428; }
   body.state .event {
@@ -211,7 +213,9 @@ body.state {
 body.historical {
   background: #14825f; }
   body.historical #banner {
-    background: #14825f; }
+    background: #14825f url("../img/historical-old.jpg") center 80% no-repeat;
+    background: #14825f url("../img/historical.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.historical .ire {
     color: #14825f; }
   body.historical .event {
@@ -223,7 +227,9 @@ body.historical {
 body.language {
   background: #0f81ad; }
   body.language #banner {
-    background: #0f81ad; }
+    background: #0f81ad url("../img/language-old.jpg") center 80% no-repeat;
+    background: #0f81ad url("../img/language.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.language .ire {
     color: #0f81ad; }
   body.language .event {
@@ -235,7 +241,9 @@ body.language {
 body.youth {
   background: #cf568c; }
   body.youth #banner {
-    background: #cf568c; }
+    background: #cf568c url("../img/youth-old.jpg") center 80% no-repeat;
+    background: #cf568c url("../img/youth.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.youth .ire {
     color: #cf568c; }
   body.youth .event {
@@ -247,7 +255,9 @@ body.youth {
 body.cultural {
   background: #7a2b88; }
   body.cultural #banner {
-    background: #7a2b88; }
+    background: #7a2b88 url("../img/cultural-old.jpg") center 80% no-repeat;
+    background: #7a2b88 url("../img/cultural.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.cultural .ire {
     color: #7a2b88; }
   body.cultural .event {
@@ -259,7 +269,9 @@ body.cultural {
 body.community {
   background: #e6263a; }
   body.community #banner {
-    background: #e6263a; }
+    background: #e6263a url("../img/community-old.jpg") center 80% no-repeat;
+    background: #e6263a url("../img/community.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.community .ire {
     color: #e6263a; }
   body.community .event {
@@ -271,7 +283,9 @@ body.community {
 body.global {
   background: #f27f0a; }
   body.global #banner {
-    background: #f27f0a; }
+    background: #f27f0a url("../img/global-old.jpg") center 80% no-repeat;
+    background: #f27f0a url("../img/global.jpg") center 80% no-repeat;
+    background-blend-mode: multiply; }
   body.global .ire {
     color: #f27f0a; }
   body.global .event {
