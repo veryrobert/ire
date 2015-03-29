@@ -89,8 +89,7 @@ header {
   width: 1108px;
   margin: 0 auto;
   overflow: auto;
-  padding-bottom: 100px;
-  background: yellow; }
+  padding-bottom: 100px; }
 
 .event {
   float: left;
@@ -102,7 +101,7 @@ header {
   -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
-  height: 440px;
+  height: 400px;
   margin: 10px;
   padding: 22px 20px;
   overflow: hidden;
@@ -122,18 +121,26 @@ header {
     font-size: 16px;
     line-height: 21px;
     margin-bottom: 0.625em; }
+  .event span.img {
+    display: block;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 20px; }
   .event img {
     mix-blend-mode: multiply;
     width: 100%; }
   .event:hover {
     cursor: pointer; }
 
-.double {
-  width: 534px;
-  height: 440px; }
+#events .double {
+  width: 534px; }
+  #events .double p {
+    font-size: 17px;
+    line-height: 26px;
+    text-indent: none; }
 
 .image {
-  height: 900px; }
+  height: 819px; }
 
 .full {
   width: 98%;
@@ -273,3 +280,47 @@ body.global {
   height: 80vh; }
   .about #banner .wrapper {
     top: 350px; }
+
+.event {
+  position: relative; }
+
+.grad:before {
+  content: "Read More";
+  position: absolute;
+  bottom: 28px;
+  left: 20px;
+  letter-spacing: 1px;
+  font-family: karla, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ccc; }
+
+.grad {
+  display: block;
+  height: 150px;
+  background: yellow;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  z-index: 100;
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 44%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(44%, white), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 44%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 44%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 44%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 44%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
+header {
+  z-index: 110; }
+
+body .main .ire {
+  color: #958864; }

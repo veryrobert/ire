@@ -129,7 +129,7 @@ header {
       &:after {
         content: "Read More \203A\203A";
         display: block;
-        font: 15px karla;
+        font: 15px karla, $helvetica;
         height: 15px;
         padding-top: 6px;
         text-indent: em(50);
@@ -431,7 +431,7 @@ footer {
   }
   li {
     display: inline;
-    font: 11px karla;
+    font: 11px karla, $helvetica;
     padding: 5px;
     text-align: center;
   }
@@ -659,7 +659,7 @@ p, a {
 
 section {
   a {
-    font-family: karla;
+    font-family: karla, $helvetica;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
