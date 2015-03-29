@@ -310,7 +310,9 @@ $brands: $state, $historical, $language, $youth, $cultural, $community, $global;
 		background: $color;
 
 		#banner {
-			background: $color;
+			background: $color url('../img/#{nth($classList, $i)}-old.jpg') center 80% no-repeat;
+			background: $color url('../img/#{nth($classList, $i)}.jpg') center 80% no-repeat;
+			background-blend-mode: multiply;
 		}
 
 		.ire {
