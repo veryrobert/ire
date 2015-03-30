@@ -4,9 +4,9 @@
 
 @import "neat";
 
-@import "getting-settings";
+// @import "getting-settings";
 
-// @import "neat/neat";
+@import "neat/neat";
 
 // z-index notes (Go in twenties 100 is heighest)
 
@@ -27,7 +27,7 @@
   top: $top;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-42%);
 }
 
 // Breakpoints
@@ -61,7 +61,8 @@ body {
 header {
   .home & {
     .logo {
-      display: none;
+      // display: none;
+      opacity: 0;
     }
     .secondary {
       display: none;
@@ -94,7 +95,7 @@ header {
   height: 65vh;
   color: $navy;
   .wrapper {
-    @include vertical-align(50%);
+    @include vertical-align(45%);
   }
   ul li a {
     // color: $navy;
@@ -182,17 +183,24 @@ header {
     width: 36px;
     height: 36px;
     background-repeat: no-repeat;
-    background-size: 680px;
     margin-left: -36px;
-    background-position-x: -12px;
-    background-position-y: -19px;
     position: relative;
     top: 10px;
     left: 30px;
+    background-size: 680px 65px;
+    background: url(../img/icon-sprite.svg);
+    background-size: 680px 65px;
+    height: 36px;
+    width: 36px;
+    text-indent: -9999px;
+    overlflow: hidden;
+    display: inline-block;
+    background-position: top -15px right -631px;
+    background-repeat: no-repeat;
   }
   &.historical a:before {
     background-position-x: -114px;
-    background-position-y: -22px;
+    background-position-y: -20px;
   }
   &.language a:before {
     background-position-x: -218px;
@@ -223,7 +231,7 @@ header {
 ///////////////////////////////////////////////////////////////////////////////////
 
 #banner .wrapper {
-  @include vertical-align(45%);
+  @include vertical-align(50%);
   color: white;
   a.more {
     display: inline-block;
@@ -252,7 +260,7 @@ header {
   .home & {
     @include vertical-align(50%);
     @media (max-width: 1281px) {
-      @include vertical-align(55%);
+      @include vertical-align(50%);
     }
     @media (max-width: 769px) {
       height: inherit;
@@ -261,7 +269,6 @@ header {
     }
     .logo {
       @include span-columns(4);
-      background: yellow;
       background-image: url(../img/logo-big.jpg);
       background: url(../img/logo-big.svg) no-repeat;
       text-indent: -9999px;
@@ -287,9 +294,9 @@ header {
       }
     }
     p {
-      font-size: em(25);
+      font-size: em(23);
       line-height: em(20);
-      padding-right: em(40);
+      padding-right: em(50);
       @media (max-width: 1281px) {
         font-size: em(23);
         padding-right: em(80);
@@ -298,7 +305,7 @@ header {
         padding-right: em(0);
       }
     }
-    color: $gold;
+    color: lighten($gold, 3%);
     .ire {
       color: white;
     }
@@ -375,6 +382,11 @@ header {
     padding: em(20) em(0);
     background: $navy;
     text-transform: uppercase;
+
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+
     nav ul li {
       display: inline-block;
       @include span-columns(1 of 8);
@@ -383,9 +395,7 @@ header {
     nav {
       @include span-columns(8);
       float: right;
-      ul {
-        background: yellow;
-      }
+      ul {}
     }
   }
   .main {
@@ -446,7 +456,7 @@ footer {
 header {
   @media (max-width: 769px) {
     // position: relative;
-    height: 75px;
+    height: 80px;
   }
 }
 
@@ -934,8 +944,8 @@ h1 {
 .secondary nav li {
   a {
     background: url(../img/icon-sprite.svg);
-    background-position-y: -20px;
-    background-size: 680px;
+    background-position-y: -16px;
+    background-size: 680px 65px;
     height: 36px;
     width: 36px;
     text-indent: -9999px;
@@ -945,13 +955,12 @@ h1 {
   }
   &.state a {
     background: url(../img/icon-sprite.svg) no-repeat;
-    background-position-x: -12px;
-    background-position-y: -19px;
-    background-size: 680px;
+    background-position: top -15px right -631px;
+    background-size: 680px 65px;
   }
   &.historical a {
     background-position-x: -114px;
-    background-position-y: -22px;
+    background-position-y: -20px;
   }
   &.language a {
     background-position-x: -218px;
@@ -1297,6 +1306,7 @@ header div.secondary nav {
         background-position-x: -12px;
         background-position-y: -16px;
         position: absolute;
+        background-size: 680px 65px;
       }
     }
   }
@@ -1335,7 +1345,7 @@ header div.secondary nav {
     .col-8 {
       width: 100%;
       p {
-         font-size: 20px;
+        font-size: 20px;
       }
     }
     a.more {
@@ -1351,7 +1361,7 @@ header div.secondary nav {
   header nav.main .prog > a:after {
     right: 50px;
   }
-  .mobile-pull-left, .col-4, #programme .wrapper .mobile-pull-left, #programme .wrapper .mobile-pull-left p, aside, #programme .wrapper .col-8, #programme .wrapper .col-4, .col-8.strands ul, .strands ul li, #programme ul, #signatories aside p, .home #about .col-6, #about .about p,  #about .signup, #about .signup h4.eng {
+  .mobile-pull-left, .col-4, #programme .wrapper .mobile-pull-left, #programme .wrapper .mobile-pull-left p, aside, #programme .wrapper .col-8, #programme .wrapper .col-4, .col-8.strands ul, .strands ul li, #programme ul, #signatories aside p, .home #about .col-6, #about .about p, #about .signup, #about .signup h4.eng {
     float: left;
     width: 100%;
     padding-left: 0px;
@@ -1359,36 +1369,31 @@ header div.secondary nav {
     margin-right: 0px;
     margin-left: 0px;
   }
-#about .signup{
-  border-left: 0px;
-  border-top: solid 1px $gold;
-  margin-top: 20px;
-}
-
-.home #about {
-  padding-top: 30px;
-
-  input, button {
-    width: 100%;
-    padding-right: 0px;
-    margin-right: 0px;
+  #about .signup {
+    border-left: 0px;
+    border-top: solid 1px $gold;
+    margin-top: 20px;
   }
-
- ul.social {
-  margin-top: 36px;
-  width: 90px;
-  left: -45px;
-  position: relative;
-  margin-left: 50%;
-}
-
-}
-
-#about .signup h4 {
-  font-size: 24px;
-  line-height: 28px;
-  padding: 0px;
-}
+  .home #about {
+    padding-top: 30px;
+    input, button {
+      width: 100%;
+      padding-right: 0px;
+      margin-right: 0px;
+    }
+    ul.social {
+      margin-top: 36px;
+      width: 90px;
+      left: -45px;
+      position: relative;
+      margin-left: 50%;
+    }
+  }
+  #about .signup h4 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0px;
+  }
   #signatories aside p.ire {
     margin-bottom: 30px;
   }
@@ -1402,27 +1407,24 @@ header div.secondary nav {
   aside h2 {
     font-size: 18px;
   }
-  #programme ul li, #programme ul:nth-child(2), #programme ul,  {
+  #programme ul li, #programme ul:nth-child(2), #programme ul {
     margin: inherit;
     padding: inherit;
     float: left;
   }
-
   #about .wrapper {
-      position: inherit;
-  top: inherit;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  overflow: hidden;
+    position: inherit;
+    top: inherit;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    overflow: hidden;
   }
-
   .home #about {
     height: inherit;
     min-height: inherit;
-    max-height: inherit
+    max-height: inherit;
   }
-
   #programme {
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -1430,12 +1432,10 @@ header div.secondary nav {
       width: 90%;
     }
   }
-
-#programme .wrapper .col-4 {
-  padding: 0 5%;
-  margin: 0 auto;
-}
-
+  #programme .wrapper .col-4 {
+    padding: 0 5%;
+    margin: 0 auto;
+  }
   #programme ul:nth-child(1) li:first-child {
     border-top: solid 1px #eee;
     padding-top: 10px;
@@ -1456,7 +1456,6 @@ header div.secondary nav {
   #programme ul li {
     padding: 24px 0px 10px 10%;
     border-bottom: solid 1px #eee;
-
   }
   #programme .wrapper {
     width: 100% !important;
@@ -1467,12 +1466,9 @@ header div.secondary nav {
   #signatories {
     padding: 30px 0;
   }
-
-  #programme .strands a:after{
-    content:"";
+  #programme .strands a:after {
+    content: "";
   }
-
-
 }
 
 // Smaller Mobile Devices
@@ -1482,3 +1478,134 @@ header div.secondary nav {
 .home #banner .wrapper .col-8.pull-right {
   float: right !important;
 }
+
+.loading {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  @include transition(all 1s $ease-in-quad);
+  z-index: 999999;
+}
+
+.loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading #harp {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: -5px 0 0 -20px;
+}
+
+//  Straight up fixes
+
+@media (min-width: 960px) {
+  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+    height: inherit;
+    padding: 375px 0 200px;
+    max-height: 830px;
+  }
+  .state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events {
+    background: rgba(255, 255, 255, 0.8);
+    padding-top: 0px;
+  }
+}
+
+// fixes desktop above
+
+header.on {
+  // z-index: 100;
+}
+
+@media (max-width: 769px) {
+  header {
+    height: 90px;
+  }
+  header .logo {
+    background-image: url(../img/logo-small-white.png) no-repeat;
+    background: url(../img/logo-small-white.svg) no-repeat;
+    height: 59px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  header .secondary {
+    background: white !important;
+  }
+}
+
+.home header .logo {
+  display: block;
+  margin-top: 0px;
+  opacity: 0;
+  @include transform(translateY(-15px));
+}
+
+.home header .logo.on {
+  @include transform(translateY(-0px));
+}
+
+header {
+  z-index: 120;
+}
+
+
+
+
+@media (max-width: 770px) {
+ header nav.main {
+    // display: none;
+  }
+}
+
+@media (max-width: 769px) {
+
+ header nav.main.on{
+    // display:block;
+  }
+
+
+  header .logo {
+    opacity: 1;
+    position: relative;
+    top: 5px;
+  }
+  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+    top: 75px;
+    height: inherit;
+    min-height: inherit;
+    padding-top: 0px;
+    position: relative;
+    padding: 0px;
+    .wrapper {
+      padding:120px 0 30px 0;
+      -webkit-transform: inherit !important;
+      -ms-transform: inherit !important;
+      transform: inherit !important;
+      color: white;
+
+      a.more {
+        display: none;
+      }
+    }
+    .wrapper:last-of-type {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .home header .logo {
+    opacity: 1;
+    top: 20px;
+  }
+}
+
+
+

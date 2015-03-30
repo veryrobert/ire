@@ -139,6 +139,9 @@ honk.hashCheck =function(){
 	}
 }
 
+console.log('hello');
+
+
 honk.pageCheck =function(){
 	self = this;
 	if(window.location.pathname == '/build/') {
@@ -167,6 +170,8 @@ honk.pageCheck =function(){
 
 			if ($(window).width() < 960) {
 			   e.preventDefault();
+			   // $('nav.strands ul, .prog').toggleClass('show');
+			   console.log('clicked');
 			}
 			else {
 				$('html, body').animate({
@@ -247,14 +252,19 @@ var menuButton 	= $('.menu'),
 menuButton.on('click', function(){
 	honk.$body.toggleClass('open');
 	menuButton.toggleClass('open');
+
+
+	// nav.addClass('on');
 	nav.toggleClass('open');
 	
 });
 
 progBtn.on('click', function(){
-
 	$('nav.strands ul, .prog').toggleClass('show');
-
 });
+
+   setTimeout(function() {
+      $('.loading').addClass('hidden');
+      }, 500);
 
 
