@@ -144,7 +144,7 @@ console.log('hello');
 
 honk.pageCheck =function(){
 	self = this;
-	if(window.location.pathname == '/build/' || window.location.pathname == '/') {
+	if(window.location.pathname == '/build/' || window.location.pathname == '/ire/' || window.location.pathname == '/') {
 		// is homepage so load signatories
 		
 		this.$body.addClass('home');
