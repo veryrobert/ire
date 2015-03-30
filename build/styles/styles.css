@@ -61,6 +61,39 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+.about #banner .wrapper {
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+.about #banner p.ire, .about #banner h2.ire {
+  color: #958864; }
+.about #banner h2.ire, .about #banner h2.eng {
+  text-transform: none !important; }
+.about #banner .wrapper.moreBtn {
+  top: inherit;
+  -webkit-transform: inherit;
+  -ms-transform: inherit;
+  transform: inherit; }
+
+section#vision {
+  padding-top: 60px; }
+  section#vision h2 {
+    font-family: 'Alegreya', serif;
+    text-transform: none !important;
+    font-weight: normal;
+    font-size: 26px; }
+  section#vision .eng {
+    color: #0b2936; }
+  section#vision .ire {
+    color: #958864; }
+  section#vision .title {
+    border-bottom: solid 1px #c9c2af;
+    display: block;
+    padding-bottom: 30px; }
+  section#vision article {
+    padding-top: 30px 0px; }
+
 body {
   font-family: 'Alegreya', serif;
   color: #0b2936;
@@ -240,7 +273,7 @@ body {
     color: #0b2936; }
   #banner .wrapper .more {
     margin-left: 51.7893318034%; }
-  .home #banner .wrapper {
+  .home #banner .wrapper, #banner .wrapper .about {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -248,18 +281,18 @@ body {
     transform: translateY(-42%);
     color: #9c8f6c; }
     @media (max-width: 1281px) {
-      .home #banner .wrapper {
+      .home #banner .wrapper, #banner .wrapper .about {
         position: relative;
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-42%); } }
     @media (max-width: 769px) {
-      .home #banner .wrapper {
+      .home #banner .wrapper, #banner .wrapper .about {
         height: inherit;
         min-height: auto;
         padding-top: 0px; } }
-    .home #banner .wrapper .logo {
+    .home #banner .wrapper .logo, #banner .wrapper .about .logo {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
@@ -269,36 +302,36 @@ body {
       text-indent: -9999px;
       height: 8.125em;
       margin-top: -1px; }
-      .home #banner .wrapper .logo:last-child {
+      .home #banner .wrapper .logo:last-child, #banner .wrapper .about .logo:last-child {
         margin-right: 0; }
       @media (max-width: 1281px) {
-        .home #banner .wrapper .logo {
+        .home #banner .wrapper .logo, #banner .wrapper .about .logo {
           height: 7.5em; } }
       @media (max-width: 769px) {
-        .home #banner .wrapper .logo {
+        .home #banner .wrapper .logo, #banner .wrapper .about .logo {
           height: 6.25em; } }
-    .home #banner .wrapper .col-8 {
+    .home #banner .wrapper .col-8, #banner .wrapper .about .col-8 {
       float: left;
       margin-right: 0; }
-      .home #banner .wrapper .col-8:last-of-type {
+      .home #banner .wrapper .col-8:last-of-type, #banner .wrapper .about .col-8:last-of-type {
         margin-right: 0;
         float: right;
         margin-bottom: 3.75em; }
         @media (max-width: 1281px) {
-          .home #banner .wrapper .col-8:last-of-type {
+          .home #banner .wrapper .col-8:last-of-type, #banner .wrapper .about .col-8:last-of-type {
             margin-bottom: 2.5em; } }
-    .home #banner .wrapper p {
+    .home #banner .wrapper p, #banner .wrapper .about p {
       font-size: 1.4375em;
       line-height: 1.25em;
       padding-right: 3.125em; }
       @media (max-width: 1281px) {
-        .home #banner .wrapper p {
+        .home #banner .wrapper p, #banner .wrapper .about p {
           font-size: 1.4375em;
           padding-right: 5em; } }
       @media (max-width: 1281px) {
-        .home #banner .wrapper p {
+        .home #banner .wrapper p, #banner .wrapper .about p {
           padding-right: 0em; } }
-    .home #banner .wrapper .ire {
+    .home #banner .wrapper .ire, #banner .wrapper .about .ire {
       color: white; }
   #banner .wrapper .read-more {
     padding-top: 30px; }
