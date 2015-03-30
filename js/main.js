@@ -263,8 +263,10 @@ progBtn.on('click', function(){
 	$('nav.strands ul, .prog').toggleClass('show');
 });
 
-   setTimeout(function() {
-      $('.loading').addClass('hidden');
-      }, 500);
+setTimeout(function() {
+	$('.loading').addClass('hidden');
+}, 500);
+
+
 
 
