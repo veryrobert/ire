@@ -42,3 +42,10 @@
 
  ☐ About Page
    ☐ add consultation & engagement
+
+
+ ☐ Performance Testing
+   ☐ Run through GTMetrix
+   ☐ check base64 image support
+   ☐ ensure svg fallbacks
+   ☐ add all vender prefixs or prefixfree

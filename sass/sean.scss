@@ -161,7 +161,6 @@ header {
     padding-top: 70px;
     .events-title {
       padding-left: 15px;
-      padding-top: 40px;
       margin-bottom: 50px;
       h2 {
         font: bold 28px/32px 'karla', Arial, sans-serif;
@@ -199,7 +198,6 @@ header {
   margin: 10px;
   padding: 22px 20px;
   overflow: hidden;
-  -webkit-font-smoothing: antialised;
   transition: all ease .3s;
   border-radius: 2px;
   h3 {
@@ -276,14 +274,14 @@ header {
   pointer-events: none;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   left: 100%;
+  -webkit-font-smoothing: subpixel-antialiasing;
   h3 {
-    font: 700 24px/28px karla, Arial, sans-serif;
-    // font: 700 24px/28px 'Alegreya', Times, serif;
+    //font: 700 24px/28px karla, Arial, sans-serif;
+    font: 20px/23px 'Alegreya', Times, serif;
     color: #333;
-    letter-spacing: -1px;
-    margin: 20px 0 60px 0;
+    margin: 40px 0 40px 0;
     padding-left: 40px;
-    padding-right: 70px;
+    padding-right: 80px;
     span {
       display: inline-block;
       width: 100%;
@@ -305,7 +303,7 @@ header {
     float: left;
     width: 100%;
     min-height: 100%;
-    padding: 40px 70px 40px 50px;
+    padding: 0;
     position: absolute;
     transition: all .2s ease .3s;
   }
@@ -330,23 +328,31 @@ header {
     pointer-events: visible;
   }
   &:hover {
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMAIDBAUGBwj5/v4hFWaAAAAFpJREFUeNqV0EESABEQQ1GMHi33P/CU6eKzlI3Us5CSrpIrvVmcr2TTXCpxqaVG9agYGtZ+QIc5FroMxUgZ+JxWu8TT7HMGYczc7Rhaw07NnS3GN7RtRkk3+QBxjAQv32l+rQAAAABJRU5ErkJggg==), auto;
+
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAAAAAAAAAAAAAAAAABPDueNAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==), auto;
+  
+  // white cursor
+  // cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==), auto;
+
+  //cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMAIDBAUGBwj5/v4hFWaAAAAFpJREFUeNqV0EESABEQQ1GMHi33P/CU6eKzlI3Us5CSrpIrvVmcr2TTXCpxqaVG9agYGtZ+QIc5FroMxUgZ+JxWu8TT7HMGYczc7Rhaw07NnS3GN7RtRkk3+QBxjAQv32l+rQAAAABJRU5ErkJggg==), auto;
   }
 }
 
 .close {
   display: block;
-  position: fixed;
-  right: 40px;
+  position: absolute;
   top: 40px;
-  width: 20px;
-  height: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
   font-size: 1.3em;
   text-decoration: none;
   z-index: 9999;
-  color: $navy;
+  color: white;
+  text-align: center;
   &:after {
-    content: "×";
+    // content: "×";
   }
   &:hover {
     cursor: pointer;
@@ -385,6 +391,10 @@ $brands: $state, $historical, $language, $youth, $cultural, $community, $global,
       background: $color;
     }
     
+    .close {
+      background: $color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==) center center no-repeat;
+    }
+
     .event:hover {
       .grad {
         opacity: 1;
