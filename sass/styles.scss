@@ -8,6 +8,7 @@
 
 @import "neat/neat";
 
+
 // z-index notes (Go in twenties 100 is heighest)
 
 // Variables
@@ -47,6 +48,9 @@ $community: rgba(230, 38, 58, 1);
 $global: rgba(242, 127, 10, 1);
 $gold: #958864;
 $navy: #0b2936;
+
+
+@import "about";
 
 // Main body elements
 ///////////////////////////////////////////////////////////////////////////////////
@@ -257,7 +261,7 @@ header {
     // @include span-columns(6);
     @include shift(4);
   }
-  .home & {
+  .home &, .about {
     @include vertical-align(50%);
     @media (max-width: 1281px) {
       @include vertical-align(50%);
