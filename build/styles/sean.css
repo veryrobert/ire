@@ -120,6 +120,7 @@ header {
   padding-top: 70px; }
   .state #events .events-title, .historical #events .events-title, .language #events .events-title, .youth #events .events-title, .cultural #events .events-title, .community #events .events-title, .global #events .events-title, .reminders #events .events-title {
     padding-left: 15px;
+    padding-top: 40px;
     margin-bottom: 50px; }
     .state #events .events-title h2, .historical #events .events-title h2, .language #events .events-title h2, .youth #events .events-title h2, .cultural #events .events-title h2, .community #events .events-title h2, .global #events .events-title h2, .reminders #events .events-title h2 {
       font: bold 28px/32px 'karla', Arial, sans-serif;
@@ -241,11 +242,10 @@ header {
   bottom: 0;
   right: 0;
   transition: all ease .3s;
-  background: rgba(255, 255, 255, 0.7);
   opacity: 0;
   pointer-events: none; }
   #ghost.active {
-    opacity: 1;
+    opacity: .5;
     pointer-events: visible; }
   #ghost:hover {
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAIVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt0UjBAAAACnRSTlMAIDBAUGBwj5/v4hFWaAAAAFpJREFUeNqV0EESABEQQ1GMHi33P/CU6eKzlI3Us5CSrpIrvVmcr2TTXCpxqaVG9agYGtZ+QIc5FroMxUgZ+JxWu8TT7HMGYczc7Rhaw07NnS3GN7RtRkk3+QBxjAQv32l+rQAAAABJRU5ErkJggg==), auto; }
@@ -273,6 +273,8 @@ body.state {
   background: #63b428; }
   body.state .ire {
     color: #63b428; }
+  body.state #ghost {
+    background: #63b428; }
   body.state .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #63b428;
     -moz-box-shadow: 0px 0px 6px 0px #63b428;
@@ -308,6 +310,8 @@ body.historical {
   background: #14825f; }
   body.historical .ire {
     color: #14825f; }
+  body.historical #ghost {
+    background: #14825f; }
   body.historical .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #14825f;
     -moz-box-shadow: 0px 0px 6px 0px #14825f;
@@ -343,6 +347,8 @@ body.language {
   background: #0f81ad; }
   body.language .ire {
     color: #0f81ad; }
+  body.language #ghost {
+    background: #0f81ad; }
   body.language .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #0f81ad;
     -moz-box-shadow: 0px 0px 6px 0px #0f81ad;
@@ -378,6 +384,8 @@ body.youth {
   background: #cf568c; }
   body.youth .ire {
     color: #cf568c; }
+  body.youth #ghost {
+    background: #cf568c; }
   body.youth .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #cf568c;
     -moz-box-shadow: 0px 0px 6px 0px #cf568c;
@@ -413,6 +421,8 @@ body.cultural {
   background: #7a2b88; }
   body.cultural .ire {
     color: #7a2b88; }
+  body.cultural #ghost {
+    background: #7a2b88; }
   body.cultural .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #7a2b88;
     -moz-box-shadow: 0px 0px 6px 0px #7a2b88;
@@ -448,6 +458,8 @@ body.community {
   background: #e6263a; }
   body.community .ire {
     color: #e6263a; }
+  body.community #ghost {
+    background: #e6263a; }
   body.community .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #e6263a;
     -moz-box-shadow: 0px 0px 6px 0px #e6263a;
@@ -483,6 +495,8 @@ body.global {
   background: #f27f0a; }
   body.global .ire {
     color: #f27f0a; }
+  body.global #ghost {
+    background: #f27f0a; }
   body.global .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #f27f0a;
     -moz-box-shadow: 0px 0px 6px 0px #f27f0a;
@@ -518,6 +532,8 @@ body.reminders {
   background: #14825f; }
   body.reminders .ire {
     color: #14825f; }
+  body.reminders #ghost {
+    background: #14825f; }
   body.reminders .event:hover {
     -webkit-box-shadow: 0px 0px 6px 0px #14825f;
     -moz-box-shadow: 0px 0px 6px 0px #14825f;
