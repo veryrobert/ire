@@ -1,34 +1,39 @@
- ✔ Home page mobile  @done (15-03-29 19:39)
- ✔ About page design /  @done (15-03-30 18:33)
- ☐ About Code front end
 
- ☐ Permanent reminders section
- ✔ Images for coordinators @done (15-03-29 17:24)
- ☐ Newsletter sign up module
- ☐ Mail chimp confirm page
- ✔ Combine CSS @done (15-03-30 18:42)
- ✔ Events page break points @done (15-03-30 17:08)
- ✔ Events Mobile @done (15-03-30 18:42)
- ☐ Video integration
- ✔ FTP details @done (15-03-30 18:32)
- ✔ Social Media assets @done (15-03-30 18:32)
- ☐ Add image for all site
- ✔ Type historical @done (15-03-30 18:32)
- ☐ Change About to Contact
- ☐ Icons Mobile Menu
- ☐ Remove Browse buttom Mobile
- ☐ Add Scroll Top Button
- ✔ Fix icons Safari @done (15-03-30 11:59)
-  ☐ Check icons firefox
-  ☐ Engagement Piece 
-  ☐ Read more mobile
-  ☐ Roll overs for icons
-  ☐ Mobile Menu issue strand
+   Ireland 2016:
 
 
-   Text:
-     ☐ Home page
-         ✔ Intro Section @done (15-03-30 18:41)
-             ✔ Programme Strands Intro / Eng / Ire @done (15-03-30 18:41)
-             ☐ The Seven Signatories Intro Text
-             ✔ Contact Information @done (15-03-30 18:41)
+ ☐ General
+    ☐ test icons across browsers
+    ☐ add images throughout site
+    ☐ add scroll to top button?
+    ☐ fix sticky header on mobile
+    ☐ mailchimp success and confirm page
+    ☐ fix flyout mobile menu animation
+
+
+☐ Home page
+  ✔ Intro Section @done (15-03-30 18:41)
+     ✔ Programme Strands Intro / Eng / Ire @done (15-03-30 18:41)
+     ☐ Signatories Intro Text
+     ☐ Signatories Images
+     ✔ Contact Information @done (15-03-30 18:41)
+     ☐ video integration
+     ☐ remove browse button on mobile
+     ☐ add contact info at bottom of page
+     ☐ mailchimp setup on homepage
+
+
+ ☐ Strand Pages
+   ✔ Icon Menu Rollovers @done (15-03-30 20:30)
+   ☐ mobile test event overlay
+  
+
+ ☐ Permanent Reminders
+   ☐ make page
+   ☐ style page
+   ☐ responsive text page
+   ☐ pull in info from gdoc
+
+
+ ☐ About Page
+   ☐ add consultation & engagement

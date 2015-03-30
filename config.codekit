@@ -1153,15 +1153,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/build\/styles\/styles (robert farrelly's conflicted copy 2015-03-29).css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/styles\/styles (robert farrelly's conflicted copy 2015-03-29).css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/build\/styles\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -1245,30 +1236,12 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/includes\/footer (robert farrelly's conflicted copy 2015-03-29).kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/footer (robert farrelly's conflicted copy 2015-03-29).kit",
-		"outputAbbreviatedPath": "\/includes\/footer (robert farrelly's conflicted copy 2015-03-29).html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/includes\/footer.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/includes\/footer.kit",
 		"outputAbbreviatedPath": "\/includes\/footer.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/includes\/harp (robert farrelly's conflicted copy 2015-03-29).kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/harp (robert farrelly's conflicted copy 2015-03-29).kit",
-		"outputAbbreviatedPath": "\/includes\/harp (robert farrelly's conflicted copy 2015-03-29).html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1281,39 +1254,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/head (robert farrelly's conflicted copy 2015-03-29).kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/head (robert farrelly's conflicted copy 2015-03-29).kit",
-		"outputAbbreviatedPath": "\/includes\/head (robert farrelly's conflicted copy 2015-03-29).html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/includes\/head.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/head.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/includes\/head.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/includes\/head.kit",
 		"outputAbbreviatedPath": "\/includes\/head.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/includes\/nav (robert farrelly's conflicted copy 2015-03-29).kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/nav (robert farrelly's conflicted copy 2015-03-29).kit",
-		"outputAbbreviatedPath": "\/includes\/nav (robert farrelly's conflicted copy 2015-03-29).html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1343,17 +1289,6 @@
 		"outputAbbreviatedPath": "\/build\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
-		},
-	"\/js\/main (robert farrelly's conflicted copy 2015-03-29).js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/main (robert farrelly's conflicted copy 2015-03-29).js",
-		"outputAbbreviatedPath": "\/js\/min\/main (robert farrelly's conflicted copy 2015-03-29)-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
@@ -2697,7 +2632,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Robert Farrelly",
+"lastSavedByUser": "Seán Mongey",
 "manualImportLinks": {
 	},
 "projectAttributes": {
