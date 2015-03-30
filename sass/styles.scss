@@ -46,6 +46,7 @@ $youth: rgba(207, 86, 140, 1);
 $cultural: rgba(122, 43, 136, 1);
 $community: rgba(230, 38, 58, 1);
 $global: rgba(242, 127, 10, 1);
+$reminders: rgba(20, 130, 95, 1);
 $gold: #958864;
 $navy: #0b2936;
 
@@ -469,7 +470,7 @@ header {
     height: calc(85vh);
     min-height: 100%;
   }
-  .state &, .historical &, .language &, .youth &, .cultural &, .community &, .global & {
+  .state &, .historical &, .reminders & .language &, .youth &, .cultural &, .community &, .global & {
     height: calc(100vh - 180px);
     min-height: 100%;
   }
@@ -494,6 +495,10 @@ header {
   .global & {
     background: $global;
   }
+  .reminders & {
+    background: $reminders;
+  }
+
   .home &, .about & {
     background: #09727a;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDk3MjdhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzclIiBzdG9wLWNvbG9yPSIjMDg1MTU5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODklIiBzdG9wLWNvbG9yPSIjMDYzMzQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -556,6 +561,9 @@ footer a, #events .eng, #events a.more, #programme ul li a {
   }
   .global & {
     color: $global;
+  }
+  .reminders & {
+    color: $historical;
   }
 }
 
@@ -1580,7 +1588,7 @@ header {
     position: relative;
     top: 5px;
   }
-  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner, .reminders #banner {
     top: 75px;
     height: inherit;
     min-height: inherit;

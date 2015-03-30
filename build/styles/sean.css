@@ -46,6 +46,8 @@ footer {
   background: white; }
   .home footer {
     background: #c5b99f; }
+  footer .harp:hover {
+    cursor: pointer; }
 
 header {
   height: inherit;
@@ -55,6 +57,9 @@ header {
     top: 0px;
     position: fixed !important;
     margin-top: -110px; }
+    @media (max-width: 640px) {
+      header.on {
+        margin-top: -85px; } }
     .home header.on {
       margin-top: 0; }
   header div.secondary {
@@ -101,28 +106,28 @@ header {
       header h1 {
         margin-top: 6px !important; } }
 
-.state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+.state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner, .reminders #banner {
   height: inherit;
   padding: 375px 0 200px; }
-  .state #banner h2, .historical #banner h2, .language #banner h2, .youth #banner h2, .cultural #banner h2, .community #banner h2, .global #banner h2 {
+  .state #banner h2, .historical #banner h2, .language #banner h2, .youth #banner h2, .cultural #banner h2, .community #banner h2, .global #banner h2, .reminders #banner h2 {
     text-transform: inherit;
     letter-spacing: 0; }
-  .state #banner .wrapper p, .historical #banner .wrapper p, .language #banner .wrapper p, .youth #banner .wrapper p, .cultural #banner .wrapper p, .community #banner .wrapper p, .global #banner .wrapper p {
+  .state #banner .wrapper p, .historical #banner .wrapper p, .language #banner .wrapper p, .youth #banner .wrapper p, .cultural #banner .wrapper p, .community #banner .wrapper p, .global #banner .wrapper p, .reminders #banner .wrapper p {
     font-size: 23px;
     line-height: 27px; }
-.state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events {
+.state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events, .reminders #events {
   background: rgba(255, 255, 255, 0.8);
   padding-top: 70px; }
-  .state #events .events-title, .historical #events .events-title, .language #events .events-title, .youth #events .events-title, .cultural #events .events-title, .community #events .events-title, .global #events .events-title {
+  .state #events .events-title, .historical #events .events-title, .language #events .events-title, .youth #events .events-title, .cultural #events .events-title, .community #events .events-title, .global #events .events-title, .reminders #events .events-title {
     padding-left: 15px;
     margin-bottom: 50px; }
-    .state #events .events-title h2, .historical #events .events-title h2, .language #events .events-title h2, .youth #events .events-title h2, .cultural #events .events-title h2, .community #events .events-title h2, .global #events .events-title h2 {
+    .state #events .events-title h2, .historical #events .events-title h2, .language #events .events-title h2, .youth #events .events-title h2, .cultural #events .events-title h2, .community #events .events-title h2, .global #events .events-title h2, .reminders #events .events-title h2 {
       font: bold 28px/32px 'karla', Arial, sans-serif;
       display: inline;
       width: inherit;
       letter-spacing: -1px;
       text-transform: inherit; }
-    .state #events .events-title .eng, .historical #events .events-title .eng, .language #events .events-title .eng, .youth #events .events-title .eng, .cultural #events .events-title .eng, .community #events .events-title .eng, .global #events .events-title .eng {
+    .state #events .events-title .eng, .historical #events .events-title .eng, .language #events .events-title .eng, .youth #events .events-title .eng, .cultural #events .events-title .eng, .community #events .events-title .eng, .global #events .events-title .eng, .reminders #events .events-title .eng {
       color: #0b2936; }
 
 #wrap {
@@ -178,14 +183,8 @@ header {
     font-size: 17px;
     line-height: 26px;
     text-indent: none; }
-
-.image {
+#events .image {
   height: 819px; }
-
-.full {
-  width: 98%;
-  height: inherit;
-  padding-bottom: 40px; }
 
 #single {
   color: black;
@@ -512,6 +511,41 @@ body.global {
     transform: translateY(-30%);
     color: white; }
 
+li.reminders h5 em {
+  color: #14825f; }
+
+body.reminders {
+  background: #14825f; }
+  body.reminders .ire {
+    color: #14825f; }
+  body.reminders .event:hover {
+    -webkit-box-shadow: 0px 0px 6px 0px #14825f;
+    -moz-box-shadow: 0px 0px 6px 0px #14825f;
+    box-shadow: 0px 0px 6px 0px #14825f; }
+    body.reminders .event:hover .grad {
+      opacity: 1;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      height: 120px; }
+  body.reminders .event:hover .grad:before {
+    content: "Read More";
+    color: #14825f;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    border-bottom: solid 1px #14825f;
+    padding-bottom: 5px; }
+  body.reminders .event {
+    color: #0b2936; }
+  body.reminders #banner .wrapper {
+    position: inherit;
+    top: 50%;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    color: white; }
+
 Andy css goes here
 #events .wrapper {
   padding-top: 60px; }
@@ -536,6 +570,9 @@ Andy css goes here
         display: block; }
     #events .events .double {
       width: 48.1%; }
+    #events .events .full {
+      width: 98.1%;
+      height: inherit; }
   @media (max-width: 1089px) {
     #events .events .event {
       width: 22.8%;

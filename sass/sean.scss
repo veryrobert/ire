@@ -10,6 +10,8 @@ $youth: rgba(207, 86, 140, 1);
 $cultural: rgba(122, 43, 136, 1);
 $community: rgba(230, 38, 58, 1);
 $global: rgba(242, 127, 10, 1);
+$reminders: rgba(20, 130, 95, 1);
+
 $gold: #9f8a5f;
 $navy: #0b2936;
 
@@ -61,6 +63,9 @@ footer {
   .home & {
     background: lighten($gold, 20%);
   }
+  .harp:hover {
+    cursor: pointer;
+  }
 }
 
 header {
@@ -71,6 +76,9 @@ header {
     top: 0px;
     position: fixed !important;
     margin-top: -110px;
+    @media (max-width: 640px) {
+      margin-top: -85px;
+    }
     .home & {
       margin-top: 0;
     }
@@ -135,7 +143,7 @@ header {
   }
 }
 
-.state, .historical, .language, .youth, .cultural, .community, .global {
+.state, .historical, .language, .youth, .cultural, .community, .global, .reminders {
   #banner {
     height: inherit;
     padding: 375px 0 200px;
@@ -240,17 +248,15 @@ header {
       text-indent: none;
     }
   }
+
+  .image {
+    height: 819px;
+  }
+
 }
 
-.image {
-  height: 819px;
-}
 
-.full {
-  width: 98%;
-  height: inherit;
-  padding-bottom: 40px;
-}
+
 
 #single {
   color: black;
@@ -350,8 +356,8 @@ header {
 // EVENT RELATED CODE ENDS
 
 $icons: -12px -19px, -114px -22px, -218px -20px, -320px -20px, -424px -20px, -527px -20px, -631px -20px;
-$classList: state, historical, language, youth, cultural, community, global;
-$brands: $state, $historical, $language, $youth, $cultural, $community, $global;
+$classList: state, historical, language, youth, cultural, community, global, reminders;
+$brands: $state, $historical, $language, $youth, $cultural, $community, $global, $reminders;
 
 @for $i from 1 through length($classList) {
   
@@ -444,6 +450,10 @@ Andy css goes here
     }
     .double {
       width: 48.1%;
+    }
+    .full {
+      width: 98.1%;
+      height: inherit;
     }
   }
   @media (max-width: 1089px) {

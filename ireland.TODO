@@ -5,8 +5,8 @@
  ☐ General
     ☐ test icons across browsers
     ☐ add images throughout site
-    ☐ add scroll to top button?
-    ☐ fix sticky header on mobile
+    ✔ add scroll to top button — made harp back to top button  @done (15-03-30 21:52)
+    ✔ fix sticky header on mobile @done (15-03-30 21:35)
     ☐ mailchimp success and confirm page
     ☐ fix flyout mobile menu animation
 
@@ -18,7 +18,7 @@
      ☐ Signatories Images
      ✔ Contact Information @done (15-03-30 18:41)
      ☐ video integration
-     ☐ remove browse button on mobile
+     ✔ remove browse button on mobile @done (15-03-30 21:54)
      ☐ add contact info at bottom of page
      ☐ mailchimp setup on homepage
 
@@ -26,13 +26,17 @@
  ☐ Strand Pages
    ✔ Icon Menu Rollovers @done (15-03-30 20:30)
    ☐ mobile test event overlay
-     
+   ☐ style close button as per visuals
+   ☐ fix close button movement on event overlay load
+   ☐ style typography as per visuals
+
 
  ☐ Permanent Reminders
-   ☐ make page
-   ☐ style page
-   ☐ responsive text page
-   ☐ pull in info from gdoc
+   ✔ make page @done (15-03-30 21:35)
+   ✔ style page @done (15-03-30 21:35)
+   ✔ responsive test page @done (15-03-30 21:53)
+   ✔ pull in info from gdoc @done (15-03-30 21:53)
+   ☐ add imagery
 
 
  ☐ About Page

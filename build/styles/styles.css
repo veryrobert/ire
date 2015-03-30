@@ -477,7 +477,7 @@ footer {
 .home #banner {
   height: calc(85vh);
   min-height: 100%; }
-.state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+.state #banner, .historical #banner, .reminders #banner .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
   height: calc(100vh - 180px);
   min-height: 100%; }
 .state #banner {
@@ -494,6 +494,8 @@ footer {
   background: #e6263a; }
 .global #banner {
   background: #f27f0a; }
+.reminders #banner {
+  background: #14825f; }
 .home #banner, .about #banner {
   background: #09727a;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDk3MjdhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMzclIiBzdG9wLWNvbG9yPSIjMDg1MTU5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODklIiBzdG9wLWNvbG9yPSIjMDYzMzQyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -538,6 +540,8 @@ svg#harp {
   color: #e6263a; }
 .global footer a, .global #events .eng, .global #events a.more, .global #programme ul li a {
   color: #f27f0a; }
+.reminders footer a, .reminders #events .eng, .reminders #events a.more, .reminders #programme ul li a {
+  color: #14825f; }
 
 .home footer li {
   color: #766c50; }
@@ -1436,22 +1440,22 @@ header {
     position: relative;
     top: 5px; }
 
-  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
+  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner, .reminders #banner {
     top: 75px;
     height: inherit;
     min-height: inherit;
     padding-top: 0px;
     position: relative;
     padding: 0px; }
-    .state #banner .wrapper, .historical #banner .wrapper, .language #banner .wrapper, .youth #banner .wrapper, .cultural #banner .wrapper, .community #banner .wrapper, .global #banner .wrapper {
+    .state #banner .wrapper, .historical #banner .wrapper, .language #banner .wrapper, .youth #banner .wrapper, .cultural #banner .wrapper, .community #banner .wrapper, .global #banner .wrapper, .reminders #banner .wrapper {
       padding: 120px 0 30px 0;
       -webkit-transform: inherit !important;
       -ms-transform: inherit !important;
       transform: inherit !important;
       color: white; }
-      .state #banner .wrapper a.more, .historical #banner .wrapper a.more, .language #banner .wrapper a.more, .youth #banner .wrapper a.more, .cultural #banner .wrapper a.more, .community #banner .wrapper a.more, .global #banner .wrapper a.more {
+      .state #banner .wrapper a.more, .historical #banner .wrapper a.more, .language #banner .wrapper a.more, .youth #banner .wrapper a.more, .cultural #banner .wrapper a.more, .community #banner .wrapper a.more, .global #banner .wrapper a.more, .reminders #banner .wrapper a.more {
         display: none; }
-    .state #banner .wrapper:last-of-type, .historical #banner .wrapper:last-of-type, .language #banner .wrapper:last-of-type, .youth #banner .wrapper:last-of-type, .cultural #banner .wrapper:last-of-type, .community #banner .wrapper:last-of-type, .global #banner .wrapper:last-of-type {
+    .state #banner .wrapper:last-of-type, .historical #banner .wrapper:last-of-type, .language #banner .wrapper:last-of-type, .youth #banner .wrapper:last-of-type, .cultural #banner .wrapper:last-of-type, .community #banner .wrapper:last-of-type, .global #banner .wrapper:last-of-type, .reminders #banner .wrapper:last-of-type {
       display: none; } }
 @media (max-width: 640px) {
   .home header .logo {
