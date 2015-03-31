@@ -14,6 +14,10 @@
     ✔ Add Active Link to Menu nav @done (15-03-31 08:20)
     ☐ logo mobile scroll move
 
+     Images:
+      ☐ Add images to banners
+      ☐ Add Home page image
+
 ☐ Home page
   ✔ Intro Section @done (15-03-30 18:41)
      ✔ Programme Strands Intro / Eng / Ire @done (15-03-30 18:41)
@@ -25,7 +29,7 @@
      ☐ video integration
      ✔ remove browse button on mobile @done (15-03-30 21:54)
      ✔ add contact info at bottom of page @done (15-03-31 11:55)
-     ☐ mailchimp setup on homepage
+     ✔ mailchimp setup on homepage @done (15-03-31 12:21)
 
  ✔ Strand Pages @done (15-03-31 01:10)
    ✔ Icon Menu Rollovers @done (15-03-30 20:30)
@@ -44,8 +48,9 @@
    ✔ responsive test page @done (15-03-30 21:53)
    ✔ pull in info from gdoc @done (15-03-30 21:53)
    ✔ add imagery @done (15-03-31 01:09)
-   ☐ Military Archive
-   ☐ Height fix on mobile
+   ✔ Military Archive @done (15-03-31 12:48)
+   ✔ Place full text in excerpt field @done (15-03-31 12:48)
+   ✔ Height fix on mobile @done (15-03-31 12:49)
    ✔ remove read more for events @done (15-03-31 09:50)
 
  ✔ About Page @done (15-03-31 11:52)
@@ -65,4 +70,5 @@
    ☐ add all vender prefixs or prefixfree
 
    ✔ add consultation & engagement @done (15-03-31 00:17)
+
 

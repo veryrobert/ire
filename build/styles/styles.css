@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -64,6 +65,10 @@ html {
 .gold {
   color: #958864; }
 
+.about #banner i {
+  padding-top: 30px;
+  font-family: 'Alegreya-italic', serif;
+  display: block; }
 .about #banner .wrapper {
   top: 55%;
   -webkit-transform: translateY(-50%);
@@ -152,6 +157,12 @@ section#vision {
 a {
   cursor: pointer; }
 
+.intro ul li {
+  padding-bottom: 10px;
+  line-height: 22px; }
+  .intro ul li i {
+    font-family: 'Alegreya-italic', serif; }
+
 body {
   font-family: 'Alegreya', serif;
   color: #0b2936;
@@ -211,7 +222,7 @@ body {
   #programme .strands {
     margin-top: -20px; }
     #programme .strands a:after {
-      content: "Read More \203A\203A";
+      content: "Níos mó \203A\203A";
       display: block;
       font: 15px karla, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       height: 15px;
@@ -1383,3 +1394,6 @@ header {
     margin-bottom: 30px; } }
 #events .wrapper {
   padding-top: 60px; }
+
+.state #banner {
+  background-image: url(../img/2015_StateCerememonial.jpg); }

@@ -1011,6 +1011,94 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/build\/img\/2016_Community.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 458307,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Community.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Community.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Culture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403050,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Culture.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Culture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Diaspora.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 732792,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Diaspora.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Diaspora.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Historic.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 401949,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Historic.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Historic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Home.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232774,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Home.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Home.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_StateCerememonial.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 491009,
+		"inputAbbreviatedPath": "\/build\/img\/2016_StateCerememonial.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_StateCerememonial.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Teanga.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 420089,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Teanga.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Teanga.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/2016_Youth.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 508427,
+		"inputAbbreviatedPath": "\/build\/img\/2016_Youth.jpg",
+		"outputAbbreviatedPath": "\/build\/img\/2016_Youth.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/build\/img\/historical-old.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1197,6 +1285,15 @@
 		"outputAbbreviatedPath": "\/build\/cultural\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
+		},
+	"\/events-reminders.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/events-reminders.kit",
+		"outputAbbreviatedPath": "\/events-reminders.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/events.kit": {
 		"fileType": 2048,

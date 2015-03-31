@@ -458,7 +458,7 @@ $brands: $state, $historical, $language, $youth, $cultural, $community, $global,
       box-shadow: 0px 0px 6px 0px $color;
     }
     .event:hover .grad:before {
-      content: "Read More";
+      content: "Níos mó";
       color: $color;
       @include transition(all 0.1s ease-in-out);
       border-bottom: solid 1px $color;
@@ -578,7 +578,7 @@ Andy css goes here
 }
 
 .grad:before {
-  content: "Read More";
+  content: "Níos mó";
   position: absolute;
   bottom: 24px;
   left: 20px;

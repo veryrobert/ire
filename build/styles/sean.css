@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -324,7 +325,7 @@ body.state {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.state .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #63b428;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -365,7 +366,7 @@ body.historical {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.historical .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #14825f;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -406,7 +407,7 @@ body.language {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.language .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #0f81ad;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -447,7 +448,7 @@ body.youth {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.youth .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #cf568c;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -488,7 +489,7 @@ body.cultural {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.cultural .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #7a2b88;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -529,7 +530,7 @@ body.community {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.community .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #e6263a;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -570,7 +571,7 @@ body.global {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.global .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #f27f0a;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -611,7 +612,7 @@ body.reminders {
       transition: all 0.4s ease-in-out;
       height: 120px; }
   body.reminders .event:hover .grad:before {
-    content: "Read More";
+    content: "Níos mó";
     color: #14825f;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
@@ -690,7 +691,7 @@ Andy css goes here
       pointer-events: none; } }
 
 .grad:before {
-  content: "Read More";
+  content: "Níos mó";
   position: absolute;
   bottom: 24px;
   left: 20px;

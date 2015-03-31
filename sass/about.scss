@@ -5,7 +5,15 @@
 
 .about {
 
+
+
 	#banner {
+
+			i {
+				padding-top: 30px;
+				 font-family: 'Alegreya-italic', serif;
+				 display: block;
+			}
 
 	.wrapper {
 		top: 55%;
@@ -82,6 +90,9 @@ section#vision {
 			font-size: 21px;
 			line-height: 26px;
 		}
+
+
+
 	}
 
 	a.toggleText {
@@ -145,3 +156,17 @@ section#vision {
 a {
 	cursor: pointer;
 }
+
+
+.intro	ul li {
+			padding-bottom: 10px;
+			line-height: 22px;
+
+			i {
+				 font-family: 'Alegreya-italic', serif;
+			}
+
+	}
+
+
+
