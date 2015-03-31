@@ -148,7 +148,7 @@ honk.getSignatories = function (strand) {
 				'<div class="col-6 single-event flush-img signatory">' + 
 				'<div class="pull-left img">' + 
 					'<h3 class="name">' + name + '</h2>' + 
-					'<img src="http://placehold.it/520x300" alt="">' +
+					'<img src="' + image + '" alt="">' +
 					//'<h4>' + bornDied + '</h4>' +
 				'</div>' + 
 				'<div class="content">' + 
@@ -218,58 +218,79 @@ honk.menuActiveClassCheck = function(){
 
 honk.pageCheck =function(){
 	self = this;
-	if(window.location.pathname == '/build/' || window.location.pathname == '/ire/' || window.location.pathname == '/') {
-		// is homepage so load signatories
+	var win = window.location.pathname;
+	if(win == '/build/' || win == '/ire/' || win == '/' || win == '/build/about/') {
 		
-		this.$body.addClass('home');
-		this.$header.addClass('on');
+		if (win == '/build/' || win == '/ire/' || win == '/') {
+			this.$body.addClass('home');
+			this.$header.addClass('on');
 
-		this.getSignatories(this.signatories)
+			this.getSignatories(this.signatories)
 
-		self.$window.on('scroll', function(){ 
+			self.$window.on('scroll', function(){ 
 
-			var scrollPos = self.$window.scrollTop();
-			if (scrollPos >= 150) {
+				var scrollPos = self.$window.scrollTop();
+				if (scrollPos >= 150) {
 
-				self.$logo.addClass('on');
+					self.$logo.addClass('on');
 
-			} else {
+				} else {
 
-				self.$logo.removeClass('on');
+					self.$logo.removeClass('on');
 
-			}
+				}
 
-		});
-			
-		self.$more.on('click', function(e){
-			e.preventDefault();
+			});
+				
+			self.$more.on('click', function(e){
+				e.preventDefault();
 
-			if ($(window).width() < 960) {
-			   e.preventDefault();
-			   // $('nav.strands ul, .prog').toggleClass('show');
-			   console.log('clicked');
-			}
-			else {
+				if ($(window).width() < 960) {
+				   e.preventDefault();
+				   // $('nav.strands ul, .prog').toggleClass('show');
+				   console.log('clicked');
+				}
+				else {
+					$('html, body').animate({
+						scrollTop: $("#programme").offset().top - 90
+					}, 600, 'easeInOutCubic');
+				}
+
+			});
+
+			self.$signatories.on('click', function(e){
+				e.preventDefault();
 				$('html, body').animate({
-					scrollTop: $("#programme").offset().top - 90
+					scrollTop: $("#signatories").offset().top - 90
 				}, 600, 'easeInOutCubic');
-			}
+			});
 
-		});
+			self.$top.on('click', function(e){
+				e.preventDefault();
+				$('html, body').animate({
+					scrollTop: 0
+				}, 600, 'easeInOutCubic');
+			});
 
-		self.$signatories.on('click', function(e){
-			e.preventDefault();
-			$('html, body').animate({
-				scrollTop: $("#signatories").offset().top - 90
-			}, 600, 'easeInOutCubic');
-		});
+		} else {
+		
+			this.$body.addClass('about');
+			this.$header.addClass('on');
+			self.$window.on('scroll', function(){ 
 
-		self.$top.on('click', function(e){
-			e.preventDefault();
-			$('html, body').animate({
-				scrollTop: 0
-			}, 600, 'easeInOutCubic');
-		});
+				var scrollPos = self.$window.scrollTop();
+				if (scrollPos >= 150) {
+
+					self.$logo.addClass('on');
+
+				} else {
+
+					self.$logo.removeClass('on');
+
+				}
+
+			});		
+		}
 
 
 	} else {
@@ -334,7 +355,8 @@ var menuButton 	= $('.menu'),
 	moreText	= $('.moreText'),
 	toggleText	= $('.toggleText');
 
-menuButton.on('click', function(){
+menuButton.on('click', function(e){
+	e.preventDefault();
 	honk.$body.toggleClass('open');
 	menuButton.toggleClass('open');
 

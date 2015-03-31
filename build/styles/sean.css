@@ -736,6 +736,8 @@ Andy css goes here
   opacity: 0; }
   .reminders .grad:hover, .reminders .grad:before:hover {
     opacity: 0; }
+.reminders #banner {
+  padding: 280px 0 100px; }
 
 header {
   z-index: 110; }
