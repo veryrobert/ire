@@ -334,3 +334,9 @@ $('footer .harp').on('click', function(){
 });
 
 
+$(function() {
+
+	console.log(location.pathname.split("/")[1);
+
+  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});

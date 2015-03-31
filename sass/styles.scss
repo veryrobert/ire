@@ -252,6 +252,10 @@ header {
     color: $navy;
   }
   .home &, .about {
+
+
+  
+
     @include vertical-align(50%);
     @media (max-width: 1281px) {
       @include vertical-align(50%);
