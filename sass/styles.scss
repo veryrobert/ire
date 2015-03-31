@@ -83,22 +83,14 @@ header {
 }
 
 
-@media (min-width: 960px) {
-  section {
-    min-height: 600px;
-  }
-}
+
 
 // Prgoamme Section Home
 ///////////////////////////////////////////////////////////////////////////////////
 
 #programme {
-  padding: em(60) 0;
-  height: 65vh;
+  padding: em(90) 0 em(60) 0;
   color: $navy;
-  .wrapper {
-    @include vertical-align(45%);
-  }
   ul li a {
     // color: $navy;
     @include transition(all 0.2s ease-in-out);
@@ -227,6 +219,14 @@ header {
 #signatories {
   padding: em(100) 0;
   background: $gold;
+  
+.signatory {
+  min-height: 790px;
+}
+  .signatory.tall {
+    min-height: 915px;
+      }
+
 }
 
 // Banner Styling
@@ -428,7 +428,7 @@ footer {
     padding: 5px;
     text-align: center;
   }
-  .home & {
+  .home &, .about & {
     background: lighten($gold, 25%);
     a {
       color: darken($gold, 15%);
@@ -509,7 +509,7 @@ svg#harp {
   .global & {
     fill: $community;
   }
-  .home & {
+  .home &, .about & {
     fill: darken($gold, 10%);
   }
 }
@@ -541,7 +541,7 @@ footer a, #events .eng, #programme ul li a {
   }
 }
 
-.home footer li {
+.home footer li, .about footer li {
   color: darken($gold, 10%);
 }
 
@@ -812,11 +812,9 @@ section {
 }
 
 #about {
-  height: 70vh;
-  min-height: 500px;
-  .wrapper {
-    @include vertical-align(50%);
-  }
+
+  padding: em(90) 0 em(60) 0;
+
   h3, h4 {
     font-size: em(21);
     line-height: 26px;
@@ -833,11 +831,11 @@ section {
   .about {
     p {
       // display: block;
-      @include span-columns(3 of 6);
+      @include span-columns(5 of 6);
       padding-right: em(10);
-      font-size: 16px;
+      font-size: 19px;
       float: left;
-      line-height: 20px;
+      line-height: 26px;
       @media (max-width: 769px) {
         @include span-columns(6 of 6);
         margin-bottom: 24px;
@@ -1391,9 +1389,6 @@ header div.secondary nav {
   #about .wrapper {
     position: inherit;
     top: inherit;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
     overflow: hidden;
   }
   .home #about {
