@@ -122,9 +122,6 @@ body {
         content: "";
         display: table; } }
 
-#banner {
-  display: block; }
-
 @media (min-width: 960px) {
   section {
     min-height: 600px; } }
@@ -256,9 +253,6 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-42%);
   color: white; }
-  #banner .wrapper a.more {
-    display: inline-block;
-    padding-bottom: 5px; }
   #banner .wrapper p {
     font-size: 1.25em;
     line-height: 26px;
@@ -271,8 +265,6 @@ body {
       margin-bottom: 0.625em; }
   #banner .wrapper .ire {
     color: #0b2936; }
-  #banner .wrapper .more {
-    margin-left: 51.7893318034%; }
   .home #banner .wrapper, #banner .wrapper .about {
     position: relative;
     top: 50%;
@@ -333,14 +325,6 @@ body {
           padding-right: 0em; } }
     .home #banner .wrapper .ire, #banner .wrapper .about .ire {
       color: white; }
-  #banner .wrapper .read-more {
-    padding-top: 30px; }
-  #banner .wrapper a.more {
-    padding-top: 30px;
-    margin-left: 34.1192171993%; }
-    @media (max-width: 769px) {
-      #banner .wrapper a.more {
-        padding-top: 0px; } }
 
 @media (max-width: 769px) {
   #programme {
@@ -477,9 +461,6 @@ footer {
 .home #banner {
   height: calc(85vh);
   min-height: 100%; }
-.state #banner, .historical #banner, .reminders #banner .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
-  height: calc(100vh - 180px);
-  min-height: 100%; }
 .state #banner {
   background: #63b428; }
 .historical #banner {
@@ -526,21 +507,21 @@ svg#harp {
   .home svg#harp {
     fill: #766c50; }
 
-.state footer a, .state #events .eng, .state #events a.more, .state #programme ul li a {
+.state footer a, .state #events .eng, .state #programme ul li a {
   color: #63b428; }
-.historical footer a, .historical #events .eng, .historical #events a.more, .historical #programme ul li a {
+.historical footer a, .historical #events .eng, .historical #programme ul li a {
   color: #14825f; }
-.language footer a, .language #events .eng, .language #events a.more, .language #programme ul li a {
+.language footer a, .language #events .eng, .language #programme ul li a {
   color: #0f81ad; }
-.youth footer a, .youth #events .eng, .youth #events a.more, .youth #programme ul li a {
+.youth footer a, .youth #events .eng, .youth #programme ul li a {
   color: #cf568c; }
-.cultural footer a, .cultural #events .eng, .cultural #events a.more, .cultural #programme ul li a {
+.cultural footer a, .cultural #events .eng, .cultural #programme ul li a {
   color: #7a2b88; }
-.community footer a, .community #events .eng, .community #events a.more, .community #programme ul li a {
+.community footer a, .community #events .eng, .community #programme ul li a {
   color: #e6263a; }
-.global footer a, .global #events .eng, .global #events a.more, .global #programme ul li a {
+.global footer a, .global #events .eng, .global #programme ul li a {
   color: #f27f0a; }
-.reminders footer a, .reminders #events .eng, .reminders #events a.more, .reminders #programme ul li a {
+.reminders footer a, .reminders #events .eng, .reminders #programme ul li a {
   color: #14825f; }
 
 .home footer li {
@@ -1101,8 +1082,6 @@ header div.secondary nav {
       -webkit-transform: inherit;
       -ms-transform: inherit;
       transform: inherit; }
-      #banner .wrapper a.more, .home #banner .wrapper a.more {
-        margin-left: 0%; }
     #banner .col-4, .home #banner .col-4 {
       float: left;
       display: block;
@@ -1112,10 +1091,6 @@ header div.secondary nav {
         margin-right: 0; }
     #banner h2.ire, .home #banner h2.ire {
       margin-bottom: 1.875em; }
-
-  .home #banner .wrapper a.more {
-    margin-left: 34.1192171993%;
-    margin-bottom: 60px; }
 
   header {
     background: #09232e; }
@@ -1249,8 +1224,6 @@ header div.secondary nav {
     width: 100%; }
     .home #banner .wrapper .col-8 p {
       font-size: 20px; }
-  .home #banner .wrapper a.more {
-    margin-left: 0px; }
 
   header nav.main.open {
     -webkit-transform: translateX(300px);
@@ -1392,15 +1365,6 @@ header div.secondary nav {
   left: 50%;
   margin: -5px 0 0 -20px; }
 
-@media (min-width: 960px) {
-  .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner {
-    height: inherit;
-    padding: 375px 0 200px;
-    max-height: 830px; }
-
-  .state #events, .historical #events, .language #events, .youth #events, .cultural #events, .community #events, .global #events {
-    background: rgba(255, 255, 255, 0.8);
-    padding-top: 0px; } }
 @media (max-width: 769px) {
   header {
     height: 90px; }

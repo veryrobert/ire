@@ -25,11 +25,14 @@
 
  ☐ Strand Pages
    ✔ Icon Menu Rollovers @done (15-03-30 20:30)
-   ☐ mobile test event overlay
-   ☐ style close button as per visuals
-   ☐ fix close button movement on event overlay load
-   ☐ style typography as per visuals
+   ✔ mobile test event overlay @done (15-03-31 00:43)
+   ✔ style close button as per visuals @done (15-03-30 22:25)
+   ✔ fix close button movement on event overlay load @done (15-03-30 22:25)
+   ✔ style typography as per visuals @done (15-03-30 22:25)
    ✔ add padding to top of events title @done (15-03-30 21:59)
+   ☐ style full module with image 
+   ☐ html change more button
+   ☐ style more button
 
 
  ☐ Permanent Reminders
@@ -42,7 +45,6 @@
 
  ☐ About Page
    ☐ add consultation & engagement
-
 
  ☐ Performance Testing
    ☐ Run through GTMetrix

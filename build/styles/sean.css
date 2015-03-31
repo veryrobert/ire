@@ -73,6 +73,26 @@ header {
     header nav li:hover span {
       opacity: 1;
       margin-top: 15px; } }
+  header .main a {
+    transition: all ease .3s;
+    position: relative;
+    border-bottom: none; }
+    header .main a .ire {
+      white-space: nowrap; }
+  header .main a:before {
+    position: absolute;
+    display: block;
+    content: '';
+    height: 100%;
+    width: 2px;
+    margin-left: -10px;
+    background: #9f8a5f;
+    opacity: 0;
+    transition: all ease .2s; }
+  header .main a:hover {
+    border-bottom: none; }
+    header .main a:hover:before {
+      opacity: 1; }
   header .tooltip {
     position: absolute;
     display: block;
@@ -202,24 +222,33 @@ header {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   left: 100%;
   -webkit-font-smoothing: subpixel-antialiasing; }
+  @media (max-width: 768px) {
+    #single {
+      width: 100%; } }
   #single h3 {
     font: 20px/23px 'Alegreya', Times, serif;
     color: #333;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 20px 0;
     padding-left: 40px;
     padding-right: 80px; }
     #single h3 span {
       display: inline-block;
       width: 100%; }
   #single p {
-    padding: 0 0 20px 40px;
+    padding: 0 80px 20px 40px;
     font: 17px/24px 'Alegreya', Times, serif; }
+    @media (max-width: 640px) {
+      #single p {
+        padding: 0 40px 20px 40px; } }
   #single p.irish {
     text-indent: 40px; }
   #single.active {
     opacity: 1;
     pointer-events: auto;
     left: 60%; }
+    @media (max-width: 768px) {
+      #single.active {
+        left: 0%; } }
   #single .info {
     float: left;
     width: 100%;
@@ -227,6 +256,11 @@ header {
     padding: 0;
     position: absolute;
     transition: all .2s ease .3s; }
+  #single img {
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px; }
 
 .hidden {
   opacity: 0; }
@@ -246,6 +280,9 @@ header {
     pointer-events: visible; }
   #ghost:hover {
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAAAAAAAAAAAAAAAAABPDueNAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==), auto; }
+  @media (max-width: 640px) {
+    #ghost {
+      display: none !important; } }
 
 .close {
   display: block;

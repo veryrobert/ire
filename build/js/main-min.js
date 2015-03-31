@@ -28,6 +28,7 @@ var honk = {
 	community : "https://spreadsheets.google.com/feeds/list/1x_zMdc_XnWuzLuG_DMEuVgLu2mnZNPGwBedZbUoxvNI/od6/public/values?alt=json",
 	cultural : "https://spreadsheets.google.com/feeds/list/1KUMHxdayLa6550UkHNTydKMLo6d5kZHwN9uHJn0otTQ/od6/public/values?alt=json",
 	global : "https://spreadsheets.google.com/feeds/list/1TR_jwbc73NiWLnmDXxJl8mRttjCaT9ChRLK_meCIRkE/od6/public/values?alt=json",
+	signatories : "https://spreadsheets.google.com/feeds/list/1sA8eMhFWpfWLdU1gXgXzvDy9mZPy8T7nMNeYOolIdnU/od6/public/values?alt=json",
 
 	// selectors
 	$single: $('#single'),
@@ -42,6 +43,7 @@ var honk = {
 	$logo: $('h1.logo'),
 	$signatories: $('.signatories'),
 	$top: $('.top'),
+	$homeSignatories: $('#signatories .wrapper'),
 
 	// document
 	$window: $(window)
@@ -99,6 +101,42 @@ honk.getAllEvents = function (strand) {
 	this.closeClick();
 }
 
+honk.getSignatories = function (strand) {
+	self = this;
+	// self.$homeSignatories.append('
+
+	// ')
+	$.getJSON(strand, function(data) {
+		for (var i = 0; i < data.feed.entry.length; i++) {
+
+			var name 			= 	data.feed.entry[i]['gsx$name']['$t'],
+				bio 		= 	data.feed.entry[i]['gsx$bio']['$t'],
+				bioIrish 		= 	data.feed.entry[i]['gsx$bioirish']['$t'],
+				bornDied 	= 	data.feed.entry[i]['gsx$borndied']['$t'],
+				image 			= 	data.feed.entry[i]['gsx$image']['$t'];
+
+			
+			self.$homeSignatories.append(
+				'<div class="col-6 single-event flush-img signatory">' + 
+				'<div class="pull-left img">' + 
+					'<h3 class="name">' + name + '</h2>' + 
+					'<img src="http://placehold.it/520x300" alt="">' +
+					//'<h4>' + bornDied + '</h4>' +
+				'</div>' + 
+				'<div class="content">' + 
+					'<p class="eng">' + bio + '</p>' + 
+					'<p class="ire">' + bioIrish + '</p>' + 
+				'</div>' +
+			'</div>');
+
+		};
+	});
+
+	this.getSingleEvent(strand);
+	this.closeClick();
+}
+
+
 honk.getSingleEvent = function(strand){
 	self = this;
 	
@@ -154,6 +192,8 @@ honk.pageCheck =function(){
 		this.$body.addClass('home');
 		this.$header.addClass('on');
 
+		this.getSignatories(this.signatories)
+
 		self.$window.on('scroll', function(){ 
 
 			var scrollPos = self.$window.scrollTop();
@@ -191,6 +231,7 @@ honk.pageCheck =function(){
 				scrollTop: $("#signatories").offset().top - 90
 			}, 600, 'easeInOutCubic');
 		});
+
 		self.$top.on('click', function(e){
 			e.preventDefault();
 			$('html, body').animate({
