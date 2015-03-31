@@ -1,0 +1,104 @@
+h1 {
+  display: block;
+  text-indent: -9999px;
+  width: 130px;
+  // background-image: url(../img/logo-small.jpg);
+  background: url(../img/logo-small.svg);
+  background-repeat: no-repeat;
+}
+
+.secondary nav li {
+  a {
+    background: url(../img/icon-sprite.svg);
+    background-position-y: -16px;
+    background-size: 680px 65px;
+    height: 36px;
+    width: 36px;
+    text-indent: -9999px;
+    overlflow: hidden;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
+  &.state a {
+    background: url(../img/icon-sprite.svg) no-repeat;
+    background-position: top -15px right -631px;
+    background-size: 680px 65px;
+  }
+  &.historical a {
+    background-position-x: -114px;
+    background-position-y: -20px;
+  }
+  &.language a {
+    background-position-x: -218px;
+  }
+  &.youth a {
+    background-position-x: -320px;
+  }
+  &.cultural a {
+    background-position-x: -424px;
+  }
+  &.community a {
+    background-position-x: -527px;
+  }
+  &.global a {
+    background-position-x: -631px;
+  }
+}
+
+ul.social {
+  display: inline-block;
+  li {
+    display: inline-block;
+  }
+  li a {
+    background-size: 67px;
+    background-position: 1px 4px;
+    display: inline-block;
+    background: url(../img/social-sprite.svg) no-repeat;
+    height: 36px;
+    width: 36px;
+    text-indent: -9999px;
+    border: solid 2px $gold;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    background-size: 60px;
+    background-position: 2px 3px;
+  }
+  .facebook a {
+    background-position: -32px 3px;
+    background-size: 57px;
+    margin-left: 5px;
+  }
+  .home & {
+    margin-top: 36px;
+  }
+}
+
+svg#harp {
+  height: 65px;
+  .state & {
+    fill: $state;
+  }
+  .historical & {
+    fill: $historical;
+  }
+  .language & {
+    fill: $language;
+  }
+  .youth & {
+    fill: $youth;
+  }
+  .cultural & {
+    fill: $cultural;
+  }
+  .community & {
+    fill: $community;
+  }
+  .global & {
+    fill: $community;
+  }
+  .home &, .about & {
+    fill: darken($gold, 10%);
+  }
+}

@@ -1,72 +1,4 @@
-@import "bourbon";
-@import "neat";
 
-
-//COLORS + UTILITIES
-$state: rgba(99, 180, 40, 1);
-$historical: rgba(20, 130, 95, 1);
-$language: rgba(15, 129, 173, 1);
-$youth: rgba(207, 86, 140, 1);
-$cultural: rgba(122, 43, 136, 1);
-$community: rgba(230, 38, 58, 1);
-$global: rgba(242, 127, 10, 1);
-$reminders: rgba(20, 130, 95, 1);
-
-$gold: #9f8a5f;
-$navy: #0b2936;
-
-::-moz-selection {
-  background: white;
-  color: $navy;
-}
-
-::selection {
-  background: white;
-  color: $navy;
-}
-
-body {
-  overflow-y: scroll;
-  transition: all ease .3s;
-}
-
-.noscroll {
-  overflow-y: hidden;
-  margin-left: -100px;
-}
-
-.logo {
-  transition: all ease .3s;
-}
-
-.home header .logo {
-  display: block;
-  margin-top: -10px;
-  opacity: 0;
-}
-
-.home header .logo.on {
-  margin-top: 0;
-  opacity: 1;
-}
-
-@media (max-width: 641px) {
-  h1.logo, .home header .logo {
-    display: block;
-    opacity: 1;
-    width: 85px;
-  }
-}
-
-footer {
-  background: white;
-  .home & {
-    background: lighten($gold, 20%);
-  }
-  .harp:hover {
-    cursor: pointer;
-  }
-}
 
 header {
   height: inherit;
@@ -179,7 +111,7 @@ header {
 .state, .historical, .language, .youth, .cultural, .community, .global, .reminders {
   #banner {
     height: inherit;
-    padding: 375px 0 200px;
+    padding: 300px 0 100px;
     h2 {
       text-transform: inherit;
       letter-spacing: 0;
@@ -408,95 +340,13 @@ header {
   }
 }
 
-// EVENT RELATED CODE ENDS
 
-$icons: -12px -19px, -114px -22px, -218px -20px, -320px -20px, -424px -20px, -527px -20px, -631px -20px;
-$classList: state, historical, language, youth, cultural, community, global, reminders;
-$brands: $state, $historical, $language, $youth, $cultural, $community, $global, $reminders;
-
-@for $i from 1 through length($classList) {
-  
-  $textcol: #{nth($brands, $i)};
-  li.#{nth($classList, $i)} {
-    h5 em {
-      color: $textcol;
-    }
-    a span.ire {
-      color: $textcol;
-    }
-  }
-
-  body.#{nth($classList, $i)} {
-    $color: #{nth($brands, $i)};
-    background: $color;
-    #banner {
-      // background: $color url('../img/#{nth($classList, $i)}-old.jpg') center 80% no-repeat;
-      // background: $color url('../img/#{nth($classList, $i)}.jpg') center 80% no-repeat;
-      // background-blend-mode: multiply;
-
-    }
-    .ire {
-      color: $color;
-    }
-
-    #ghost {
-      background: $color;
-    }
-    
-    .close {
-      background: $color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==) center center no-repeat;
-    }
-
-    .event:hover {
-      .grad {
-        opacity: 1;
-        @include transition(all 0.4s ease-in-out);
-        height: 120px;
-      }
-      -webkit-box-shadow: 0px 0px 6px 0px $color;
-      -moz-box-shadow: 0px 0px 6px 0px $color;
-      box-shadow: 0px 0px 6px 0px $color;
-    }
-    .event:hover .grad:before {
-      content: "Níos mó";
-      color: $color;
-      @include transition(all 0.1s ease-in-out);
-      border-bottom: solid 1px $color;
-      padding-bottom: 5px;
-    }
-    .event {
-      color: $navy;
-    }
-    #banner .wrapper {
-      position: inherit;
-      top: 50%;
-      -webkit-transform: translateY(-30%);
-      -ms-transform: translateY(-30%);
-      transform: translateY(-30%);
-      color: white;
-    }
-  }
-
-}
-
-
-
-Andy css goes here
+// Andy css goes here
 
 #events .wrapper {
   padding-top: 60px;
 }
 
-.about {
-  #banner {
-    // background: blue;
-    height: 80vh;
-    .wrapper {
-      top: 350px;
-    }
-    section {}
-  }
-}
 
 #events .events .event {
   position: relative;
@@ -600,7 +450,7 @@ Andy css goes here
   position: absolute;
   width: 100%;
   left: 0px;
-  z-index: 100;
+  z-index: 80;
   bottom: 0;
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 44%, rgba(255, 255, 255, 1) 100%);
   /* FF3.6+ */
@@ -624,6 +474,9 @@ Andy css goes here
     &:hover {
       opacity: 0;
     }
+  }
+  #banner {
+    padding: 280px 0 100px;
   }
 }
 

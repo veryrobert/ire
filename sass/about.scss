@@ -1,26 +1,21 @@
 
-.gold {
-	color: $gold;
-}
 
 .about {
 
-
-
 	#banner {
 
-			i {
-				padding-top: 30px;
-				 font-family: 'Alegreya-italic', serif;
-				 display: block;
-			}
-
-	.wrapper {
-		top: 55%;
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
+	i {
+		padding-top: 30px;
+		 font-family: 'Alegreya-italic', serif;
+		 display: block;
 	}
+
+	// .wrapper {
+	// 	top: 55%;
+	// 	-webkit-transform: translateY(-50%);
+	// 	-ms-transform: translateY(-50%);
+	// 	transform: translateY(-50%);
+	// }
 
 	 p.ire, h2.ire {
 	 	color: $gold;
@@ -40,9 +35,11 @@
 
 }
 
-section#vision {
+#vision {
 	padding-top: 60px;
-
+	@include media($phone) {
+		padding-top: 100px; 
+	}
 	h2 {
 		font-family: 'Alegreya', serif;
 		text-transform: none !important;
@@ -127,22 +124,26 @@ section#vision {
 
 		display: none;
 
-		  padding-top: 0px;
+		padding-top: 0px;
 
-		  float: right;
-		    width: 65.9%;
-		
-		div {
-			  padding-top: 0px;
-			width: 48%;
-			  margin-right: 3.357652%;
-			display: block;
-			float: left;
+		float: right;
+		width: 65.9%;
+		@include media($phone) {
+			width: 100%;
+			div {
+				padding-top: 0px;
+				width: 100%;
+				margin-right: 3.357652%;
+				display: block;
+				float: left;
+			}
+			div.ire {
+				margin-right: 0px;
+				padding-right: 0px;
+			}
 		}
-		div.ire {
-			margin-right: 0px;
-			padding-right: 0px;
-		}
+
+
 
 		&.open {
 			display: block

@@ -1,0 +1,347 @@
+// HOME – PROGRAMME
+#programme {
+	padding: em(90) 0 em(60) 0;
+	color: $navy;
+	overflow: hidden;
+	@include media($tablet) { 
+		padding: em(120) 0 em(60) 0;
+		ul:nth-child(2) {
+		  margin-left: -10px;
+		}
+		ul li a {
+		  font-size: 26px;
+		  line-height: 28px;
+		}
+	}
+
+	.wrapper {
+		@include media($phone) {
+		  opacity: 1;
+		  position: relavtive;
+		  -webkit-transform: translateX(0);
+		  -ms-transform: translateX(0);
+		  transform: translateX(0);
+		  .col-8, .col-4 {
+			@include span-columns(12 of 12);
+		  }
+		}
+	}
+
+	aside {
+		padding-right: 30px;
+		@include media($tablet) {
+			padding-right: 0px;
+			width: 40%;
+		}
+		@include media($phone) { 
+			padding-bottom: 20px;
+		}
+
+		h2 {
+			text-transform: uppercase;
+		}
+		h2.ire {
+			padding-bottom: 40px;
+		}
+		p {
+			padding-bottom: 20px;
+			line-height: 24px;
+		}
+	}
+
+	.strands {
+		margin-top: -20px;
+		@include media($tablet) {
+			width:55%;
+			ul li a {
+				font: 16px/21px 'Alegreya', serif !important;
+			}
+		}
+
+		@include media($phone) { 
+			ul {
+				padding-left: 20px;
+			}
+		}
+		a {
+			white-space: nowrap;
+			&:after {
+				content: "Read More \203A\203A";
+				display: block;
+				font: 15px karla, $helvetica;
+				height: 15px;
+				padding-top: 6px;
+				text-indent: em(50);
+				opacity: 0;
+				@include transition(all 0.4s ease-in-out);
+				@include transform(translateX(-15px));
+			}
+		}
+		a:hover {
+			&:after {
+				opacity: 1;
+				@include transition(all 0.4s ease-in-out);
+				@include transform(translateX(-0px));
+			}
+		}
+	}
+
+
+
+
+	ul {
+		@include span-columns(4 of 8);
+		@include media($tablet) {
+			width: 100%;
+		}
+
+		li {
+			margin-bottom: em(30);
+			@include media($tablet) {
+				margin-bottom: 0 !important;
+			}
+		}
+
+		a {
+			@include transition(all 0.2s ease-in-out);
+			letter-spacing: -0.5px;
+			span {
+				padding-left: 45px;
+			}
+		}
+
+	}
+
+	ul li {
+	  a {
+		font: em(28) "Alegreya", serif normal;
+		text-transform: inherit;
+		line-height: 32px;
+	  }
+	  a:before {
+		content: "";
+		display: inline-block;
+		background: url(../img/icon-sprite.svg);
+		width: 36px;
+		height: 36px;
+		background-repeat: no-repeat;
+		margin-left: -36px;
+		position: relative;
+		top: 10px;
+		left: 30px;
+		background-size: 680px 65px;
+		background: url(../img/icon-sprite.svg);
+		background-size: 680px 65px;
+		height: 36px;
+		width: 36px;
+		text-indent: -9999px;
+		overlflow: hidden;
+		display: inline-block;
+		background-position: top -15px right -631px;
+		background-repeat: no-repeat;
+	  }
+	  &.historical a:before {
+		background-position-x: -114px;
+		background-position-y: -20px;
+	  }
+	  &.language a:before {
+		background-position-x: -218px;
+	  }
+	  &.youth a:before {
+		background-position-x: -320px;
+	  }
+	  &.cultural a:before {
+		background-position-x: -424px;
+	  }
+	  &.community a:before {
+		background-position-x: -527px;
+	  }
+	  &.global a:before {
+		background-position-x: -631px;
+	  }
+	}
+
+  
+}
+
+#video {
+	background: lighten($gold, 20%);
+	overlflow: hidden;
+	text-align: center;
+	padding: em(100) 0;
+	@include media($phone) { 
+		padding: em(30) 0;
+	}
+	.embed {
+		width: 800px;
+		height: 450px;
+		display: inline-block;
+		background: white;
+		box-shadow: 0px 0px 6px rgba(0,0,0,.3);
+		@include media($phone) {
+			width: 400px;
+			max-width: 90%;
+			height: 200px;
+		}
+	}
+
+}
+
+
+
+
+// SIGNATORIES
+
+#signatories {
+	padding: 60px 0;
+	background: $gold !important;
+
+	@include media($tablet) {
+		padding: 30px 0 !important;
+	}
+
+	@include media($phone) {
+		padding: 30px 0 !important;
+	}
+
+	.signatory {
+	min-height: 790px;
+	}
+	.signatory.tall {
+	min-height: 915px;
+	}
+	aside {
+		padding-top: em(30);
+		@include media($phone) {
+			padding-bottom: 20px;
+		}
+
+		p.eng, h2.eng {
+			color: $navy;
+		}
+		h2.ire {
+			margin-bottom: em(30);
+		}
+		p.ire, h2.ire {
+			color: white;
+		}
+		p {
+			font-size: 22px;
+			padding-right: 40px;
+			@media (max-width: 769px) {
+				font-size: 18px;
+			}
+		}
+	}
+	.content {
+		p.ire {
+			color: $gold;
+		}
+	}
+}
+
+
+#about {
+
+  padding: em(90) 0 em(60) 0;
+
+  h3, h4 {
+	font-size: em(21);
+	line-height: 26px;
+	&.ire {
+	  margin-bottom: em(30);
+	}
+  }
+  @media (max-width: 769px) {
+	h4 {
+	  font-size: 17px;
+	  line-height: 21px;
+	}
+  }
+  .about {
+	p {
+	  // display: block;
+	  @include span-columns(5 of 6);
+	  padding-right: em(10);
+	  font-size: 19px;
+	  float: left;
+	  line-height: 26px;
+	  @media (max-width: 769px) {
+		@include span-columns(6 of 6);
+		margin-bottom: 24px;
+	  }
+	  &.ire {
+		@include omega;
+	  }
+	}
+  }
+  .signup {
+	@include span-columns(5 of 12);
+	margin-top: -40px;
+	min-height: 350px;
+	border-left: solid 1px $gold;
+	margin-left: 30px;
+	padding: em(40) 0 em(30) 8%;
+	@include media($tablet) {
+		margin-left: 0px;
+	}
+	@include media($phone) {
+		border-left: none;
+		margin-left: 0;
+		width: 100%;
+		padding: em(40) 0 em(30) 0;
+	}
+  }
+  input {
+	display: block;
+	margin: em(20) 0;
+	width: 300px;
+	padding: 10px 10px 16px 0px;
+	border: 0px;
+	outline: none;
+	border-bottom: solid 1px $gold;
+	color: $navy;
+	font: 700 15px karla, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	@media (max-width: 769px) {
+	  width: 214px;
+	  font-size: 14px;
+	}
+  }
+  button {
+	padding: 16px 30px;
+	border: none;
+	background: $gold;
+	color: white;
+	font: 700 15px karla, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+  }
+}
+
+
+.flush-img {
+  padding: 0px 0px em(20) 0px;
+  margin-bottom: em(30);
+  .img {
+    position: relative;
+    width: 100%;
+    // max-height: 300px;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    padding: em(5) em(20) 0 em(20);
+  }
+  h3.name {
+    position: absolute;
+    padding: em(15);
+    font-size: em(28) !important;
+    color: white;
+    bottom: 0px;
+    margin-bottom: 0em !important;
+  }
+}

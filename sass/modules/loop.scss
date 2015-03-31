@@ -1,0 +1,97 @@
+footer a, #events .eng, #programme ul li a {
+  .state & {
+    color: $state;
+  }
+  .historical & {
+    color: $historical;
+  }
+  .language & {
+    color: $language;
+  }
+  .youth & {
+    color: $youth;
+  }
+  .cultural & {
+    color: $cultural;
+  }
+  .community & {
+    color: $community;
+  }
+  .global & {
+    color: $global;
+  }
+  .reminders & {
+    color: $historical;
+  }
+}
+
+
+@for $i from 1 through length($classList) {
+  
+  $textcol: #{nth($brands, $i)};
+
+
+  #programme ul li.#{nth($classList, $i)} a {
+    color: $textcol;
+  }
+
+  li.#{nth($classList, $i)} {
+    h5 em {
+      color: $textcol;
+    }
+    a span.ire {
+      color: $textcol;
+    }
+  }
+
+  body.#{nth($classList, $i)} {
+    $color: #{nth($brands, $i)};
+    background: $color;
+    #banner {
+      // background: $color url('../img/#{nth($classList, $i)}-old.jpg') center 80% no-repeat;
+      // background: $color url('../img/#{nth($classList, $i)}.jpg') center 80% no-repeat;
+      // background-blend-mode: multiply;
+
+    }
+    .ire {
+      color: $color;
+    }
+
+    #ghost {
+      background: $color;
+    }
+    
+    .close {
+      background: $color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==) center center no-repeat;
+    }
+
+    .event:hover {
+      .grad {
+        opacity: 1;
+        @include transition(all 0.4s ease-in-out);
+        height: 120px;
+      }
+      -webkit-box-shadow: 0px 0px 6px 0px $color;
+      -moz-box-shadow: 0px 0px 6px 0px $color;
+      box-shadow: 0px 0px 6px 0px $color;
+    }
+    .event:hover .grad:before {
+      content: "Níos mó";
+      color: $color;
+      @include transition(all 0.1s ease-in-out);
+      border-bottom: solid 1px $color;
+      padding-bottom: 5px;
+    }
+    .event {
+      color: $navy;
+    }
+    #banner .wrapper {
+      position: inherit;
+      top: 50%;
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+      transform: translateY(-30%);
+      color: white;
+    }
+  }
+}

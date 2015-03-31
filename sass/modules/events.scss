@@ -1,0 +1,43 @@
+
+#events, #signatories {
+  .single-event {
+    background: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.1);
+  }
+  .events-title {
+    margin-bottom: em(40);
+    font: 24px karla, helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: em(-1);
+  }
+  .wrapper {
+    padding-bottom: em(100);
+  }
+  .col-6, .col-3 {
+    .img {
+      margin-bottom: em(20);
+    }
+  }
+  .single-event h2 {
+    font-family: 'Alegreya', serif;
+    font-weight: normal;
+    font-size: em(21);
+    margin-bottom: em(2);
+    &:last-of-type {
+      margin-bottom: em(20);
+    }
+  }
+  p {
+    font-size: em(16);
+    line-height: em(21);
+    margin-bottom: em(10);
+    &:last-oftype {
+      margin-bottom: em(0);
+    }
+  }
+}

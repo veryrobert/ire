@@ -1,0 +1,109 @@
+// Main body elements
+body {
+  // background: yellow;
+  font-family: 'Alegreya', serif;
+  color: $navy;
+  outline: none;
+  overflow-y: scroll;
+  transition: all ease .3s;
+}
+
+// WRAPPER
+.wrapper {
+  @include outer-container;
+  @include media($largeDesktop) {
+    @include outer-container(90%);
+  }
+}
+
+.col-12 {
+  @include span-columns(12);
+}
+
+.col-6, .signatory {
+  @include span-columns(6);
+  @include omega(2n);
+  @include media($tablet) {
+    @include span-columns(4 of 8);
+  }
+
+  @include media($phone) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.col-4 {
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(4 of 8);
+    @include omega(2n);
+  }
+
+  @include media($phone) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.col-3 {
+  @include span-columns(3);
+  @include media($tablet) {
+    @include span-columns(2 of 8);
+    @include omega(2n);
+  }
+
+  @include media($phone) {
+    @include span-columns(2 of 4);
+  }
+}
+
+.col-8 {
+
+  @include span-columns(8);
+  @include media($phone) {
+    @include span-columns(4 of 4);
+  }
+
+}
+
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+  margin-right: 0px;
+}
+
+
+.img {
+  .col-12 & {
+    @include span-columns(6 of 12);
+    // background-color: aqua;
+    @include media($tablet) {
+      @include span-columns(8 of 8);
+    }
+  }
+  .col-6 & {
+    @include media($tablet) {
+      @include span-columns(4 of 4);
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+
+.content {
+  .col-12 & {
+    @include span-columns(6 of 12);
+    @include media($tablet) {
+      @include span-columns(8 of 8);
+    }
+  }
+}
+
+
+
+

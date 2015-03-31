@@ -1,0 +1,238 @@
+
+// HEADER
+header {
+	position: fixed;
+	background: white;
+	width: 100%;
+	z-index: 100;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+	padding-top: em(10);
+	@include media($tablet) {
+		height: 90px;
+		background: darken($navy, 2%);
+	}
+
+	.wrapper {
+		@include media($tablet) {
+			 max-width: 100%;
+		}
+
+	}
+
+	.menu {
+		display: block;
+		background: rgba(255,255,255,.1);
+		padding: 10px;
+		width: inherit;
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.logo {
+		height: em(75);
+		@include span-columns(2);
+		float: left;
+		.home & { 
+			display: block;
+			margin-top: -10px;
+			opacity: 0;
+			transition: all ease .3s;
+			@include media($phone) {
+				display: block;
+				// width: 85px;
+				margin-top: 0;
+				opacity: 1;
+			}
+			@include media($tablet) {
+				opacity: 1; 
+			}
+		}
+		@include media($tablet) {
+			background-image: url(../img/logo-small-white.png) no-repeat;
+			background: url(../img/logo-small-white.svg) no-repeat;
+			height: 59px;
+			width: 90px;
+			margin-bottom: 10px;
+			opacity: 1;
+			position: relative;
+			left: 20px;
+		}
+	}
+
+	.logo.on {
+		margin-top: 0;
+		opacity: 1;    	
+	}
+
+
+	.main {
+		margin-right: 0px !important;
+		@include span-columns(8);
+		float: right;
+		height: em(100);
+		padding: em(22) em(0) em(18) em(0);
+		@include media($tablet) {
+			display: none;
+			background: white;
+			position: relative;
+			height: inherit;
+			width: 100%;
+			top: 0px;
+			left: 0px;
+			padding: 10px 30px;
+			&.open {
+				display: block;
+			}
+		}
+		ul > li {
+			display: inline-block;
+			@include span-columns(2 of 8);
+			margin-right: 20px;
+			min-width: 145px;
+			line-height: 21px;
+			margin-top: -0px;
+			&:first-child {
+				margin-right: 5px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			@include media($tablet) {
+				width: 100% !important;
+				display: block;
+				padding: 5px 0;
+			}
+		}
+
+		a {
+			float: left;
+			color: $gold;
+			transition: all ease .3s;
+			span.eng {
+				display: inline;
+				color: $navy;
+			}
+			span.eng:after {
+				content: "\a";
+				white-space: pre;
+			}
+		}
+		a.active:before {
+			opacity: 1;
+		}
+
+		@include media($tablet) {
+			.prog > a {
+				&:hover {
+					&:after {
+						color: $gold;
+						border: solid 1px $gold;
+					}
+				}
+			}
+
+			.strands {
+				ul {
+				height: auto;
+				overflow: hidden;
+				float: left;
+				display: none;
+				position: relative;
+				padding: 5px 0 5px 15px;
+				&.show {
+				  display: block;
+				}
+				}
+				a {
+					font: 15px/18px karla, sans-serif;
+					letter-spacing: -0.5px;
+				}
+			}
+		}
+	}
+
+
+	.secondary {
+		height: em(78);
+		padding: em(20) em(0);
+		background: $navy;
+		text-transform: uppercase;
+		-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+		-moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+		box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.2);
+		@include media($tablet) {
+			background: white !important;
+		}
+
+		.home &, .reminders &, .about & {
+			display: none;
+		}
+
+		nav ul li {
+			display: inline-block;
+			@include span-columns(1 of 8);
+			text-align: center;
+			width: 10.8%;
+		}
+
+		nav {
+			@include span-columns(8);
+			float: right;
+			width: 67.880783%;
+		}
+	}
+
+}
+
+.about, .reminders  {
+	header.on {
+			margin-top: 0;
+			position: fixed;
+	}
+	header {
+		margin-top: 0;
+		position: fixed !important;
+	}
+}
+
+
+
+
+@media (max-width: 1060px) {
+  header .main ul li {
+    &:first-child {
+      margin-right: 4%;
+    }
+    min-width: inherit;
+    width: auto;
+    margin-right: 5%;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  header .main ul li {
+    a {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    &:first-child {
+      margin-right: 2%;
+    }
+    margin-right: 2%;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+

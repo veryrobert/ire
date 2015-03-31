@@ -1,0 +1,45 @@
+// Type & Links
+///////////////////////////////////////////////////////////////////////////////////
+
+h1, h2, h3, h4, #banner p, #banner a, .single-event p, p, #programme ul li a, button, input, nav a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: "karla", $helvetica;
+  font-weight: 700;
+  line-height: em(18);
+  letter-spacing: -0.5px;
+  .secondary & {
+    h2 {
+      text-transform: uppercase;
+    }
+    &.eng {
+      color: $gold;
+    }
+    &.ire {
+      color: white;
+    }
+  }
+}
+
+p, a {
+  font-size: em(18);
+  text-decoration: none;
+}
+
+section {
+  a {
+    font-family: karla, $helvetica;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid white;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+}

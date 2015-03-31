@@ -1,0 +1,96 @@
+// BREAKPOINTS
+$largeDesktop: new-breakpoint(max-width 1088px 12);
+$desktop: new-breakpoint(max-width 960px 12);
+$tablet: new-breakpoint(max-width 768px 8);
+$phone: new-breakpoint(max-width 640px 4);
+
+// RESPONSIVE HIDING
+.hide-desktop {
+	display: none;
+	@include media($tablet) {
+		display: block;
+	}
+}
+
+.hide-mobile {
+  @include media($phone) {
+    display: none !important;
+  }
+}
+
+
+//COLORS + UTILITIES
+$state: rgba(99, 180, 40, 1);
+$historical: rgba(20, 130, 95, 1);
+$language: rgba(15, 129, 173, 1);
+$youth: rgba(207, 86, 140, 1);
+$cultural: rgba(122, 43, 136, 1);
+$community: rgba(230, 38, 58, 1);
+$global: rgba(242, 127, 10, 1);
+$reminders: rgba(20, 130, 95, 1);
+$gold: #9f8a5f;
+$navy: #0b2936;
+
+// LIST FOR LOOP
+$icons: -12px -19px, -114px -22px, -218px -20px, -320px -20px, -424px -20px, -527px -20px, -631px -20px;
+$classList: state, historical, language, youth, cultural, community, global, reminders;
+$brands: $state, $historical, $language, $youth, $cultural, $community, $global, $reminders;
+
+
+
+// FUN.. CTIONS
+@mixin backgroundImage($url) {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url($url);
+  background-size: 100px 82px;
+}
+
+@mixin vertical-align($top) {
+  position: relative;
+  top: $top;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-42%);
+}
+
+
+// SELECTION TEXT
+::-moz-selection { background: white; color: $navy; }
+::selection { background: white; color: $navy; }
+
+
+// FOR OVERLAY SCREEN LOCK
+.noscroll {
+	overflow-y: hidden;
+	margin-left: -100px;
+}
+
+
+.navy {
+  color: $navy;
+}
+
+.gold {
+  color: $gold;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  @include transition(all 1s $ease-in-quad);
+  z-index: 999999;
+}
