@@ -1,3 +1,8 @@
+
+.gold {
+	color: $gold;
+}
+
 .about {
 
 	#banner {
@@ -45,18 +50,33 @@ section#vision {
 	}
 
 	.title {
-		border-bottom: solid 1px #c9c2af;
+		// border-bottom: solid 1px #c9c2af;
 		display: block;
 		padding-bottom: 30px;
 	}
 
 	article {
-		div {
-			padding-top: 30px;
+		@include fill-parent();
+		border-top: solid 1px #c9c2af;
+		clear: both;
+		padding-top: 30px;
+		margin-bottom: 60px;
+		overflow: hidden;
+
+		&:last-of-type {
+			padding-bottom: 60px;
+			a {
+				// border-bottom: solid 1px $gold;
+			}
+		}
+
+		div.intro {
+			padding-top: 0px;
 		}
 		p {
 			font-size: 17px;
 			line-height: 24px;
+			margin-bottom: 12px;
 		}
 		h2 {
 			font-size: 21px;
@@ -64,4 +84,64 @@ section#vision {
 		}
 	}
 
+	a.toggleText {
+		color: #ccc;
+		clear: both;
+		@include shift(4 of 12);
+		// @include span-columns(8 of 12);
+		font-weight: normal;
+		letter-spacing: 1px;
+		margin-top: 30px;
+		// padding-top: 30px;
+		padding-bottom: 5px;
+		display: inline-block;
+		border-bottom: solid 1px transparent;
+		cursor: pointer;
+		@include transition(all 0.2s ease-in-out);
+
+
+		
+
+		&:hover {
+			color: $gold;
+			border-bottom: solid 1px $gold; 
+			padding-bottom: 5px;
+	
+			@include transition(border 0.2s ease-in-out);
+		}
+
+	}
+
+	.moreText {
+
+		display: none;
+
+		  padding-top: 0px;
+
+		  float: right;
+		    width: 65.9%;
+		
+		div {
+			  padding-top: 0px;
+			width: 48%;
+			  margin-right: 3.357652%;
+			display: block;
+			float: left;
+		}
+		div.ire {
+			margin-right: 0px;
+			padding-right: 0px;
+		}
+
+		&.open {
+			display: block
+		}
+
+	}
+
+
+}
+
+a {
+	cursor: pointer;
 }

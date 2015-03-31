@@ -247,16 +247,24 @@ var menuButton 	= $('.menu'),
 	nav			= $('.main'),
 	body		= $('body'),
 	strandsNav	= $('nav.strands'),
-	progBtn		= $('.prog a');
+	progBtn		= $('.prog a')
+	moreText	= $('.moreText'),
+	toggleText	= $('.toggleText');
 
 menuButton.on('click', function(){
 	honk.$body.toggleClass('open');
 	menuButton.toggleClass('open');
 
-
 	// nav.addClass('on');
 	nav.toggleClass('open');
 	
+});
+
+toggleText.on('click', function(e){
+	e.preventDefault(e);
+	
+	$(this).siblings('.moreText').slideToggle();
+
 });
 
 progBtn.on('click', function(){
@@ -266,6 +274,8 @@ progBtn.on('click', function(){
 setTimeout(function() {
 	$('.loading').addClass('hidden');
 }, 500);
+
+
 
 
 
