@@ -108,39 +108,6 @@ header {
   }
 }
 
-.state, .historical, .language, .youth, .cultural, .community, .global, .reminders {
-  #banner {
-    height: inherit;
-    padding: 300px 0 100px;
-    h2 {
-      text-transform: inherit;
-      letter-spacing: 0;
-    }
-    .wrapper p {
-      font-size: 23px;
-      line-height: 27px;
-    }
-  }
-  #events {
-    background: rgba(255, 255, 255, 0.8);
-    padding-top: 70px;
-    .events-title {
-      padding-left: 15px;
-      margin-bottom: 50px;
-      h2 {
-        font: bold 28px/32px 'karla', Arial, sans-serif;
-        display: inline;
-        width: inherit;
-        letter-spacing: -1px;
-        text-transform: inherit;
-      }
-      .eng {
-        color: $navy;
-      }
-    }
-  }
-}
-
 // EVENT RELATED CODE STARTS
 #wrap {
   width: 1108px;

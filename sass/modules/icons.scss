@@ -2,14 +2,14 @@ h1 {
   display: block;
   text-indent: -9999px;
   width: 130px;
-  // background-image: url(../img/logo-small.jpg);
-  background: url(../img/logo-small.svg);
+  // background-image: url(.././img/logo-small.jpg);
+  background: url(.././img/logo-small.svg);
   background-repeat: no-repeat;
 }
 
 .secondary nav li {
   a {
-    background: url(../img/icon-sprite.svg);
+    background: url(.././img/icon-sprite.svg);
     background-position-y: -16px;
     background-size: 680px 65px;
     height: 36px;
@@ -20,28 +20,27 @@ h1 {
     background-repeat: no-repeat;
   }
   &.state a {
-    background: url(../img/icon-sprite.svg) no-repeat;
+    background: url(.././img/icon-sprite.svg) no-repeat;
     background-position: top -15px right -631px;
     background-size: 680px 65px;
   }
   &.historical a {
-    background-position-x: -114px;
-    background-position-y: -20px;
+    background-position: -114px -20px;
   }
   &.language a {
-    background-position-x: -218px;
+    background-position: -218px -15px;
   }
   &.youth a {
-    background-position-x: -320px;
+    background-position: -320px -15px;
   }
   &.cultural a {
-    background-position-x: -424px;
+    background-position: -424px -15px;
   }
   &.community a {
-    background-position-x: -527px;
+    background-position: -527px -15px;
   }
   &.global a {
-    background-position-x: -631px;
+    background-position: -631px -15px;
   }
 }
 
@@ -54,7 +53,7 @@ ul.social {
     background-size: 67px;
     background-position: 1px 4px;
     display: inline-block;
-    background: url(../img/social-sprite.svg) no-repeat;
+    background: url(.././img/social-sprite.svg) no-repeat;
     height: 36px;
     width: 36px;
     text-indent: -9999px;

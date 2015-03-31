@@ -48,8 +48,7 @@ footer a, #events .eng, #programme ul li a {
     $color: #{nth($brands, $i)};
     background: $color;
     #banner {
-      // background: $color url('../img/#{nth($classList, $i)}-old.jpg') center 80% no-repeat;
-      // background: $color url('../img/#{nth($classList, $i)}.jpg') center 80% no-repeat;
+       background: $color url('.././img/_#{nth($classList, $i)}.jpg') center 80% no-repeat;
       // background-blend-mode: multiply;
 
     }

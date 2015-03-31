@@ -13,6 +13,9 @@ header {
 		height: 90px;
 		background: darken($navy, 2%);
 	}
+	@include media($phone) {
+		position: fixed !important;
+	}
 
 	.wrapper {
 		@include media($tablet) {
@@ -56,8 +59,8 @@ header {
 			}
 		}
 		@include media($tablet) {
-			background-image: url(../img/logo-small-white.png) no-repeat;
-			background: url(../img/logo-small-white.svg) no-repeat;
+			background-image: url(./img/logo-small-white.png) no-repeat;
+			background: url(./img/logo-small-white.svg) no-repeat;
 			height: 59px;
 			width: 90px;
 			margin-bottom: 10px;

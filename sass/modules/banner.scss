@@ -1,3 +1,44 @@
+.state, .historical, .language, .youth, .cultural, .community, .global, .reminders {
+  #banner {
+    height: inherit;
+    padding: 320px 0 50px 0;
+    @include media($tablet) {
+      padding: 80px 0 50px 0 !important;
+    }
+    h2 {
+      text-transform: inherit;
+      letter-spacing: 0;
+    }
+    .wrapper p {
+      font-size: 23px;
+      line-height: 27px;
+    }
+  }
+  #events {
+    background: rgba(255, 255, 255, 0.8);
+    .events-title {
+      padding-left: 15px;
+      margin-bottom: 50px;
+      h2 {
+        font: bold 28px/32px 'karla', Arial, sans-serif;
+        display: inline;
+        width: inherit;
+        letter-spacing: -1px;
+        text-transform: inherit;
+      }
+      .eng {
+        color: $navy;
+      }
+    }
+  }
+}
+
+.reminders {
+  #banner {
+    padding: 280px 0 50px 0;
+  }
+}
+
 #banner .wrapper {
   @include vertical-align(50%);
   color: white;
@@ -48,8 +89,8 @@
     }
     .logo {
       @include span-columns(4);
-      background-image: url(../img/logo-big.jpg);
-      background: url(../img/logo-big.svg) no-repeat;
+      background-image: url(.././img/logo-big.png);
+      background: url(.././img/logo-big.svg) no-repeat;
       text-indent: -9999px;
       height: em(130);
       margin-top: -1px;
@@ -91,7 +132,6 @@
 
 #banner {
   @include media($tablet) {
-    top: 75px;
     height: inherit;
     min-height: inherit;
     padding-top: 0px;
@@ -125,7 +165,7 @@
     background: linear-gradient(135deg, #09727a 0%, #085159 37%, #063342 89%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09727a', endColorstr='#063342',GradientType=1 );
     @include media($tablet) {
-      padding: 50px 0 0 0;
+      padding: 120px 0 0 0 !important;
     }
     .wrapper {
       .col-8.pull-right {
@@ -136,10 +176,6 @@
 }
 
 .about {
-  #banner {
-    @include media($phone) {
-    }
-  }
   #banner .wrapper p {
     padding-right: 0;
   }
