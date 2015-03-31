@@ -180,15 +180,6 @@ body {
         content: "";
         display: table; } }
 
-<<<<<<< HEAD
-@media (min-width: 960px) {
-  section {
-    min-height: 600px; } }
-=======
-#banner {
-  display: block; }
-
->>>>>>> bits
 #programme {
   padding: 5.625em 0 3.75em 0;
   color: #0b2936; }
