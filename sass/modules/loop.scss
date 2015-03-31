@@ -25,7 +25,6 @@ footer a, #events .eng, #programme ul li a {
   }
 }
 
-
 @for $i from 1 through length($classList) {
   
   $textcol: #{nth($brands, $i)};
@@ -48,8 +47,9 @@ footer a, #events .eng, #programme ul li a {
     $color: #{nth($brands, $i)};
     background: $color;
     #banner {
-       background: $color url('.././img/_#{nth($classList, $i)}.jpg') center 80% no-repeat;
-      // background-blend-mode: multiply;
+       background: $color url('.././img/_#{nth($classList, $i)}.gif') left -50% no-repeat;
+       background-size: 70%;
+       background-blend-mode: multiply;
 
     }
     .ire {

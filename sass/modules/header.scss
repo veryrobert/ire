@@ -59,8 +59,8 @@ header {
 			}
 		}
 		@include media($tablet) {
-			background-image: url(./img/logo-small-white.png) no-repeat;
-			background: url(./img/logo-small-white.svg) no-repeat;
+			background-image: url(/img/logo-small-white.png) no-repeat;
+			background: url(/img/logo-small-white.svg) no-repeat;
 			height: 59px;
 			width: 90px;
 			margin-bottom: 10px;

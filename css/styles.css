@@ -21,16 +21,16 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 /* line 40, ../sass/_reset.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 4, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
+/* line 4, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 html { box-sizing: border-box; }
 
-/* line 9, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
+/* line 9, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/grid/_box-sizing.scss */
 *, *:before, *:after { box-sizing: inherit; }
 
-/* line 4, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_box-sizing.scss */
+/* line 4, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_box-sizing.scss */
 html { box-sizing: border-box; }
 
-/* line 9, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_box-sizing.scss */
+/* line 9, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_box-sizing.scss */
 *, *:before, *:after { box-sizing: inherit; }
 
 /* line 8, ../sass/variables.scss */
@@ -77,67 +77,67 @@ body { font-family: 'Alegreya', serif; color: #0b2936; outline: none; overflow-y
 
 /* line 19, ../sass/robgrid.scss */
 .col-12 { float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-12:last-child { margin-right: 0; }
 
 /* line 23, ../sass/robgrid.scss */
 .col-6, .signatory { float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-6:last-child, .signatory:last-child { margin-right: 0; }
-/* line 78, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+/* line 78, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
 .col-6:nth-child(2n), .signatory:nth-child(2n) { margin-right: 0; }
-/* line 83, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+/* line 83, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
 .col-6:nth-child(2n+1), .signatory:nth-child(2n+1) { clear: left; }
 @media screen and (max-width: 768px) { /* line 23, ../sass/robgrid.scss */
   .col-6, .signatory { float: left; display: block; margin-right: 3.5786636068%; width: 48.2106681966%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-6:last-child, .signatory:last-child { margin-right: 0; } }
 @media screen and (max-width: 640px) { /* line 23, ../sass/robgrid.scss */
   .col-6, .signatory { float: left; display: block; margin-right: 7.4229703521%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-6:last-child, .signatory:last-child { margin-right: 0; } }
 
 /* line 35, ../sass/robgrid.scss */
 .col-4 { float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-4:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 35, ../sass/robgrid.scss */
   .col-4 { float: left; display: block; margin-right: 3.5786636068%; width: 48.2106681966%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-4:last-child { margin-right: 0; }
-  /* line 78, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+  /* line 78, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
   .col-4:nth-child(2n) { margin-right: 0; }
-  /* line 83, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+  /* line 83, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
   .col-4:nth-child(2n+1) { clear: left; } }
 @media screen and (max-width: 640px) { /* line 35, ../sass/robgrid.scss */
   .col-4 { float: left; display: block; margin-right: 7.4229703521%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-4:last-child { margin-right: 0; } }
 
 /* line 47, ../sass/robgrid.scss */
 .col-3 { float: left; display: block; margin-right: 2.3576515979%; width: 23.2317613015%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-3:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 47, ../sass/robgrid.scss */
   .col-3 { float: left; display: block; margin-right: 3.5786636068%; width: 22.3160022949%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-3:last-child { margin-right: 0; }
-  /* line 78, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+  /* line 78, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
   .col-3:nth-child(2n) { margin-right: 0; }
-  /* line 83, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+  /* line 83, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
   .col-3:nth-child(2n+1) { clear: left; } }
 @media screen and (max-width: 640px) { /* line 47, ../sass/robgrid.scss */
   .col-3 { float: left; display: block; margin-right: 7.4229703521%; width: 46.288514824%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-3:last-child { margin-right: 0; } }
 
 /* line 59, ../sass/robgrid.scss */
 .col-8 { float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-8:last-child { margin-right: 0; }
 @media screen and (max-width: 640px) { /* line 59, ../sass/robgrid.scss */
   .col-8 { float: left; display: block; margin-right: 7.4229703521%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-8:last-child { margin-right: 0; } }
 
 /* line 69, ../sass/robgrid.scss */
@@ -148,26 +148,26 @@ body { font-family: 'Alegreya', serif; color: #0b2936; outline: none; overflow-y
 
 /* line 80, ../sass/robgrid.scss */
 .col-12 .img { float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-12 .img:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 80, ../sass/robgrid.scss */
   .col-12 .img { float: left; display: block; margin-right: 3.5786636068%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-12 .img:last-child { margin-right: 0; } }
 @media screen and (max-width: 768px) { /* line 87, ../sass/robgrid.scss */
   .col-6 .img { float: left; display: block; margin-right: 7.4229703521%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-6 .img:last-child { margin-right: 0; } }
 /* line 92, ../sass/robgrid.scss */
 .img img { width: 100%; }
 
 /* line 99, ../sass/robgrid.scss */
 .col-12 .content { float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .col-12 .content:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 99, ../sass/robgrid.scss */
   .col-12 .content { float: left; display: block; margin-right: 3.5786636068%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   .col-12 .content:last-child { margin-right: 0; } }
 
 /* line 3, ../sass/sean.scss */
@@ -412,12 +412,12 @@ section a { font-family: karla, "Helvetica Neue", "Helvetica", "Roboto", "Arial"
 section h2 { text-transform: uppercase; }
 
 /* line 1, ../sass/modules/icons.scss */
-h1 { display: block; text-indent: -9999px; width: 130px; background: url(.././img/logo-small.svg); background-repeat: no-repeat; }
+h1 { display: block; text-indent: -9999px; width: 130px; background-image: url(/img/logo-small.jpg); background: url(/img/logo-small.svg); background-repeat: no-repeat; }
 
 /* line 11, ../sass/modules/icons.scss */
-.secondary nav li a { background: url(.././img/icon-sprite.svg); background-position-y: -16px; background-size: 680px 65px; height: 36px; width: 36px; text-indent: -9999px; overlflow: hidden; display: inline-block; background-repeat: no-repeat; }
+.secondary nav li a { background: url(/img/icon-sprite.svg); background-position-y: -16px; background-size: 680px 65px; height: 36px; width: 36px; text-indent: -9999px; overlflow: hidden; display: inline-block; background-repeat: no-repeat; }
 /* line 22, ../sass/modules/icons.scss */
-.secondary nav li.state a { background: url(.././img/icon-sprite.svg) no-repeat; background-position: top -15px right -631px; background-size: 680px 65px; }
+.secondary nav li.state a { background: url(/img/icon-sprite.svg) no-repeat; background-position: top -15px right -631px; background-size: 680px 65px; }
 /* line 27, ../sass/modules/icons.scss */
 .secondary nav li.historical a { background-position: -114px -20px; }
 /* line 30, ../sass/modules/icons.scss */
@@ -436,7 +436,7 @@ ul.social { display: inline-block; }
 /* line 49, ../sass/modules/icons.scss */
 ul.social li { display: inline-block; }
 /* line 52, ../sass/modules/icons.scss */
-ul.social li a { background-size: 67px; background-position: 1px 4px; display: inline-block; background: url(.././img/social-sprite.svg) no-repeat; height: 36px; width: 36px; text-indent: -9999px; border: solid 2px #9f8a5f; border-radius: 36px; background-size: 60px; background-position: 2px 3px; }
+ul.social li a { background-size: 67px; background-position: 1px 4px; display: inline-block; background: url(/img/social-sprite.svg) no-repeat; height: 36px; width: 36px; text-indent: -9999px; border: solid 2px #9f8a5f; border-radius: 36px; background-size: 60px; background-position: 2px 3px; }
 /* line 67, ../sass/modules/icons.scss */
 ul.social .facebook a { background-position: -32px 3px; background-size: 57px; margin-left: 5px; }
 /* line 72, ../sass/modules/icons.scss */
@@ -473,7 +473,7 @@ header { position: fixed; background: white; width: 100%; z-index: 100; box-shad
 header .menu { display: block; background: rgba(255, 255, 255, 0.1); padding: 10px; width: inherit; position: absolute; right: 40px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); color: white; text-transform: uppercase; letter-spacing: 0.5px; -webkit-font-smoothing: antialiased; }
 /* line 42, ../sass/modules/header.scss */
 header .logo { height: 4.6875em; float: left; display: block; margin-right: 2.3576515979%; width: 14.7019570017%; float: left; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 header .logo:last-child { margin-right: 0; }
 /* line 46, ../sass/modules/header.scss */
 .home header .logo { display: block; margin-top: -10px; opacity: 0; -webkit-transition: all ease .3s; transition: all ease .3s; }
@@ -482,12 +482,12 @@ header .logo:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 46, ../sass/modules/header.scss */
   .home header .logo { opacity: 1; } }
 @media screen and (max-width: 768px) { /* line 42, ../sass/modules/header.scss */
-  header .logo { background-image: url(./img/logo-small-white.png) no-repeat; background: url(./img/logo-small-white.svg) no-repeat; height: 59px; width: 90px; margin-bottom: 10px; opacity: 1; position: relative; left: 20px; } }
+  header .logo { background-image: url(/img/logo-small-white.png) no-repeat; background: url(/img/logo-small-white.svg) no-repeat; height: 59px; width: 90px; margin-bottom: 10px; opacity: 1; position: relative; left: 20px; } }
 /* line 73, ../sass/modules/header.scss */
 header .logo.on { margin-top: 0; opacity: 1; }
 /* line 79, ../sass/modules/header.scss */
 header .main { margin-right: 0px !important; float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; float: right; height: 6.25em; padding: 1.375em 0em 1.125em 0em; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 header .main:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 79, ../sass/modules/header.scss */
   header .main { display: none; background: white; position: relative; height: inherit; width: 100%; top: 0px; left: 0px; padding: 10px 30px; }
@@ -495,7 +495,7 @@ header .main:last-child { margin-right: 0; }
   header .main.open { display: block; } }
 /* line 98, ../sass/modules/header.scss */
 header .main ul > li { display: inline-block; float: left; display: block; margin-right: 3.5786636068%; width: 22.3160022949%; margin-right: 20px; min-width: 145px; line-height: 21px; margin-top: -0px; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 header .main ul > li:last-child { margin-right: 0; }
 /* line 105, ../sass/modules/header.scss */
 header .main ul > li:first-child { margin-right: 5px; }
@@ -527,11 +527,11 @@ header .secondary { height: 4.875em; padding: 1.25em 0em; background: #0b2936; t
 .home header .secondary, .reminders header .secondary, .about header .secondary { display: none; }
 /* line 182, ../sass/modules/header.scss */
 header .secondary nav ul li { display: inline-block; float: left; display: block; margin-right: 3.5786636068%; width: 9.3686693441%; text-align: center; width: 10.8%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 header .secondary nav ul li:last-child { margin-right: 0; }
 /* line 189, ../sass/modules/header.scss */
 header .secondary nav { float: left; display: block; margin-right: 2.3576515979%; width: 65.8807828007%; float: right; width: 67.880783%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 header .secondary nav:last-child { margin-right: 0; }
 
 /* line 199, ../sass/modules/header.scss */
@@ -623,7 +623,7 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
   .home #banner .wrapper, .about #banner .wrapper { height: inherit; min-height: auto; padding-top: 0px; } }
 /* line 90, ../sass/modules/banner.scss */
 .home #banner .wrapper .logo, .about #banner .wrapper .logo { float: left; display: block; margin-right: 2.3576515979%; width: 31.7615656014%; background-image: url(.././img/logo-big.png); background: url(.././img/logo-big.svg) no-repeat; text-indent: -9999px; height: 8.125em; margin-top: -1px; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 .home #banner .wrapper .logo:last-child, .about #banner .wrapper .logo:last-child { margin-right: 0; }
 @media (max-width: 1281px) { /* line 90, ../sass/modules/banner.scss */
   .home #banner .wrapper .logo, .about #banner .wrapper .logo { height: 7.5em; } }
@@ -671,7 +671,7 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
   #programme .wrapper { opacity: 1; position: relavtive; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
   /* line 24, ../sass/modules/home.scss */
   #programme .wrapper .col-8, #programme .wrapper .col-4 { float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   #programme .wrapper .col-8:last-child, #programme .wrapper .col-4:last-child { margin-right: 0; } }
 /* line 30, ../sass/modules/home.scss */
 #programme aside { padding-right: 30px; }
@@ -697,7 +697,7 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
 #programme .strands a:hover:after { opacity: 1; -webkit-transition: all ease .3s; transition: all ease .3s; -webkit-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0px); }
 /* line 85, ../sass/modules/home.scss */
 #programme .strands ul { float: left; display: block; margin-right: 3.5786636068%; width: 48.2106681966%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 #programme .strands ul:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 85, ../sass/modules/home.scss */
   #programme .strands ul { width: 100%; } }
@@ -749,15 +749,15 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
   #signatories { padding: 30px 0 !important; } }
 /* line 208, ../sass/modules/home.scss */
 #signatories .signatory { min-height: 790px; float: left; display: block; margin-right: 2.3576515979%; width: 48.821174201%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 #signatories .signatory:last-child { margin-right: 0; }
-/* line 78, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+/* line 78, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
 #signatories .signatory:nth-child(2n) { margin-right: 0; }
-/* line 83, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
+/* line 83, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_omega.scss */
 #signatories .signatory:nth-child(2n+1) { clear: left; }
 @media screen and (max-width: 640px) { /* line 208, ../sass/modules/home.scss */
   #signatories .signatory { float: left; display: block; margin-right: 2.3576515979%; width: 100%; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   #signatories .signatory:last-child { margin-right: 0; } }
 /* line 216, ../sass/modules/home.scss */
 #signatories .signatory.tall { min-height: 915px; }
@@ -788,17 +788,17 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
   #about h4 { font-size: 17px; line-height: 21px; } }
 /* line 273, ../sass/modules/home.scss */
 #about .about p { float: left; display: block; margin-right: 4.8291579146%; width: 82.5284736809%; padding-right: 0.625em; font-size: 19px; float: left; line-height: 26px; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 #about .about p:last-child { margin-right: 0; }
 @media (max-width: 769px) { /* line 273, ../sass/modules/home.scss */
   #about .about p { float: left; display: block; margin-right: 4.8291579146%; width: 100%; margin-bottom: 24px; }
-  /* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+  /* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
   #about .about p:last-child { margin-right: 0; } }
 /* line 284, ../sass/modules/home.scss */
 #about .about p.ire { margin-right: 0; }
 /* line 289, ../sass/modules/home.scss */
 #about .signup { float: left; display: block; margin-right: 2.3576515979%; width: 40.2913699012%; margin-top: -40px; min-height: 350px; border-left: solid 1px #9f8a5f; margin-left: 30px; padding: 2.5em 0 1.875em 8%; }
-/* line 87, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
+/* line 87, ../../../../../Volumes/Macintosh HD/Applications/CodeKit.app/Contents/Resources/engines/neat/neat/grid/_span-columns.scss */
 #about .signup:last-child { margin-right: 0; }
 @media screen and (max-width: 768px) { /* line 289, ../sass/modules/home.scss */
   #about .signup { margin-left: 0px; } }
@@ -856,18 +856,18 @@ footer li { display: inline; font: 11px karla, "Helvetica Neue", "Helvetica", "R
 /* line 23, ../sass/modules/loop.scss */
 .reminders footer a, .reminders #events .eng, .reminders #programme ul li a { color: #14825f; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.state a { color: #63b428; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.state h5 em { color: #63b428; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.state a span.ire { color: #63b428; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.state { background: #63b428; }
-/* line 50, ../sass/modules/loop.scss */
-body.state #banner { background: #63b428 url(".././img/_state.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.state #banner { background: #63b428 url(".././img/_state.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.state .ire { color: #63b428; }
 /* line 59, ../sass/modules/loop.scss */
@@ -885,18 +885,18 @@ body.state .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.state #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.historical a { color: #14825f; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.historical h5 em { color: #14825f; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.historical a span.ire { color: #14825f; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.historical { background: #14825f; }
-/* line 50, ../sass/modules/loop.scss */
-body.historical #banner { background: #14825f url(".././img/_historical.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.historical #banner { background: #14825f url(".././img/_historical.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.historical .ire { color: #14825f; }
 /* line 59, ../sass/modules/loop.scss */
@@ -914,18 +914,18 @@ body.historical .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.historical #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.language a { color: #0f81ad; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.language h5 em { color: #0f81ad; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.language a span.ire { color: #0f81ad; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.language { background: #0f81ad; }
-/* line 50, ../sass/modules/loop.scss */
-body.language #banner { background: #0f81ad url(".././img/_language.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.language #banner { background: #0f81ad url(".././img/_language.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.language .ire { color: #0f81ad; }
 /* line 59, ../sass/modules/loop.scss */
@@ -943,18 +943,18 @@ body.language .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.language #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.youth a { color: #cf568c; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.youth h5 em { color: #cf568c; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.youth a span.ire { color: #cf568c; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.youth { background: #cf568c; }
-/* line 50, ../sass/modules/loop.scss */
-body.youth #banner { background: #cf568c url(".././img/_youth.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.youth #banner { background: #cf568c url(".././img/_youth.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.youth .ire { color: #cf568c; }
 /* line 59, ../sass/modules/loop.scss */
@@ -972,18 +972,18 @@ body.youth .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.youth #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.cultural a { color: #7a2b88; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.cultural h5 em { color: #7a2b88; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.cultural a span.ire { color: #7a2b88; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.cultural { background: #7a2b88; }
-/* line 50, ../sass/modules/loop.scss */
-body.cultural #banner { background: #7a2b88 url(".././img/_cultural.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.cultural #banner { background: #7a2b88 url(".././img/_cultural.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.cultural .ire { color: #7a2b88; }
 /* line 59, ../sass/modules/loop.scss */
@@ -1001,18 +1001,18 @@ body.cultural .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.cultural #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.community a { color: #e6263a; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.community h5 em { color: #e6263a; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.community a span.ire { color: #e6263a; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.community { background: #e6263a; }
-/* line 50, ../sass/modules/loop.scss */
-body.community #banner { background: #e6263a url(".././img/_community.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.community #banner { background: #e6263a url(".././img/_community.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.community .ire { color: #e6263a; }
 /* line 59, ../sass/modules/loop.scss */
@@ -1030,18 +1030,18 @@ body.community .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.community #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.global a { color: #f27f0a; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.global h5 em { color: #f27f0a; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.global a span.ire { color: #f27f0a; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.global { background: #f27f0a; }
-/* line 50, ../sass/modules/loop.scss */
-body.global #banner { background: #f27f0a url(".././img/_global.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.global #banner { background: #f27f0a url(".././img/_global.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.global .ire { color: #f27f0a; }
 /* line 59, ../sass/modules/loop.scss */
@@ -1059,18 +1059,18 @@ body.global .event { color: #0b2936; }
 /* line 87, ../sass/modules/loop.scss */
 body.global #banner .wrapper { position: inherit; top: 50%; -webkit-transform: translateY(-30%); -ms-transform: translateY(-30%); transform: translateY(-30%); color: white; }
 
-/* line 34, ../sass/modules/loop.scss */
+/* line 33, ../sass/modules/loop.scss */
 #programme ul li.reminders a { color: #14825f; }
 
-/* line 39, ../sass/modules/loop.scss */
+/* line 38, ../sass/modules/loop.scss */
 li.reminders h5 em { color: #14825f; }
-/* line 42, ../sass/modules/loop.scss */
+/* line 41, ../sass/modules/loop.scss */
 li.reminders a span.ire { color: #14825f; }
 
-/* line 47, ../sass/modules/loop.scss */
+/* line 46, ../sass/modules/loop.scss */
 body.reminders { background: #14825f; }
-/* line 50, ../sass/modules/loop.scss */
-body.reminders #banner { background: #14825f url(".././img/_reminders.jpg") center 80% no-repeat; }
+/* line 49, ../sass/modules/loop.scss */
+body.reminders #banner { background: #14825f url(".././img/_reminders.gif") left -50% no-repeat; background-size: 70%; background-blend-mode: multiply; }
 /* line 55, ../sass/modules/loop.scss */
 body.reminders .ire { color: #14825f; }
 /* line 59, ../sass/modules/loop.scss */
