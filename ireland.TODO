@@ -7,20 +7,24 @@
     ☐ add images throughout site
     ✔ add scroll to top button — made harp back to top button  @done (15-03-30 21:52)
     ✔ fix sticky header on mobile @done (15-03-30 21:35)
-    ☐ mailchimp success and confirm page
-    ☐ fix flyout mobile menu animation
-
+    ✔ mailchimp success and confirm page @done (15-03-31 12:02)
+      ☐ Style maill chimp page
+    ✔ fix flyout mobile menu animation @done (15-03-31 11:45)
+    ✔ Add class pull-right to irish in banners  @done (15-03-31 07:43)
+    ✔ Add Active Link to Menu nav @done (15-03-31 08:20)
+    ☐ logo mobile scroll move
 
 ☐ Home page
   ✔ Intro Section @done (15-03-30 18:41)
      ✔ Programme Strands Intro / Eng / Ire @done (15-03-30 18:41)
      ✔ Signatories Intro Text @done (15-03-31 00:49)
-     ☐ Signatories Images
+     ✔ Signatories Images @done (15-03-31 12:21)
+     ☐ Import Signatories images from excel
      ✔ Signatories spreadsheet integration @done (15-03-31 01:11)
      ✔ Contact Information @done (15-03-30 18:41)
      ☐ video integration
      ✔ remove browse button on mobile @done (15-03-30 21:54)
-     ☐ add contact info at bottom of page
+     ✔ add contact info at bottom of page @done (15-03-31 11:55)
      ☐ mailchimp setup on homepage
 
  ✔ Strand Pages @done (15-03-31 01:10)
@@ -34,16 +38,24 @@
    ✔ style more button @done (15-03-31 01:10)
 
 
- ✔ Permanent Reminders @done (15-03-31 01:09)
+ ☐ Permanent Reminders
    ✔ make page @done (15-03-30 21:35)
    ✔ style page @done (15-03-30 21:35)
    ✔ responsive test page @done (15-03-30 21:53)
    ✔ pull in info from gdoc @done (15-03-30 21:53)
    ✔ add imagery @done (15-03-31 01:09)
+   ☐ Military Archive
+   ☐ Height fix on mobile
+   ✔ remove read more for events @done (15-03-31 09:50)
 
-
- ☐ About Page
+ ✔ About Page @done (15-03-31 11:52)
    ☐ responsive css
+
+ ☐ Menu
+   ☐ fix programme to go to homepage when on other pages
+   ☐ fix signatories ...
+   ✔ Remove secondary nav on about page, permanent reminders page @done (15-03-31 09:36)
+   ☐ scrollspy programnme and signatories links on home
 
 
  ☐ Performance Testing

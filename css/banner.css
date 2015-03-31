@@ -1,0 +1,16 @@
+@media (max-width: 769px) {
+  .home #banner, .about #banner {
+    top: 0px;
+    padding: 80px 0px 60px 0; }
+    .home #banner .wrapper, .about #banner .wrapper {
+      position: relative;
+      paddong-top: 0px;
+      top: 0px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+
+  .browse {
+    display: none; } }
+#programme {
+  backgroud: yellow; }

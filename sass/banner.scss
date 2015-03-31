@@ -1,0 +1,57 @@
+@media (max-width: 769px) {
+
+  .home #banner, .about #banner {
+    top: 0px;
+    padding: 80px 0px 60px 0;
+    .wrapper {
+       position: relative;
+       paddong-top: 0px;
+         top: 0px;
+         -webkit-transform: none;
+        -ms-transform: none;
+         transform: none;
+        
+    }
+  }
+  .browse {
+     display: none;
+  }
+
+#programme {
+  padding-top: 50px;
+}
+
+
+}
+
+
+@media (max-width: 640px) {
+
+  section#vision a.toggleText {
+    margin-left: 0px;
+  }
+
+  section#vision {
+    article h2.ire {
+      padding-bottom: 30px;
+    }
+  }
+
+  section#vision .moreText {
+    width: 100%;
+    > div {
+      width: 100%;
+    }
+  }
+
+  #banner h2.ire, .home #banner h2.ire {
+    margin-bottom: 30px;
+  }
+
+}
+
+#events .wrapper  {
+
+  padding-top: 60px;
+
+}

@@ -181,7 +181,7 @@ body {
         display: table; } }
 
 #programme {
-  padding: 5.625em 0 3.75em 0;
+  padding: 5em 0 3.75em 0;
   color: #0b2936; }
   #programme ul li a {
     -webkit-transition: all 0.2s ease-in-out;
@@ -1339,16 +1339,47 @@ header {
     position: relative;
     padding: 0px; }
     .state #banner .wrapper, .historical #banner .wrapper, .language #banner .wrapper, .youth #banner .wrapper, .cultural #banner .wrapper, .community #banner .wrapper, .global #banner .wrapper, .reminders #banner .wrapper {
-      padding: 120px 0 30px 0;
+      padding: 60px 0 30px 0;
       -webkit-transform: inherit !important;
       -ms-transform: inherit !important;
       transform: inherit !important;
       color: white; }
       .state #banner .wrapper a.more, .historical #banner .wrapper a.more, .language #banner .wrapper a.more, .youth #banner .wrapper a.more, .cultural #banner .wrapper a.more, .community #banner .wrapper a.more, .global #banner .wrapper a.more, .reminders #banner .wrapper a.more {
-        display: none; }
-    .state #banner .wrapper:last-of-type, .historical #banner .wrapper:last-of-type, .language #banner .wrapper:last-of-type, .youth #banner .wrapper:last-of-type, .cultural #banner .wrapper:last-of-type, .community #banner .wrapper:last-of-type, .global #banner .wrapper:last-of-type, .reminders #banner .wrapper:last-of-type {
-      display: none; } }
+        display: none; } }
 @media (max-width: 640px) {
   .home header .logo {
     opacity: 1;
     top: 20px; } }
+@media (max-width: 769px) {
+  .home #banner, .about #banner {
+    top: 0px;
+    padding: 80px 0px 60px 0; }
+    .home #banner .wrapper, .about #banner .wrapper {
+      position: relative;
+      paddong-top: 0px;
+      top: 0px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+
+  .browse {
+    display: none; }
+
+  #programme {
+    padding-top: 50px; } }
+@media (max-width: 640px) {
+  section#vision a.toggleText {
+    margin-left: 0px; }
+
+  section#vision article h2.ire {
+    padding-bottom: 30px; }
+
+  section#vision .moreText {
+    width: 100%; }
+    section#vision .moreText > div {
+      width: 100%; }
+
+  #banner h2.ire, .home #banner h2.ire {
+    margin-bottom: 30px; } }
+#events .wrapper {
+  padding-top: 60px; }
