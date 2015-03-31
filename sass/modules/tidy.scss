@@ -1,0 +1,136 @@
+// Mobile Specific
+
+// Small Desktop
+@media (max-width: 960px) {
+  .strand-menu-title {
+    display: none;
+  }
+  header div.secondary nav {
+    width: 100%;
+  }
+}
+
+
+
+
+// Mobile Starts Here
+@media (max-width: $phone) {
+
+  // .home #banner .wrapper {
+  //   .logo {
+  //     display: none;
+  //   }
+  //   .col-8 {
+  //     width: 100%;
+  //     p {
+  //       font-size: 20px;
+  //     }
+  //   }
+  // }
+
+  // header nav.main .prog > a:after {
+  //   right: 50px;
+  // }
+
+  // .mobile-pull-left, .col-4, #programme .wrapper .mobile-pull-left, #programme .wrapper .mobile-pull-left p, aside, #programme .wrapper .col-8, #programme .wrapper .col-4, .col-8.strands ul, .strands ul li, #programme ul, #signatories aside p, .home #about .col-6, #about .about p, #about .signup, #about .signup h4.eng {
+  //   float: left;
+  //   width: 100%;
+  //   padding-left: 0px;
+  //   padding-right: 0px;
+  //   margin-right: 0px;
+  //   margin-left: 0px;
+  // }
+
+  // #about .signup {
+  //   border-left: 0px;
+  //   border-top: solid 1px $gold;
+  //   margin-top: 20px;
+  // }
+  // .home #about {
+  //   padding-top: 30px;
+  //   input, button {
+  //     width: 100%;
+  //     padding-right: 0px;
+  //     margin-right: 0px;
+  //   }
+  //   ul.social {
+  //     margin-top: 36px;
+  //     width: 90px;
+  //     left: -45px;
+  //     position: relative;
+  //     margin-left: 50%;
+  //   }
+  // }
+  // #about .signup h4 {
+  //   font-size: 24px;
+  //   line-height: 28px;
+  //   padding: 0px;
+  // }
+  // #signatories aside p.ire {
+  //   margin-bottom: 30px;
+  // }
+  // #programme aside h2.ire, .mobile-pull-left {
+  //   margin-bottom: 0px;
+  //   padding-bottom: 0px;
+  // }
+  // #programme .wrapper .mobile-pull-left p {
+  //   font-size: 21px;
+  // }
+  // aside h2 {
+  //   font-size: 18px;
+  // }
+  // #programme ul li, #programme ul:nth-child(2), #programme ul {
+  //   margin: inherit;
+  //   padding: inherit;
+  //   float: left;
+  // }
+  // #about .wrapper {
+  //   position: inherit;
+  //   top: inherit;
+  //   overflow: hidden;
+  // }
+  // .home #about {
+  //   height: inherit;
+  //   min-height: inherit;
+  //   max-height: inherit;
+  // }
+  // #programme {
+  //   padding-bottom: 0px;
+  //   margin-bottom: 0px;
+  //   aside {
+  //     width: 90%;
+  //   }
+  // }
+  // #programme .wrapper .col-4 {
+  //   padding: 0 5%;
+  //   margin: 0 auto;
+  // }
+  // #programme ul:nth-child(1) li:first-child {
+  //   border-top: solid 1px #eee;
+  //   padding-top: 10px;
+  //   margin-top: 20px;
+  // }
+  // #programme ul:nth-child(2) li:first-child {
+  //   border-top: solid 0px #eee;
+  //   padding-top: 10px;
+  //   margin-top: 20px;
+  // }
+  // #programme ul:nth-child(2) li:last-child {
+  //   border-bottom: 0px;
+  // }
+  // #programme ul {
+  //   position: relative;
+  //   margin-left: 0px;
+  // }
+  // #programme ul li {
+  //   padding: 24px 0px 10px 10%;
+  //   border-bottom: solid 1px #eee;
+  // }
+  // #programme .wrapper {
+  //   width: 100% !important;
+  //   margin: 0px;
+  //   padding: 0px;
+  //   max-width: 100%;
+  // }
+}
+

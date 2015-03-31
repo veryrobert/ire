@@ -1,0 +1,56 @@
+footer {
+  height: em(230);
+  position: relative;
+  background: white;
+  nav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0px;
+  }
+  .wrapper {
+    positon: absolute;
+  }
+  .harp {
+    // @include vertical-align;
+    position: relative;
+    top: 70px;
+    width: 65px;
+    margin: 0 auto;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  ul {
+    @include fill-parent;
+    text-align: center;
+  }
+  li {
+    display: inline;
+    font: 11px karla, $helvetica;
+    padding: 5px;
+    text-align: center;
+  }
+  .home &, .about & {
+    background: lighten($gold, 25%);
+    a {
+      color: darken($gold, 15%);
+    }
+  }
+
+
+}
+
+.home, .about {
+  footer {
+    background: lighten($gold, 25%);
+
+    li {
+      color: darken($gold, 10%); 
+    }
+    a {
+      color: darken($gold, 15%);
+    }
+  }
+}
