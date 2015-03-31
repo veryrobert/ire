@@ -677,10 +677,12 @@ section {
   @include transition(border 0.2s ease-in-out);
 }
 
-.main a:hover {
-  border-bottom: solid 1px $gold;
-  @include transition(border 0.2s ease-in-out);
-}
+// .main a:hover, .main a:active {
+//   border-left: solid 1px $gold;
+//   @include transition(border 0.2s ease-in-out);
+// }
+
+
 
 // Global Elements
 ///////////////////////////////////////////////////////////////////////////////////
@@ -1008,6 +1010,12 @@ header div.secondary nav {
   width: 67.880783%;
 }
 
+
+header .main a.active:before {
+  opacity: 1;
+}
+
+
 // Mobile Specific
 ///////////////////////////////////////////////////////////////////////////////////
 
@@ -1093,32 +1101,7 @@ header div.secondary nav {
 }
 
 @media (max-width: 769px) {
-  body {
-    @include transition(transform 0.6s ease-in-out);
-    &.open {
-      -webkit-transform: translateX(-280px);
-      -ms-transform: translateX(-280px);
-      transform: translateX(-280px);
-      @include transition(transform 0.6s ease-in-out);
-    }
-  }
-  // .home #banner .wrapper .logo,
-  header nav.main {
-    display: block;
-    -webkit-transform: translateX(300px);
-    -ms-transform: translateX(300px);
-    transform: translateX(300px);
-    @include transition(transform 0.9s ease-in-out);
-    &.open {
-      -webkit-transform: translateX(280px);
-      -ms-transform: translateX(280px);
-      // transform: translateX(280px);
-      @include transition(transform 0.9s ease-in-out);
-      -webkit-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
-      -moz-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
-      box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
-    }
-  }
+
   .home header .logo {
     display: none;
     background-image: url(../img/logo-small-white.png) no-repeat;
@@ -1126,22 +1109,18 @@ header div.secondary nav {
     height: 45px;
   }
   .menu {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/menu.png);
-    background: url(../img/menu.svg) no-repeat;
-    width: 40px;
-    height: 36px;
-    background-color: darken($navy, 3%);
+    display: block;
+    width: inherit;
     padding: 0 10px;
-    text-indent: -9999px;
-    background-position-x: 2px;
     position: absolute;
     right: 6%;
-    top: 20px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    top: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(-50%);
+    color: white;
+    // font: ;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
@@ -1171,72 +1150,29 @@ header div.secondary nav {
     .logo {
       display: block;
     }
-  }
-  #banner {}
-  header nav.main {
-    position: fixed;
-    background: $navy;
-    height: inherit;
-    width: 300px;
-    padding: 0;
-    padding-top: 5px;
-    min-height: 100%;
-    height: 100vh;
-    margin-left: -20px;
-    right: 0px;
-    top: 0px;
-    ul {}
-    ul li {
-      display: inherit;
-      float: inherit;
-      width: 100%;
-      &:first-child {
-        // a {	padding-top: 0px; }
-     
-      }
-      &:last-child {
-        a {
-          padding-bottom: 22px;
-        }
-      }
-      a {
-        @include transition(all 0.2s ease-in-out);
-        padding: 16px 30px 17px 30px;
-        width: 100%;
-        border-bottom: solid 1px darken($navy, 5%);
-        &:hover {
-          background: darken($navy, 5%);
-          border-bottom: solid 1px darken($navy, 5%);
-        }
-        &:hover {
-          @include transition(all 0.2s ease-in-out);
-        }
-        .eng {
-          color: white;
-        }
-      }
+    .wrapper {
+      max-width: 100%;
     }
+  }
+  header nav.main {
+    display: none;
+    background: white;
+    position: relative;
+    height: inherit;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 10px 30px;
+    &.open {
+      display: block;
+    }
+    li {
+      width: 100%;
+      display: block;
+      padding: 5px 0;
+    }
+
     .prog > a {
-      &:after {
-        content: "\0002B";
-        display: block;
-        color: darken($navy, 5%);
-        border: solid 1px darken($navy, 5%);
-        height: 26px;
-        width: 26px;
-        -webkit-border-radius: 24px;
-        -moz-border-radius: 24px;
-        border-radius: 24px;
-        font-size: 26px;
-        position: absolute;
-        right: 30px;
-        opacity: 1;
-        text-align: center;
-        vertical-align: middle;
-        padding-top: 2px;
-        margin-top: -31px;
-        @include transition(all 0.2s ease-in-out);
-      }
       &:hover {
         &:after {
           color: $gold;
@@ -1244,50 +1180,24 @@ header div.secondary nav {
         }
       }
     }
-    .prog.show > a {
-      &:after {
-        @include transform(rotate(225deg));
-        @include transition(all 0.2s ease-in-out);
-        color: $gold;
-        border-color: $gold;
-      }
-    }
+
     // Mobile Navigation Drop down
     .strands {
+
       ul {
         height: auto;
         overflow: hidden;
         float: left;
-        height: 0px;
+        display: none;
         position: relative;
-        @include transition(height 0.6s ease-in-out);
+        padding: 5px 0 5px 15px;
         &.show {
-          height: 411px;
-          @include transition(height 0.6s ease-in-out);
+          display: block;
         }
       }
       a {
-        font: 14px karla, sans-serif;
-        line-height: 8px;
-        padding-left: 75px;
-        background-color: darken($navy, 2%);
-        &.eng {
-          color: white;
-        }
-      }
-      a:before {
-        content: "";
-        display: inline-block;
-        background: url(../img/icon-sprite.svg);
-        width: 35px;
-        height: 35px;
-        background-repeat: no-repeat;
-        background-size: 500px;
-        margin-left: -42px;
-        background-position-x: -12px;
-        background-position-y: -16px;
-        position: absolute;
-        background-size: 680px 65px;
+        font: 15px/18px karla, sans-serif;
+        letter-spacing: -0.5px;
       }
     }
   }
@@ -1330,12 +1240,7 @@ header div.secondary nav {
       }
     }
   }
-  header nav.main.open {
-    -webkit-transform: translateX(300px);
-    -ms-transform: translateX(280px);
-    -webkit-transition: -webkit-transform 0.9s ease-in-out;
-    -moz-transition: -moz-transform 0.9s ease-in-out;
-  }
+
   header nav.main .prog > a:after {
     right: 50px;
   }
@@ -1549,7 +1454,7 @@ header {
   header .logo {
     opacity: 1;
     position: relative;
-    top: 5px;
+    left: 20px;
   }
   .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner, .reminders #banner {
     top: 75px;

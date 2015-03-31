@@ -18,6 +18,7 @@ window.isMobile = function() {
 // Site yo
 var honk = {
 	eventIndex : 0,
+	strand : window.location.pathname.split('/')[2],
 
 	// strands
 	state : "https://spreadsheets.google.com/feeds/list/15vI4t00kqeyjd-EQRT3gcv6nriwqaoC39kENV815_wo/od6/public/values?alt=json",
@@ -99,7 +100,34 @@ honk.getAllEvents = function (strand) {
 
 	this.getSingleEvent(strand);
 	this.closeClick();
+
+	this.menu();
 }
+
+
+honk.menu = function(){
+
+
+	this.menuActiveClassCheck();
+
+	if (	this.strand == 'state' || 
+			this.strand == 'historical' || 
+			this.strand == 'language' ||
+			this.strand == 'youth' ||
+			this.strand == 'cultural' ||
+			this.strand == 'community' ||
+			this.strand == 'global') {
+
+		// do strand specific stuff
+
+	} else {
+
+		this.$secondary.remove();
+
+	}
+}
+
+
 
 honk.getSignatories = function (strand) {
 	self = this;
@@ -167,20 +195,24 @@ honk.getSingleEvent = function(strand){
 	});
 }
 
-honk.hashCheck =function(){
+honk.menuActiveClassCheck = function(){
 
-	l(window.location.hash);
-	if(window.location.hash == '') {
-		this.getAllEvents(honk.historical);
+	// l('menuActiveClassCheck ' + this.strand);
+	if (this.strand == 'about') {
+	
+		$('.main li:first-child a').addClass('active');
+
+	} else if (this.strand == 'reminders') {
+
+		$('.main li:last-child a').addClass('active');
+
 	} else {
-		var page = window.location.hash.split('#')[1],
-			title = page.capitalize(),
-			strand = this[page];
+	
+		l('not about page');
 
-		this.getAllEvents(strand);
-		
-		this.$pageTitle.empty().append(title);		
 	}
+
+
 }
 
 
@@ -281,10 +313,10 @@ honk.pageCheck =function(){
 	}
 }
 
+
 // Get This Party Started
 $(document).ready(function(){
 	l('JS LOADED');
-	// honk.hashCheck();
 	honk.pageCheck();
 
 	FastClick.attach(document.body);
@@ -333,10 +365,3 @@ $('footer .harp').on('click', function(){
 	}, 600, 'easeInOutCubic');
 });
 
-
-$(function() {
-
-	console.log(location.pathname.split("/")[1);
-
-  $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-});

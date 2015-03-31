@@ -186,7 +186,7 @@ header {
     margin-bottom: 0.625em; }
   .event span.img {
     display: block;
-    height: 380px;
+    max-height: 380px;
     overflow: hidden;
     margin-bottom: 20px; }
   .event img {
@@ -302,6 +302,8 @@ header {
 
 li.state h5 em {
   color: #63b428; }
+li.state a span.ire {
+  color: #63b428; }
 
 body.state {
   background: #63b428; }
@@ -340,6 +342,8 @@ body.state {
     color: white; }
 
 li.historical h5 em {
+  color: #14825f; }
+li.historical a span.ire {
   color: #14825f; }
 
 body.historical {
@@ -380,6 +384,8 @@ body.historical {
 
 li.language h5 em {
   color: #0f81ad; }
+li.language a span.ire {
+  color: #0f81ad; }
 
 body.language {
   background: #0f81ad; }
@@ -418,6 +424,8 @@ body.language {
     color: white; }
 
 li.youth h5 em {
+  color: #cf568c; }
+li.youth a span.ire {
   color: #cf568c; }
 
 body.youth {
@@ -458,6 +466,8 @@ body.youth {
 
 li.cultural h5 em {
   color: #7a2b88; }
+li.cultural a span.ire {
+  color: #7a2b88; }
 
 body.cultural {
   background: #7a2b88; }
@@ -496,6 +506,8 @@ body.cultural {
     color: white; }
 
 li.community h5 em {
+  color: #e6263a; }
+li.community a span.ire {
   color: #e6263a; }
 
 body.community {
@@ -536,6 +548,8 @@ body.community {
 
 li.global h5 em {
   color: #f27f0a; }
+li.global a span.ire {
+  color: #f27f0a; }
 
 body.global {
   background: #f27f0a; }
@@ -574,6 +588,8 @@ body.global {
     color: white; }
 
 li.reminders h5 em {
+  color: #14825f; }
+li.reminders a span.ire {
   color: #14825f; }
 
 body.reminders {
@@ -715,6 +731,11 @@ Andy css goes here
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */ }
+
+.reminders .grad, .reminders .grad:before {
+  opacity: 0; }
+  .reminders .grad:hover, .reminders .grad:before:hover {
+    opacity: 0; }
 
 header {
   z-index: 110; }

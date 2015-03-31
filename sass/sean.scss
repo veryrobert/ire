@@ -252,7 +252,7 @@ header {
   }
   span.img {
     display: block;
-    height: 380px;
+    max-height: 380px;
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -419,6 +419,9 @@ $brands: $state, $historical, $language, $youth, $cultural, $community, $global,
   $textcol: #{nth($brands, $i)};
   li.#{nth($classList, $i)} {
     h5 em {
+      color: $textcol;
+    }
+    a span.ire {
       color: $textcol;
     }
   }
@@ -614,6 +617,16 @@ Andy css goes here
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */
 }
+
+.reminders {
+  .grad, .grad:before {
+    opacity: 0;
+    &:hover {
+      opacity: 0;
+    }
+  }
+}
+
 
 header {
   z-index: 110;

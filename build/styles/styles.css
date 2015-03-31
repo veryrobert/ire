@@ -736,12 +736,6 @@ section h2 {
   -moz-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out; }
 
-.main a:hover {
-  border-bottom: solid 1px #958864;
-  -webkit-transition: border 0.2s ease-in-out;
-  -moz-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out; }
-
 .col-12 .img {
   float: left;
   display: block;
@@ -1014,6 +1008,9 @@ header div.secondary nav ul li {
 header div.secondary nav {
   width: 67.880783%; }
 
+header .main a.active:before {
+  opacity: 1; }
+
 @media (max-width: 1060px) {
   header .main ul li {
     min-width: inherit;
@@ -1061,36 +1058,6 @@ header div.secondary nav {
   .hide-desktop {
     display: none; } }
 @media (max-width: 769px) {
-  body {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -moz-transition: -moz-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out; }
-    body.open {
-      -webkit-transform: translateX(-280px);
-      -ms-transform: translateX(-280px);
-      transform: translateX(-280px);
-      -webkit-transition: -webkit-transform 0.6s ease-in-out;
-      -moz-transition: -moz-transform 0.6s ease-in-out;
-      transition: transform 0.6s ease-in-out; }
-
-  header nav.main {
-    display: block;
-    -webkit-transform: translateX(300px);
-    -ms-transform: translateX(300px);
-    transform: translateX(300px);
-    -webkit-transition: -webkit-transform 0.9s ease-in-out;
-    -moz-transition: -moz-transform 0.9s ease-in-out;
-    transition: transform 0.9s ease-in-out; }
-    header nav.main.open {
-      -webkit-transform: translateX(280px);
-      -ms-transform: translateX(280px);
-      -webkit-transition: -webkit-transform 0.9s ease-in-out;
-      -moz-transition: -moz-transform 0.9s ease-in-out;
-      transition: transform 0.9s ease-in-out;
-      -webkit-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
-      -moz-box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2);
-      box-shadow: -4px 0px 5px 0px rgba(7, 21, 31, 0.2); }
-
   .home header .logo {
     display: none;
     background-image: url(../img/logo-small-white.png) no-repeat;
@@ -1098,22 +1065,17 @@ header div.secondary nav {
     height: 45px; }
 
   .menu {
-    content: "";
-    display: inline-block;
-    background-image: url(../img/menu.png);
-    background: url(../img/menu.svg) no-repeat;
-    width: 40px;
-    height: 36px;
-    background-color: #081f29;
+    display: block;
+    width: inherit;
     padding: 0 10px;
-    text-indent: -9999px;
-    background-position-x: 2px;
     position: absolute;
     right: 6%;
-    top: 20px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px; } }
+    top: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(-50%);
+    color: white;
+    -webkit-font-smoothing: antialiased; } }
 @media (max-width: 769px) {
   #banner, .home #banner {
     top: 75px;
@@ -1141,110 +1103,39 @@ header div.secondary nav {
     background: #09232e; }
     header .logo {
       display: block; }
+    header .wrapper {
+      max-width: 100%; }
 
   header nav.main {
-    position: fixed;
-    background: #0b2936;
+    display: none;
+    background: white;
+    position: relative;
     height: inherit;
-    width: 300px;
-    padding: 0;
-    padding-top: 5px;
-    min-height: 100%;
-    height: 100vh;
-    margin-left: -20px;
-    right: 0px;
-    top: 0px; }
-    header nav.main ul li {
-      display: inherit;
-      float: inherit;
-      width: 100%; }
-      header nav.main ul li:last-child a {
-        padding-bottom: 22px; }
-      header nav.main ul li a {
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        padding: 16px 30px 17px 30px;
-        width: 100%;
-        border-bottom: solid 1px #071921; }
-        header nav.main ul li a:hover {
-          background: #071921;
-          border-bottom: solid 1px #071921; }
-        header nav.main ul li a:hover {
-          -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
-        header nav.main ul li a .eng {
-          color: white; }
-    header nav.main .prog > a:after {
-      content: "\0002B";
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 10px 30px; }
+    header nav.main.open {
+      display: block; }
+    header nav.main li {
+      width: 100%;
       display: block;
-      color: #071921;
-      border: solid 1px #071921;
-      height: 26px;
-      width: 26px;
-      -webkit-border-radius: 24px;
-      -moz-border-radius: 24px;
-      border-radius: 24px;
-      font-size: 26px;
-      position: absolute;
-      right: 30px;
-      opacity: 1;
-      text-align: center;
-      vertical-align: middle;
-      padding-top: 2px;
-      margin-top: -31px;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
+      padding: 5px 0; }
     header nav.main .prog > a:hover:after {
       color: #958864;
       border: solid 1px #958864; }
-    header nav.main .prog.show > a:after {
-      -webkit-transform: rotate(225deg);
-      -moz-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-      -o-transform: rotate(225deg);
-      transform: rotate(225deg);
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      color: #958864;
-      border-color: #958864; }
     header nav.main .strands ul {
       height: auto;
       overflow: hidden;
       float: left;
-      height: 0px;
+      display: none;
       position: relative;
-      -webkit-transition: height 0.6s ease-in-out;
-      -moz-transition: height 0.6s ease-in-out;
-      transition: height 0.6s ease-in-out; }
+      padding: 5px 0 5px 15px; }
       header nav.main .strands ul.show {
-        height: 411px;
-        -webkit-transition: height 0.6s ease-in-out;
-        -moz-transition: height 0.6s ease-in-out;
-        transition: height 0.6s ease-in-out; }
+        display: block; }
     header nav.main .strands a {
-      font: 14px karla, sans-serif;
-      line-height: 8px;
-      padding-left: 75px;
-      background-color: #09232e; }
-      header nav.main .strands a.eng {
-        color: white; }
-    header nav.main .strands a:before {
-      content: "";
-      display: inline-block;
-      background: url(../img/icon-sprite.svg);
-      width: 35px;
-      height: 35px;
-      background-repeat: no-repeat;
-      background-size: 500px;
-      margin-left: -42px;
-      background-position-x: -12px;
-      background-position-y: -16px;
-      position: absolute;
-      background-size: 680px 65px; }
+      font: 15px/18px karla, sans-serif;
+      letter-spacing: -0.5px; }
 
   .hide-desktop {
     display: block; } }
@@ -1269,12 +1160,6 @@ header div.secondary nav {
     width: 100%; }
     .home #banner .wrapper .col-8 p {
       font-size: 20px; }
-
-  header nav.main.open {
-    -webkit-transform: translateX(300px);
-    -ms-transform: translateX(280px);
-    -webkit-transition: -webkit-transform 0.9s ease-in-out;
-    -moz-transition: -moz-transform 0.9s ease-in-out; }
 
   header nav.main .prog > a:after {
     right: 50px; }
@@ -1444,7 +1329,7 @@ header {
   header .logo {
     opacity: 1;
     position: relative;
-    top: 5px; }
+    left: 20px; }
 
   .state #banner, .historical #banner, .language #banner, .youth #banner, .cultural #banner, .community #banner, .global #banner, .reminders #banner {
     top: 75px;
