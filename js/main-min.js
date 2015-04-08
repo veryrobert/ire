@@ -128,6 +128,19 @@ honk.menu = function(){
 	}
 }
 
+honk.checkIE = function(){
+
+	var ua = window.navigator.userAgent,
+		msie = ua.indexOf("MSIE");
+
+	if (!msie) {
+		honk.$body.addClass('fallback');
+		l('IE YEP');
+	} else {
+		l('IE NOPE');
+	}
+
+}
 
 
 honk.getSignatories = function (strand) {
@@ -216,12 +229,26 @@ honk.menuActiveClassCheck = function(){
 
 }
 
+honk.autoPlayVid = function (vcode, width, height){
+	l('ran');
+	$(".video").html('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+vcode+'?autoplay=1&loop=1&rel=0&wmode=transparent" frameborder="0" allowfullscreen wmode="Opaque"></iframe>').css('display', 'inline-block');
+}
 
 honk.pageCheck =function(){
-	FastClick.attach(document.body);
-	this.$video.fitVids();
 
 	self = this;
+	FastClick.attach(document.body);
+
+	$('.still').click(function(e){
+		e.preventDefault();
+		$(this).hide();
+		self.autoPlayVid('mwsFew1VNN4','560','400');
+		// self.$video.fitVids();
+		$(".video").fitVids();
+
+	});
+
+
 	var win = window.location.pathname;
 	if(win == '/build/' || win == '/ire/' || win == '/' || win == '/build/about/') {
 		
@@ -343,6 +370,11 @@ $(document).ready(function(){
 	honk.pageCheck();
 
 	proc();
+
+
+
+
+
 
 });
 
