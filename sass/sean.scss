@@ -230,6 +230,12 @@ header {
     @media (max-width: 640px) {
       padding: 0 40px 20px 40px;
     }
+    a {
+      font: 17px/24px 'Alegreya', Times, serif;
+      border-bottom: 1px dotted black;
+      color: black;
+      text-transform: inherit;
+    }
   }
   p.irish {
     text-indent: 40px;

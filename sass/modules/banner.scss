@@ -89,8 +89,8 @@
     }
     .logo {
       @include span-columns(4);
-      background-image: url(.././img/logo-big.png);
-      background: url(.././img/logo-big.svg) no-repeat;
+      background-image: url(/img/logo-big.png)  no-repeat;
+      background: url(/img/logo-big.svg) no-repeat;
       text-indent: -9999px;
       height: em(130);
       margin-top: -1px;

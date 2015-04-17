@@ -68,6 +68,10 @@ footer a, #events .eng, #programme ul li a {
       background: $color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAMGDvwrAXRAAAAEJJREFUeNqt0DsKADAIRMH4uf+ZAzZvwWwXG3VARI+JDO0ix7pCrDonoTToLs0QhmKimCi20I/vRWrfbnOv209+xwUvkwFx5EtLewAAAABJRU5ErkJggg==) center center no-repeat;
     }
 
+    #single p.ire a {
+      color: $color;
+      border-bottom: 1px dotted $color;
+    }
     .event:hover {
       .grad {
         opacity: 1;
